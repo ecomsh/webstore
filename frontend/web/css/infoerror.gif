@@ -1,0 +1,3 @@
+<br />
+<b>Warning</b>:  readfile(http://www.ftzmall.com.cn//app/site/statics/css/images/infoerror.gif): failed to open stream: HTTP request failed! HTTP/1.1 404
+ in <b>E:\cqtest\myBatu.php</b> on line <b>78</b><br />

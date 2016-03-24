@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>会员登录_上海外高桥进口商品网</title>
+<link href="../mobile/css/amazeui.min.css" rel="stylesheet" type="text/css">
+<link href="../mobile/css/mobile.css" rel="stylesheet">
+<link href="../mobile/css/styles.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/frozen.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../demo/demo.css">
+</head>
+
+<body>
+
+<!-- 页面头部固定区域start-->
+<header class="ui-header ui-header-positive">
+    <div class="unlogo-head"><i class="icon-arrow-left float-left"></i><span class="center-text">登录</span><a href="index.html" class="float-right1"><i class="icon-home" onclick=""></i></a></div>
+</header>
+
+<!-- 页面头部固定区域end--> 
+<!-- 页面中部非固定区域1-信息填写panel区域start-->
+<section class="top-m-45">
+    <div class="m-page" style="min-height: 609px;">
+        <div class="full-screen">
+            <div class="full-padding">
+                <div class="login-bg">
+                    <div class="login-close-btn"></div>
+                </div>
+                <form id="w1" class="form" action="login-1.html" method="post">
+                    <input type="hidden" name="_csrf" value="STFvZ1hpVnMMAgMUbCssXnp5GlMfX3sDIlwiPz8jMQEnYyosDQsDHA==">
+                    <div class="ui-tab2">
+                        <ul class="ui-tab-nav2">
+                            <li><a href="login-3.html">手机登录</a></li>
+                            <li class="current ui-tab-border-b">账号登录</li>
+                        </ul>
+                    </div>
+                    <div class="login-box">
+                        <div class="ui-form-item ui-border-b">
+                            <label> 用户名 </label>
+                            <input type="text" id="mobileloginform-username" name="MobileLoginForm[username]" placeholder="邮箱/用户名/手机号">
+                            <div class="input-common input-clean"></div>
+                            <div class="notice" style="height:10px;"></div>
+                        </div>
+                        <div class="ui-form-item ui-border-b">
+                            <label for="mobileloginform-password">密码</label>
+                            <input type="password" id="mobileloginform-password" name="MobileLoginForm[password]" placeholder="请输入密码" data-caution="密码栏不能为空">
+                            <div class="input-common input-eyes"></div>
+                        </div>
+                    </div>
+                    <div class="ui-form-item ui-border-b">
+                        <label for="mobileloginform-password">验证码</label>
+                        <input type="text" id="mobileloginform-verifycode" class="form-control" name="MobileLoginForm[verifyCode]" placeholder="请输入验证码">
+                        <img id="mobileloginform-verifycode-image" class="verifycode-image" src="../img/captcha.png?v=5629d9ea95f7e" alt="点击换图" title="点击换图" style="cursor:pointer">
+                        <div class="input-common"></div>
+                    </div>
+                    <div class="forget-password">
+                        <p> <a href="/passport/resetpassword.html" class="signup-link">忘记密码？</a> </p>
+                    </div>
+                    <div class="login-btn">
+                        <div class="ui-col-logbut">
+                            <button class="ui-btn-lg ui-btn-primary"> 登录 </button>
+                        </div>
+                        <div class="ui-col-logbut">
+                            <button class="ui-btn-lg ui-btn-primary-ep"> 注册 </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 页面中部非固定区域1-信息填写panel区域end--> 
+<script>
+        $(document).ready(function() {
+            $('input#mobileloginform-stub').parent().parent().css('display', 'none');
+            $('.field-mobileloginform-username .x1 .input-common').addClass('input-clean');
+            $('.field-mobileloginform-password .x1 .input-common').addClass('input-eyes');
+          //输入框清空和呈密码状
+            var click_i = 1;
+            $('.input-clean').on('click', function() {
+                $(this).siblings().val('');
+            });
+            $('.input-eyes').on('click', function() {
+                if (click_i == 0) {
+                    $(this).siblings().prop('type', 'text');
+                    click_i = 1;
+                } else {
+                    $(this).siblings().prop('type', 'password');
+                    click_i = 0;
+                };
+            });
+        })
+
+    </script> 
+<script src="../assets/8cfae686/jquery.js"></script> 
+<script src="../assets/57dc1b74/yii.js"></script> 
+<script src="../assets/57dc1b74/yii.validation.js"></script> 
+<script src="../assets/57dc1b74/yii.captcha.js"></script> 
+<script src="../assets/57dc1b74/yii.activeForm.js"></script> 
+<script type="text/javascript">jQuery(document).ready(function () {
+jQuery('#mobileloginform-verifycode-image').yiiCaptcha({"refreshUrl":"\/site\/captcha.html?refresh=1","hashKey":"yiiCaptcha\/site\/captcha"});
+jQuery('#w1').yiiActiveForm([{"id":"mobileloginform-username","name":"username","container":".field-mobileloginform-username","input":"#mobileloginform-username","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"此项为必填"});value = yii.validation.trim($form, attribute, []);}},{"id":"mobileloginform-password","name":"password","container":".field-mobileloginform-password","input":"#mobileloginform-password","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"此项为必填"});}},{"id":"mobileloginform-verifycode","name":"verifyCode","container":".field-mobileloginform-verifycode","input":"#mobileloginform-verifycode","validate":function (attribute, value, messages, deferred, $form) {yii.validation.captcha(value, messages, {"hash":404,"hashKey":"yiiCaptcha/site/captcha","caseSensitive":false,"message":"验证码错误"});}}], []);
+});</script><!--         <script>jQuery.noConflict();</script> --> 
+<script src="../mobile/js/jquery.js"></script> 
+<script src="../mobile/js/amazeui.min.js"></script> 
+<script src="../mobile/js/main.js"></script>
+</body>
+</html>

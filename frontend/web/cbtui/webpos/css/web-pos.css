@@ -1,0 +1,54 @@
+body{font-size:14px; font-family:"Microsoft YaHei"}
+.text-muted{height: 40px;line-height: 40px;vertical-align: middle;}
+.log-m{margin-bottom: 20px;margin-top: 60px}
+.price-p{margin-top:160px}
+.add-btn{width:100%;height:102px;font-size:2em}
+.phone-bg{background-color: #f1f1f1;overflow: hidden;margin-top: 15px; border-radius: 4px;margin-bottom: 0;padding: 6px 0}
+.totalprice-bg{background-color: #f7f7f7;overflow: hidden;padding: 10px 0;border-top:1px solid #e5e5e5}
+.total-price{color: #d9534f;font-size: 16px}
+.pay-color{color: #d9534f;}
+.pro-list{border-color: #e5e5e5}
+.pro-list>thead>tr{background-color: #f1f1f1;}
+.pro-list>tbody>tr>td{vertical-align:middle;}
+.pro-list>thead>tr>td,.pro-list>thead>tr>th,.pro-list>tbody>tr>td,.pro-list>tbody>tr>th {border-bottom-width: 1px;border-color: #e5e5e5}
+.step-btn{width: 200px;height: 40px;font-size: 16px}
+.logo-size{font-size:400px;}
+td.item_num, th.item_num{width:160px;}
+td.narrow,th.narrow{width:120px;}
+.input-xm{height:24px;width:32px;padding:0;text-align:center;display:inline-block;}
+input.text{border:none; width:100%;outline:none;background-color:transparent;}
+textarea.text{border:none;width:100%;height:auto;outline:none;resize:none;overflow:visible;background-color:transparent;}
+div.addresslist{font-size:12px;width:100%;min-height:132px;border:solid 1px #d9edf7;margin-bottom:15px}
+div.addr{display: inline-block;vertical-align: top;position: relative;width: 222px;height: 106px;margin: 3px 14px 14px 3px;color: #666;cursor: pointer;}
+div.add_addr{display: inline-block;vertical-align: top;position: relative;width: 222px;height: 106px;margin: 14px 4px 0px;color: #666;cursor: pointer;}
+div.addr>div.inner{z-index: 2;position: relative;padding: 8px 12px;border: 3px dashed #ddd;overflow: hidden;}
+div.addr.active>div.inner{border: 3px dashed #31708f;background-color:#d9edf7;}
+div.addr:hover>div.inner{background-color:#d9edf7;}
+div.addr>div.inner>div.addr-head{width: 100%;border-bottom: 1px solid #eee;padding: 0 0 24px 0;margin-bottom: 5px;height: 18px;line-height: 18px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+div.addr>div.inner>div.addr-body{height: 55px;overflow: hidden;word-break: break-all;word-wrap: break-word;}
+div.addr>div.inner>div.addr-toolbar{visibility:hidden;}
+div.addr.active>div.inner>div.addr-toolbar{visibility:visible;}
+div#loader{display:block;position:absolute;left:49%;top:400px;width:32px;height:32px;background-image:url(loader.gif);}
+form#confirmForm{display:block;}
+.add_num, .del_num{display:inline-block;height: 24px;width: 30px;padding: 0;text-align: center;}
+.form-group .inpuw-w{ width: 280px;}
+.panel-m{margin-bottom: 0}
+.fixed-m{margin-bottom: 80px;}
+.check-m{ margin-bottom: 250px}
+.webpos-login{ background:url(../images/login-bg.png) no-repeat; width:388px; height:512px;margin-top: 50px;padding: 30px 40px 0 50px}
+.webpos-tp{display: block;padding-top: 70px}
+.web-title{display: block;width: 78px;float: left;font-size: 16px;font-weight: normal;}
+.form-horizontal .web-title {text-align:justify;text-align-last:justify;-moz-text-align-last:justify;}
+
+.web-input{display: block;width: 250px;float: left;}
+.log-title{color: #e81a62;font-size: 24px;margin-bottom: 50px;margin-left: -15px}
+.web-m{margin-bottom: 30px}
+.webpos-input{height: 40px;border: solid 1px #ededed;padding-left: 34px;font-size: 16px;border-radius:0;}
+.store-input{background:url(../images/login-stores.png) no-repeat 6px;}
+.store-name{background:url(../images/login-name.png) no-repeat 6px;}
+.store-pd{background:url(../images/login-pd.png) no-repeat 6px;}
+.font16{font-size: 16px;font-weight:normal;}
+.for-pd a{color: #ed145b}
+.for-pd a:hover{text-decoration: none;}
+.web-btn{background-color: #e81a62;border-radius: 0;border: none}
+.web-btn:hover{background-color: #d40c52;}

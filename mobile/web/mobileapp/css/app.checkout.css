@@ -1,0 +1,37 @@
+header.ui-header {
+    display: none !important;
+    height: 0px;
+    line-height: 0px;
+  }
+  .ui-header ~ .ui-container{
+    border-top: 5px solid transparent;
+  }
+  .order-item-group .item-title{
+    color: #181818;
+  }
+  .order-list .order-coupon{
+    color: #181818;
+  }
+  .font-color7{
+    color: #F74B08;
+  }
+  .order-item-group .item-title img{
+    display: none !important;
+  }
+  .order-item-group .order-item{
+    color: #6B6B6B;
+  }
+  .font-color1,.ui-bottom-sure{
+    color: #FC511F;
+  }
+  .total-price{
+    color: #FC511F;
+    font-weight: bold;
+  }
+  .go-check-out{
+    background: #FC511F;
+    background: -webkit-gradient(linear,0 0,0 100%,from(#FC511F),to(#FC511F));
+  }
+  .add-address-box{
+        background: #FC511F;
+  }

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<title>会员中心</title>
+		<meta name="viewport" content="width=1200" />
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="">
+		<link rel="stylesheet" href="../src/bootstrap-3.3.5/dist/css/bootstrap.css"/>
+		<link rel="stylesheet" href="../src/css/common.css"/>
+		<link rel="stylesheet" href="../src/css/layout.css"/>
+		<link rel="stylesheet" href="../src/css/member.css"/>
+	</head>
+	<body class="user-color">
+		<div class="topbar">
+			<div class="container">
+				<div class="pull-left topbar-left">
+				<!-- 未登录状态start -->
+					<!-- 欢迎来到上海外高桥进口商品网！
+					<a class="login-href" href="">请登录</a>|<a class="registe-href" href="">快速注册</a> -->
+				<!-- 未登录状态end -->
+				<!-- 已登录状态start -->
+					<!-- username显示的优先级：用户名>手机>邮箱,点击在新窗口打开用户中心页面 -->
+					欢迎您，<a href="" target="_blank" class="topbar-username">15800000000</a> | <a href="" class="quit">退出</a>
+				<!-- 已登录状态end -->
+				</div>
+				<div class="pull-right topbar-right">
+					<ul class="nav">	
+						<li class="pull-left"><a href="">订单查询　|　</a></li>
+						<!-- <li class="pull-left"><a href="">我的收藏　|　</a></li> -->
+						<li class="pull-left"><a href="">个人中心</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="header">
+			<div class="container clearfix">	
+				<div class="pull-left logo">
+					<a href="index.html"><img src="../src/images/logo.png"></a>
+				</div>
+				<div class="pull-right">
+					<div class="input-group search-group">
+						<input type="text" class="form-control header-search" placeholder="品牌搜索" name="" value=""/>
+						<span class="input-group-btn">
+							<button class="btn btn-search" type="button">搜索</button>
+						</span>
+					</div>
+					<ul class="nav search-nav">
+						<li class="pull-left"><a href="">保湿</a>|</li>
+						<li class="pull-left"><a href="">面膜</a>|</li>
+						<li class="pull-left font-color1"><a href="">洗面奶</a>|</li>
+						<li class="pull-left"><a href="">补水</a>|</li>
+						<li class="pull-left"><a href="">香水</a>|</li>
+						<li class="pull-left"><a href="">眼霜</a>|</li>
+						<li class="pull-left"><a href="">口红</a>|</li>
+						<li class="pull-left font-color1"><a href="">护肤套装</a></li>
+					</ul>
+				</div>	
+			</div>
+		</div>
+		<div class="nav-con">
+			<div class="container clearfix">
+				<div class="pull-left">
+					<ul class="nav nav-ul">
+						<li class="bg-color1 pull-left"><a href="index.html">首页</a></li>
+						<li class="pull-left"><a href="">美妆个护</a></li>
+						<li class="pull-left"><a href="">母婴益智</a></li>
+						<li class="pull-left"><a href="">食品保健</a></li>
+						<li class="pull-left"><a href="">国际轻奢</a></li>
+					</ul>
+				</div>
+				<div class="pull-right">
+					<div class="nav-car navbar-right">
+						购物车<span class="car-count">0</span>>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div class="container user-color">
+			<div class="member-left">
+                <h4 class="member-title">会员中心</h4>
+                <ul class="member-ul">
+                	<span>交易管理</span>
+                	<li><a class="current" href="">我的订单</a></li>
+                	<li><a href="">我的购物车</a></li>
+                	<li><a href="">退款退货管理</a></li>
+                </ul>
+                <ul class="member-ul">
+                	<span>账户中心</span>
+                	<li><a href="">账户信息</a></li>
+                	<li><a href="">实名认证</a></li>
+                	<li><a href="">修改密码</a></li>
+                	<li><a href="">收货地址</a></li>
+                </ul>
+			</div>
+			<div class="member-right-order">
+                <div class="member-main">
+                    <div class="order-detail">
+                        <div class="title title2">订单信息</div>
+                        <table border="0" cellpadding="0" cellspacing="0" class="order-info gridlist_member">
+                            <tbody>
+                                <tr>
+                                    <td width="38%">
+                                    	<ul>
+                                            <li>订单号：<span class="price-normal">6629299380663511121</span></li>
+                                            <li>订单金额：<span class="point">￥156.00</span></li>
+                                            <li>订单状态：<span class="siteparttitle-blue">已申请退货退款</span></li>
+                                        </ul>
+                                    </td>
+                                    <td width="42%" >
+                                        <div class="alert alert-warning">说明：店家已经收到您的付款，正在备货，稍后将会发货。</div>
+                                    </td>
+                                    <td width="20%">
+                                        <!--<div class = "lave-word"><a href = "javascript:void(0);" id = "odr_msg" class = "btn-w" title = "order_msg" data-uri = "{url:'http://ci.store.ftzmall.com/msg-add.html',target:'_blank'}" rel = "_payorder">我要留言</a></div>-->
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="order-track" style="border:none">
+                            <div id="order_des" class="switch">
+                                <ul class="switchable-triggerBox tab-member clearfix">
+                                    <li>
+                                        <a class="active" href="javascript:void(0);">订单追踪</a>
+                                    </li>
+                                </ul>
+                                <div class="switchable-content switchable-content2">
+                                    <div class="switchable-panel">
+                                        <div class="box">
+                                            <div class="flow">
+                                                <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                    <tbody>
+                                                    	<tr>
+                                                            <td class="box-td">提交订单</td>
+                                                            <td class="box-td">等待确认</td>
+                                                            <td class="box-td">
+                                                                <span class="point">捡配货物</span>
+                                                            </td>
+                                                            <td class="box-td">店家发货</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="5" class="flow-bg">
+                                                                <div class="flow-bg bg3"></div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <p>2015-09-24 11:49:09&nbsp;&nbsp;用户创建订单</p>
+                                            <p>2015-09-24 11:49:23&nbsp;&nbsp;用户支付订单</p>
+                                            <p>2015-09-24 11:49:59&nbsp;&nbsp;系统完成订单排程</p>
+                                            <p>2015-09-24 11:50:03&nbsp;&nbsp;系统发送订单作业到仓库</p>
+                                            <p>2015-09-24 11:51:22&nbsp;&nbsp;订单对应的包裹由仓库发出</p>
+                                            <p>2015-09-24 11:55:47&nbsp;&nbsp;用户创建退货申请</p>                          
+                                            <script>
+                                                $$('.classless-delivery-id').addEvent('click', function(e) {
+                                                var target = e.target, href = target.get('href'), deliveryid = target.get('deliveryid'), p = target.getParent('p');
+                                                var logisticdomid = 'logistic-' + deliveryid, logisticdom = $(logisticdomid);
+                                                e.stop(); // prevent jump
+                                                if (!logisticdom) { //
+                                                    logisticdom = {destroy: function() {
+                                                        }};
+                                                    new Request({
+                                                    url: href, noCache: true, async: false,
+                                                    onSuccess: function(responseText, responseXML) {
+                                                        var newdom = new Element('div', {html: responseText, 'class': 'logistic-info', id: logisticdomid});
+                                                        newdom.inject(p, 'after');
+                                                        }
+                                                    }).get();
+                                                } else {
+                                                    logisticdom.destroy();
+                                                    }
+                                                });
+                                            </script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+                                (function() {
+                                Ex_Event_Group['_payorder'] = {
+                                    fn: function(el, e) {
+                                        e.stop();
+                                        el = $(el.target) || $(el);
+                                        if (el.get('data-uri')) {
+                                            var data = JSON.decode(el.get('data-uri'));
+                                            if (data.target == '_blank') {
+                                                _open(data.url, data.params || {});
+                                            }
+                                            else {
+                                                location.href = data.url;
+                                                }
+                                            }
+                                        }
+                                    };
+                                })();
+                            var tabs = new Switchable('order_des', {autoplay: false});
+                            </script>
+                            <div class="cart-wrap ">
+                                <div class="FormWrap gift-bag order-trace">
+                                    <table cellspacing="0" cellpadding="3" class="gridlist gridlist_member good-line">
+                                        <colgroup>
+                                            <col class="span-auto">
+                                            <col class="span-2">
+                                            <col class="span-3">
+                                        </colgroup>
+                                        <tbody>
+                                        	<tr>
+                                                <th class="bln">商品</th>
+                                                <th>数量</th>
+                                                <th>金额小计</th>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td class="good-left">
+                                                    <ul class="proinfo1">
+                                                        <li class="proinfo-li1">
+                                                            <span class="pro-column1">
+                                                                <div class="proinfo-list1">
+                                                                    <div class="product-information1 clearfix">
+                                                                        <img src="../src/images/order-tp.png" class="product-img1">
+                                                                        <div class="product-inf1">
+                                                                            <a class="product-name1">哈姆雷特巧克力红色礼盒</a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="product-information1 clearfix">
+                                                                        <img src="../src/images/order-tp.png" class="product-img1">
+                                                                        <div class="product-inf1">
+                                                                            <a class="product-name1">哈姆雷特巧克力红色礼盒</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </span>
+                                                            <span class="pro-column2 font-orange">￥150000</span>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td class="text-center vm">1</td>
+                                                <td class="text-center vm font-orange">￥148.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="good-left">
+                                                    <ul class="proinfo1">
+                                                        <li class="proinfo-li1">
+                                                            <span class="pro-column1">
+                                                                <div class="proinfo-list1">
+                                                                    <div class="product-information1 clearfix">
+                                                                        <img src="../src/images/order-tp.png" class="product-img1">
+                                                                        <div class="product-inf1">
+                                                                            <a class="product-name1">哈姆雷特巧克力红色礼盒雷特巧克力红色礼盒雷特巧克力红色礼盒</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </span>
+                                                            <span class="pro-column2 font-orange">￥150000</span>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td class="text-center vm">1</td>
+                                                <td class="text-center vm font-orange">￥148.00</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <h4>收货信息</h4>
+                                    <table cellspacing="0" cellpadding="0" class="takegoods">
+                                        <tbody>
+                                            <tr>
+                                                <th>配送地区：</th>
+                                                <td>上海市上海市黄浦区</td>
+                                            </tr>
+                                            <tr>
+                                                <th>收货地址：</th>
+                                                <td>上海市上海市黄浦区中山一路1号1-123室</td>
+                                            </tr>
+                                            <tr>
+                                                <th>收货人邮编：</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>收货人姓名：</th>
+                                                <td>刘芳</td>
+                                            </tr>
+                                            <tr>
+                                                <th>联系电话：</th>
+                                                <td>13701823123</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <h4>配送方式</h4>
+                                    <table cellspacing="0" cellpadding="0" class="takegoods">
+                                        <tbody>
+                                        	<tr>
+                                                <th>配送方式：</th><td>快递</td>
+                                            </tr>
+                                            <tr>
+                                            	<th>配送费用：</th>
+                                            	<td><span class="point">￥8.00</span>
+                                            	</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <h4>支付信息</h4>
+                                    <table cellspacing="0" cellpadding="0" border="0" class="takegoods">
+                                        <tbody>
+                                            <tr>
+                                                <th>支付方式：</th>
+                                                <td>支付宝</td>
+                                            </tr>
+                                            <tr>
+                                                <th>支付金额：</th>
+                                                <td>0.01</td>
+                                            </tr>
+                                            <tr>
+                                                <th>支付时间：</th>
+                                                <td>2015-09-24 11:49:23</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>     
+                                    <h4>结算信息</h4>
+                                        <table border="0" cellspacing="0" cellpadding="0" class="liststyle data">
+                                            <colgroup>
+                                                <col width="88%">
+                                                <col width="12%">
+                                            </colgroup>
+                                            <tbody>
+                                            	<tr>
+                                                    <th>商品总金额：</th>
+                                                    <td class="font-orange">￥148.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>优惠费用：</th>
+                                                    <td>-￥0.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>配送费用：</th>
+                                                    <td>￥8.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>商品进口税金：</th>
+                                                    <td>￥0.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>订单总金额：</th>
+                                                    <td class="font16px font-orange fontbold">￥156.00</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer-top container">
+				<img src="../src/images/map.png" class="map-img">
+				<ul class="clearfix">
+					<li class="pull-left map-inf">
+						<span class="map-title">FTZMALL</span>
+						<ul class="map-ul">
+							<li><a href="">购物流程</a></li>
+							<li><a href="">发票政策</a></li>
+							<li><a href="">安全保证</a></li>
+							<li><a href="">服务保证</a></li>
+							<li><a href="">意见与建议</a></li>
+						</ul>
+					</li>
+					<li class="pull-left map-inf">
+						<span class="map-title">配送服务</span>
+						<ul class="map-ul">
+							<li><a href="">配送范围及运费</a></li>
+							<li><a href="">配送服务</a></li>
+							<li><a href="">验货与签收</a></li>
+						</ul>
+					</li>
+					<li class="pull-left map-inf">
+						<span class="map-title">支付方式</span>
+						<ul class="map-ul">
+							<li><a href="">DIG卡支付</a></li>
+							<li><a href="">在线支付</a></li>
+							<li><a href="">组合支付</a></li>
+						</ul>
+					</li>
+					<li class="pull-left map-inf">
+						<span class="map-title">售后服务</span>
+						<ul class="map-ul">
+							<li><a href="">退换货政策</a></li>
+							<li><a href="">退换货说明</a></li>
+							<li><a href="">退换货流程</a></li>
+							<li><a href="">退款说明</a></li>
+							<li><a href="">常见问题</a></li>
+						</ul>
+					</li>
+					<li class="pull-left map-inf">
+						<span class="map-title">自贸区直购</span>
+						<ul class="map-ul">
+							<li><a href="">消费者告知书</a></li>
+							<li><a href="">海关通关及关税</a></li>
+							<li><a href="">自贸区直够购物流程</a></li>
+							<li><a href="">自贸区直购退换货政策</a></li>
+							<li><a href="">自贸区直购退换货流程</a></li>
+							<li><a href="">自贸区直购退款说明</a></li>
+						</ul>
+					</li>
+					<li class="pull-left code-inf">
+						<span class="map-title">FTZMALL微信</span>
+						<img src="../src/images/code.png">
+						<div class="telephone">
+							400-188-5179
+							<p>周一至周五:9:00-17:00</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="footer-bottom">
+				<p class="footer-bottom-p1"><a href="">关于我们</a>|<a href="">品牌入驻</a>|<a href="">联系我们</a>|<a href="">免责声明</a>|<a href="">隐私条款</a>|<a href="">完税价格表</a>|<a href="">诚聘英才</a>|<a href="">快递 100</a></p>
+				<p class="footer-bottom-p2">Copyright © 2006 - 2015上海外高桥进口商品网版权所有　沪ICP备11030945号-3   增值电信业务经营许可证　沪B-20110100</p>
+				<p>
+					<img src="../src/images/footer1.png"><img src="../src/images/footer2.png">
+				</p>
+			</div>
+		</div>
+		<script src="../src/js/jquery-1.11.3.min.js"></script>
+		<script src="../src/bootstrap-3.3.5/dist/js/bootstrap.js"></script>
+		<script src="../src/js/cbt.ui.layout.js"></script>
+	</body>
+</html>

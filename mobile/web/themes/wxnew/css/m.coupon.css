@@ -1,0 +1,30 @@
+.font-red{color:#ed145a;}
+.font-gray{color:#999;}
+.ui-dialog-bd{min-height:31px;padding: 5px}
+.ui-dialog-bd input{border: 1px solid #dad9da;height: 30px;width:230px;text-align: center}
+.ui-dialog-ft{background-image:none}
+.ui-dialog-ft button{background-image:none}
+
+.addcoupon-topbar{width:94%;height：80px;margin:0 auto;text-align: center;margin-top:15px;}
+.addcoupon-topbar a{width:100%; height:38px;line-height: 38px;border: 1px #ed145a solid; display: block; color: #ed145a}
+
+.tab{background-color:#efeff4;width:100%;margin-top: 15px}
+.ui-tab-nav{margin-top: 10px;border-bottom: 1px #ccc solid; font-weight: bold}
+.ui-tab-nav li.current{border-bottom:3px #ed145a solid;}
+.ui-tab-nav li.current a{color:#ed145a;}
+
+.coupon-fullbox{width:100%;background-color: #fff;}
+.coupon-bigbox{width:94%; height:80px; background-color: #fff;display: inline-block;margin-left: 3%}
+.coupon-leftbox{background: url(../images/coupon-bg.png) 0 0 no-repeat;width:110px;height: 50px; margin-top: 15px;float:left;position: relative;color:#fff;}
+.coupon-leftbox2{background: url(../images/coupon-gq.png) 0 0 no-repeat;width:110px;height: 50px; margin-top: 15px;float:left;position: relative;color:#fff;}
+.ab1{font-size: 12px;position:absolute;top:25px;left:5px;z-index: 5}
+.ab2{font-size: 32px;position:absolute;top:5px;left:15px;z-index: 5}
+.ab3{font-size: 12px;position:absolute;top:8px;left:60px;z-index: 5}
+.ab4{font-size: 12px;position:absolute;top:25px;left:60px;z-index: 5}
+.ab5{font-size: 12px;position:absolute;top:16px;left:10px;z-index: 5}
+.coupon-rightbox{line-height: 25px;float: left;margin-top: 15px;padding-left: 5px;font-size: 14px}
+.arrow-down{background: url(../images/arr-down.png) 0 0 no-repeat;width:7px;height: 6px;display: block;float: right;margin-top: 37px}
+.arrow-up{background: url(../images/arr-up.png) 0 0 no-repeat;width:7px;height: 6px;display: block;float: right;margin-top: 37px}
+.coupon-bottombox{width:100%;background-color: #efeff4;line-height: 28px;font-size: 14px; padding-left: 3%; color:#221713;padding-top: 5px;padding-bottom: 5px;display: none}
+.no-coupon{text-align: center;padding-top:40%;}
+.no-coupon p{text-align: center;padding-top:10px;}

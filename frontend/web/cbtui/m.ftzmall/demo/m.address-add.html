@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="full-screen" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="format-detection" content="address=no"/>
+	<title></title>
+	<link rel="stylesheet" href="../src/frozenui-1.3.0/css/frozen.css"/>
+	<link rel="stylesheet" href="../src/frozenui-1.3.0/css/font-awesome.css"/>
+	<link rel="stylesheet" href="../src/css/m.common.css"/>
+	<link rel="stylesheet" href="../src/css/m.add-address.css"/>
+</head>
+<body ontouchstart>
+	<header class="ui-header ui-header-positive ui-border-b">
+		<div class="topbar-bigbox">
+			<i class="ui-icon-return float-left"></i>
+			<div class="topbar-fontbox">添加地址</div>
+			<i class="ui-icon-home float-r font-32"></i>
+		</div>
+	</header>    
+	<section class="ui-container">
+		<ul class="address-infos">
+			<li class="address-info">
+				<div class="item-name">选择省</div>
+				<select name="province" class="province item-option add-static">
+					<option value="">请选择省</option>
+					<option value="">北京</option>
+					<option value="">天津</option>
+				</select>
+			</li>
+			<li class="address-info"> 
+				<div class="item-name">选择市</div>
+				<select name="city" class="city item-option add-static">
+					<option value="">请选择市</option>
+					<option>北京市</option>
+					<option>天津市</option>
+				</select>
+			</li>
+			<li class="address-info">
+				<div class="item-name">选择区县</div>
+				<select name="county" class="area item-option add-static">
+					<option value="">请选择区/县</option>
+					<option>朝阳区</option>
+					<option>东城区</option>
+				</select>
+			</li>
+			<li class="address-info">
+				<div class="item-name">街道地址</div>
+				<input type="text" value="" name="recipient_street" placeholder="请输入街道地址" class="other-input" id="street-input"/>
+			</li>
+			<li class="address-info">
+				<div class="item-name">收货人</div>
+				<input type="text" value="" id="username" name="recipient_name" placeholder="请输入收货人姓名" class="other-input"></li>
+			<li class="address-info">
+				<div class="item-name">手机号码</div>
+				<input type="tel" value="" id="tell" name="recipient_hp" placeholder="请输入收货人手机号码" class="other-input only-num"/>
+			</li>
+		</ul>
+		<div class="new-address">保存新地址</div>
+	</section>
+	<script src="../src/frozenui-1.3.0/lib/zepto.min.js"></script>
+	<script src="../src/frozenui-1.3.0/js/frozen.js"></script>		 
+   
+</body>
+</html>

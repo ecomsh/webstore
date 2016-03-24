@@ -1,0 +1,12 @@
+.ui-container{margin:0 auto;}
+.top-box {width:90%;margin:0 auto;margin-top: 1.5em}
+.realname-text{background:#ffe7f1 url(../images/notice-bg.png) no-repeat scroll .25rem .65rem;background-size:1rem;padding:.625rem 0 .625rem 1.5rem;font-size:.8rem;margin:.625rem;}
+.address-infos{background:#fff;margin:.625rem;border:.0625rem solid #ddd;position:relative;font-size:.875rem;padding:0 .625rem}
+.address-infos .form-group{border-bottom:solid .0625rem #ddd;line-height:2.75rem;overflow:hidden}
+.item-name{display:inline-block;width:27%;line-height:inherit;vertical-align:middle}
+.form-group:nth-last-child(1){border-bottom: none;}
+.skip-text{text-align:right;color:#e81a62;float:right;margin: .625rem .625rem 0 0;}
+.btn-sub{display:block;width:100%;height:2.5rem;border-radius:.25rem;background:#ed145b;line-height:2.5rem;text-align:center;color:#fff;margin:0 auto}
+.submit-div{margin:.625rem;}
+.help-block-error{margin-left: 27%;color:#ed145b;}
+.alert-success{width: 90%;color:#777;margin:0 auto;}

@@ -1,0 +1,76 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 12, 2015, 6:20:15 AM
+    Author     : hezonglin
+*/
+
+.help-block{display: block;
+            margin: 4px 0px 0px;
+            padding: 0;}
+
+.help-block-error{
+/*    /*background: #FFFFE6;
+                  border: 1px solid #FFCCCC;*/
+                  color: #FF0000;
+                  padding: 2px 12px;}
+
+
+
+//hezll add for new pager style 20150831
+
+
+.prevOrder a:hover{
+    background: url(../images/pager_pre.gif) no-repeat 0 0;
+    background-position: 0 -21px;
+
+}
+.nextOrder a:hover{
+    background: url(../images/pager_next.gif) no-repeat 0 0;
+    background-position: 0 -21px;
+
+}
+.prevOrder a{
+    background: url(../images/pager_pre.gif) no-repeat 0 0;
+
+}
+.prevOrder span{
+    background: url(../images/pager_pre.gif) no-repeat 0 0;
+    background-position: 0 -42px;
+}
+.nextOrder a{
+    background: url(../images/pager_next.gif) no-repeat 0 0;
+
+}
+.nextOrder span{
+    background: url(../images/pager_next.gif) no-repeat 0 0;
+    background-position: 0 -42px;
+}
+.prevOrder a,.prevOrder span, .nextOrder a,.nextOrder span{
+    width: 50px;
+    height: 21px;
+    line-height: 21px;
+    overflow: hidden;
+    text-indent: -9999px;
+    float: left;
+    _display: inline;
+    margin: 0 2px;
+
+}
+
+.recordinfo .btn-div .h5cq{width:100%;text-align:center;position:absolute;}
+
+.recordinfo .h1cq {
+	font-weight: bold;
+	font-family: Arial, "微软雅黑";
+	font-size: 18px;
+    line-height: 30px;
+}
+.recordinfo .h2cq, .h3cq, .h4cq, .h5cq, .h6cq {
+	font-weight: 300;
+	font-family: Arial, "微软雅黑";
+	margin: 0;
+}

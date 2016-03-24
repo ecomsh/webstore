@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<title>ftzmall-checkout</title>
+		<meta name="viewport" content="width=1200" />
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="">
+		<link rel="stylesheet" href="../src/bootstrap-3.3.5/dist/css/bootstrap.css"/>
+		<link rel="stylesheet" href="../src/css/common.css"/>
+		<link rel="stylesheet" href="../src/css/layout.css"/>
+		<link rel="stylesheet" href="../src/css/checkout.css"/>
+	</head>
+	<body>
+		<div class="topbar">
+			<div class="container">
+				<div class="pull-left topbar-left">
+				<!-- 未登录状态start -->
+					<!-- 欢迎来到上海外高桥进口商品网！
+					<a class="login-href" href="">请登录</a>|<a class="registe-href" href="">快速注册</a> -->
+				<!-- 未登录状态end -->
+				<!-- 已登录状态start -->
+					<!-- username显示的优先级：用户名>手机>邮箱,点击在新窗口打开用户中心页面 -->
+					欢迎您，<a href="" target="_blank" class="topbar-username">15800000000</a> | <a href="" class="quit">退出</a>
+				<!-- 已登录状态end -->
+				</div>
+				<div class="pull-right topbar-right">
+					<ul class="nav">	
+						<li class="pull-left"><a href="">订单查询　|　</a></li>
+						<li class="pull-left"><a href="">我的收藏　|　</a></li>
+						<li class="pull-left"><a href="">个人中心</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="header">
+			<div class="container clearfix">	
+				<div class="pull-left logo">
+					<a href="index.html"><img src="../src/images/logo.png"></a>
+				</div>
+				<div class="pull-right checkout-right">
+					<img src="../src/images/progressbarimg-02.png">
+				</div>	
+			</div>
+		</div>
+		<div class="container checkout-container">
+			<!-- 库存不足模态框start -->
+
+			<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labeledby="myModalLabel">
+				<div class="modal-dialog understock" role="document">
+					<div class="modal-content">
+						<div class="modal-body">
+							您购买的<span class="font-color4">库存不足</span>，请返回购物车修改
+							<button class="btn btn-returncart">返回购物车修改</button>	
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 库存不足模态框end -->
+
+
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="false">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							<p class="add-title font-color4">2、修改地址</p>
+						</div>
+						<div class="modal-body">
+							<form action="" method="post" class="form-horizontal">
+								<div class="form-group">
+									<label for="recipients-name" class="col-sm-2">收件人：<span class="font-color4">*</span></label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control recipients-name" id="recipients-name" placeholder="请填写收货人姓名">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="recipients-address" class="col-sm-2">收货地址：<span class="font-color4">*</span></label>
+									<div class="col-sm-10">
+										<select id="recipients-address" class="form-control col-sm-2 recipients-address">
+											<option>aaa</option>
+											<option>abb</option>
+											<option>abc</option>
+										</select>
+										<select class="form-control col-sm-2 recipients-address">
+											<option>bba</option>
+											<option>bbb</option>
+											<option>bbc</option>
+										</select>
+										<select class="form-control col-sm-2 recipients-address">
+											<option>caa</option>
+											<option>cbb</option>
+											<option>cbc</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="recipients-address-detail" class="col-sm-2">详细地址：<span class="font-color4">*</span></label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control recipients-address-detail" id="recipients-address-detail" placeholder="请填写详细地址">
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="recipients-tel" class="col-sm-2">手机号码：<span class="font-color4">*</span></label>
+									<div class="col-sm-10 recipients-telephone">
+										<input type="text" class="form-control col-sm-2 recipients-tel" placeholder="请填写手机号码"><span class="col-sm-2 recipients-tel-width1">或固定电话</span> <input type="text" class="form-control col-sm-2 recipients-tel-width2" placeholder="区号"/><span class="col-sm-1 recipients-tel-width4">-</span> <input type="text" class="form-control col-sm-2 recipients-tel-width3" placeholder="电话号码"/><span class="col-sm-1 recipients-tel-width4">-</span><input type="text" class="form-control col-sm-2 recipients-tel-width2" placeholder="分机号"/>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="recipients-btngroup" class="col-sm-2"></label></label>
+									<div class="btn-group" role="group">
+										<button type="button" class="btn btn-ensure">确定</button>
+										<button type="button" class="btn btn-empty">取消</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p class="timing-clock">请在下单后 <span class="font-color4">30 分钟 00 秒 </span>内完成支付[<span class="font-color4">？</span>]</p>
+			<div class="checkout-order">
+				<div class="real-name">
+					<p class="realname-title">1、实名认证</p>
+					<p class="warm-prompt">温馨提示：请使用和身份证号对应的真实姓名，否则您购买的商品将无法通过海关检查！<span class="thereason" data-toogle="popover" data-placement="bottom" data-content="上海外高桥进口商品网商品需清关后入境，根据海关需求，需要您跳鞋您的身份证进行个人物品入境申报。<br/>因为海关会对您的身份信息进行验证，请确保填写正确，否则商品可能无法正常通关。<br/>身份证信息将加密保管，绝不对外泄漏。">为什么要实名认证</span></p>
+
+
+					<!-- <div class="realusername">姓名：张三</div>
+					<div class="realtelephone">手机：<span class="font-color4">15800000000</span></div>
+					<div class="realemail">邮箱：zhangsan@qq.com</div>
+					<div class="realcard">证件：身份证 3101981988082326270098</div> -->
+
+
+					<form action="" method="post" class="form-horizontal">
+						<div class="form-group">
+							<label for="real-username" class="col-sm-2">姓名：<span class="font-color4">*</span></label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control real-username" id="real-username" placeholder="请填写真实姓名">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="real-tel" class="col-sm-2">手机：<span class="font-color4">*</span></label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control real-tel" id="real-tel" placeholder="请填写手机号码">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="real-email" class="col-sm-2">邮箱：<span class="font-color4">*</span></label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control real-email" id="real-username" placeholder="请填写常用邮箱">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="real-card" class="col-sm-2">证件：<span class="font-color4">*</span></label>
+							<div class="col-sm-10 clearfix">
+								<select id="real-card">
+									<option>身份证</option>
+								</select>
+								<input type="text" class="form-control real-card" placeholder="请填写证件号码">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="realname-btngroup" class="col-sm-2"></label>
+							<div class="btn-group" role="group" id="realname-btngroup">
+								<button type="button" class="btn btn-ensure">确定</button>
+								<button type="button" class="btn btn-empty">清空</button>
+							</div>
+						</div>
+					</form> 
+				</div>
+
+
+				<div class="shipping-address">
+					<!-- <p class="add-title font-color4">2、修改地址</p> -->
+					<p class="add-title">2、地址选择</p>
+					<table class="table">
+						<tr class="address-tr default-address">
+							<td class="default-head">
+								寄送至
+							</td>
+							<td class="default-name">
+								<label>
+								<span class="radio-address-bg"><input type="radio" name="shipping-time" id="shipping-time1" class="radio-time" autocomplete="off" value="option1"/></span>张三</label>
+							</td>
+							<td class="default-tel">15800000000</td>
+							<td class="default-add-detail">上海市浦东新区富特西一路77号10号楼2楼</td>
+							<td class="shipping-operation">
+								<span>默认地址</span>
+								<a class="operation1">取消默认地址</a>
+								<a class="operation2" data-toggle="modal" data-target="#myModal">修改本地址</a>
+								<a class="operation3">删除</a>
+							</td>
+						</tr>
+						<tr class="address-tr">
+							<td class="default-head">
+							</td>
+							<td class="default-name">
+								<label>
+								<span class="radio-address-bg"><input type="radio" name="shipping-time" id="shipping-time1" class="radio-time" autocomplete="off" value="option1"/></span>张三</label>
+							</td>
+							<td class="default-tel">15800000000</td>
+							<td class="default-add-detail">上海市浦东新区富特西一路77号10号楼2楼</td>
+							<td class="shipping-operation">
+								<a class="operation1">设为默认地址</a>
+								<a class="operation2" data-toggle="modal" data-target="#myModal">修改本地址</a>
+								<a class="operation3">删除</a>
+							</td>
+						</tr>
+						<tr class="address-tr">
+							<td class="default-head">
+							</td>
+							<td class="default-name">
+								<label>
+								<span class="radio-address-bg"><input type="radio" name="shipping-time" id="shipping-time1" class="radio-time" autocomplete="off" value="option1"/></span>张三</label>
+							</td>
+							<td class="default-tel">15800000000</td>
+							<td class="default-add-detail">上海市浦东新区富特西一路77号10号楼2楼</td>
+							<td class="shipping-operation">
+								<a class="operation1">设为默认地址</a>
+								<a class="operation2" data-toggle="modal" data-target="#myModal">修改本地址</a>
+								<a class="operation3">删除</a>
+							</td>
+						</tr>
+						<tr class="address-tr">
+							<td class="default-head">
+							</td>
+							<td class="default-name">
+								<label>
+								<span class="radio-address-bg"><input type="radio" name="shipping-time" id="shipping-time1" class="radio-time" autocomplete="off" value="option1"/></span>张三</label>
+							</td>
+							<td class="default-tel">15800000000</td>
+							<td class="default-add-detail">上海市浦东新区富特西一路77号10号楼23楼</td>
+							<td class="shipping-operation">
+								<a class="operation1">设为默认地址</a>
+								<a class="operation2" data-toggle="modal" data-target="#myModal">修改本地址</a>
+								<a class="operation3">删除</a>
+							</td>
+						</tr>
+					</table>
+					<button class="btn btn-newaddress" data-toggle="modal" data-target="#myModal"><span class="addbg">+</span>使用新地址</button>
+
+					<!-- <form action="" method="post" class="form-horizontal">
+						<div class="form-group">
+							<label for="recipients-name" class="col-sm-2">收件人：<span class="font-color4">*</span></label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control recipients-name" id="recipients-name" placeholder="请填写收货人姓名">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="recipients-address" class="col-sm-2">收货地址：<span class="font-color4">*</span></label>
+							<div class="col-sm-10">
+								<select id="recipients-address" class="form-control col-sm-2 recipients-address">
+									<option>aaa</option>
+									<option>abb</option>
+									<option>abc</option>
+								</select>
+								<select class="form-control col-sm-2 recipients-address">
+									<option>bba</option>
+									<option>bbb</option>
+									<option>bbc</option>
+								</select>
+								<select class="form-control col-sm-2 recipients-address">
+									<option>caa</option>
+									<option>cbb</option>
+									<option>cbc</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="recipients-address-detail" class="col-sm-2">详细地址：<span class="font-color4">*</span></label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control recipients-address-detail" id="recipients-address-detail" placeholder="请填写详细地址">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="recipients-tel" class="col-sm-2">手机号码：<span class="font-color4">*</span></label>
+							<div class="col-sm-10 recipients-telephone">
+								<input type="text" class="form-control col-sm-2 recipients-tel" placeholder="请填写手机号码"><span class="col-sm-2 recipients-tel-width1">或固定电话</span> <input type="text" class="form-control col-sm-2 recipients-tel-width2" placeholder="区号"/><span class="col-sm-1 recipients-tel-width4">-</span> <input type="text" class="form-control col-sm-2 recipients-tel-width3" placeholder="电话号码"/><span class="col-sm-1 recipients-tel-width4">-</span><input type="text" class="form-control col-sm-2 recipients-tel-width2" placeholder="分机号"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="recipients-btngroup" class="col-sm-2"></label></label>
+							<div class="btn-group" role="group">
+								<button type="button" class="btn btn-ensure">确定</button>
+								<button type="button" class="btn btn-empty">清空</button>
+							</div>
+						</div>
+					</form>	 -->
+				</div>
+				<!-- 收货地址end -->
+				<!-- 送货时间start -->
+				<div class="shipping-time">
+					<p class="time-title">3、送货时间</p>
+					<form action="" method="post" class="form-horizontal">
+						<label class="radio-inline">
+							<span class="radio-time-bg"><input type="radio" name="shipping-time" id="shipping-time1" class="radio-time" autocomplete="off" value="option1"/></span>仅工作日送货
+						</label>
+						<label class="radio-inline">
+							<span class="radio-time-bg"><input type="radio" name="shipping-time" id="shipping-time2" class="radio-time" autocomplete="off" value="option2"/></span>仅周末送货
+						</label>
+						<label class="radio-inline radio-time-border">
+							<span class="radio-time-bg"><input type="radio" name="shipping-time" id="shipping-time3" class="radio-time" autocomplete="off" checked="checked" value="option3"/></span>工作日/周末/节假日均可
+						</label>
+					</form>
+				</div>
+				<!-- 送货时间end -->
+				<!-- 商品清单start -->
+				<div class="product-listing">
+					<p class="listing-title">4、商品清单</p>
+					<p class="listing-table-title">海关保税仓直发</p>
+					<ul>
+						<li class="checkout-table-header">
+							<span class="th1">商品</span>
+							<span class="th2">重量（g）</span>
+							<span class="th3">单价（元）</span>
+							<span class="th4">数量</span>
+							<span class="th5">小计（元）</span>
+						</li>
+						<li class="cart-table1-con">
+							<span class="th1">
+								<!-- 外层套div是为了做整个清单垂直居中的 -->
+								<div class="product-cell">
+									<p class="product-name">匈牙利 柠檬加薪华夫饼干100g</p>
+								</div>
+								<div class="product-cell">
+									<p class="product-name">匈牙利 柠檬加薪华夫饼干100g</p>
+								</div>
+							</span>
+							<span class="th2">
+								<p class="product-price">330</p>
+								<p class="product-price">330</p>
+							</span>
+							<span class="th3 text-middle">
+								<p>100.00</p>
+								<p class="price-line">20</p>
+							</span>
+							<span class="th4 text-middle text-middle">3</span>
+							<span class="th5 text-middle">300.00<p class="price-line">省20</p></span>
+						</li>
+						<li class="cart-table1-con">
+							<span class="th1">
+								<div class="product-cell">
+									<p class="product-name">匈牙利 柠檬加薪华夫饼干100g</p>
+								</div>
+							</span>
+							<span class="th2">
+								<p class="product-price">330</p>
+							</span>
+							<span class="th3 text-middle">
+								<p>100.00</p>
+								<p class="price-line">20</p>
+							</span>
+							<span class="th4 text-middle text-middle">3</span>
+							<span class="th5 text-middle">300.00<p class="price-line">省20</p></span>
+						</li>
+						<li class="cart-table1-con">
+							<span class="th1">
+								<div class="product-cell">
+									<p class="product-name">匈牙利 柠檬加薪华夫饼干100g</p>
+								</div>
+							</span>
+							<span class="th2">
+								<p class="product-price">330</p>
+							</span>
+							<span class="th3 text-middle">
+								<p>100.00</p>
+								<p class="price-line">20</p>
+							</span>
+							<span class="th4 text-middle text-middle">3</span>
+							<span class="th5 text-middle">300.00<p class="price-line">省20</p></span>
+						</li>
+						<li class="listing-explain clearfix">
+							<div class="coupons pull-left">
+								<div>
+									<label>
+										<span class="radio-coupons-bg"><input type="radio" name="coupons-radio" id="coupons1" class="coupons-radio" autocomplete="off" value=""/></span>使用优惠券：
+									</label>
+									<select disabled="disabled" autocomplete="off">
+										<option>优惠券1</option>
+										<option>优惠券2</option>
+										<option>优惠券3</option>
+									</select>
+								</div>
+								<div class="activation">
+									<label>
+										<span class="radio-coupons-bg"><input type="radio" name="coupons-radio" id="coupons2" class="coupons-radio" autocomplete="off" value=""/></span>激活优惠码：
+									</label>
+										<input type="text" name="" value="" class="input-coupons" autocomplete="off" placeholder="请输入优惠码" disabled="disabled"/>
+										<button class="btn btn-activation" autocomplete="off" disabled="disabled">立即激活</button>	
+								</div>	
+							</div>
+							<div class="listing-total pull-right">
+								<div>商品总计：<span class="order-total">￥1404.80</span></div>
+								<div>
+									<span class="activity1">您参加了 【满100】 的活动</span>
+									活动优惠：<span class="activity-span">-￥484.00</span>
+								</div>
+								<div>
+									<span class="free-activity">【满99元全场包邮】</span>
+									运费：　　<span class="freight-span">￥0.00</span>
+								</div>
+								<div>订单关税：<span class="order-tariffs">44.00</span></div>
+								<div>应付金额：<span class="amount-payable">￥990</span></div>
+							</div>
+
+						</li>
+					</ul>		
+						
+
+									
+									
+				</div>
+				<!-- 商品清单end -->
+				<!-- 支付方式start -->
+				<!-- 各位亲，支付部分的注释的代码，请不要删除呦！未来有可能支持 -->
+				<div class="pay-method">
+					<p class="method-title">5、支付方式</p>
+					<form action="" method="post">
+						<div class="alipay">
+							<label class="radio">
+								<!-- <span class="radio-pay-bg">
+									<input type="radio" name="pay-method" id="pay-method" class="radio-pay" value=""/>
+								</span> -->
+								支付宝/财付通/东方支付<span class="font-color5">支持支付宝、财付通、东方支付的使用</span>
+							</label>
+							<div class="alipay-div">
+								<label class="radio-inline alipay1">
+									<span class="radio-pay-bg">
+										<input type="radio" name="pay-method" id="pay-method1" class="radio-pay" value=""/>
+									</span>
+								</label>
+								<label class="radio-inline alipay2">
+									<span class="radio-pay-bg">
+										<input type="radio" name="pay-method" id="pay-method2" class="radio-pay" value=""/>
+									</span>
+								</label>
+								<!-- <label class="radio-inline alipay3">
+									<span class="radio-pay-bg">
+										<input type="radio" name="pay-method" id="pay-method3" class="radio-pay" value=""/>
+									</span>
+								</label> -->
+							</div>
+						</div>
+						<!-- <label class="radio">
+							<span class="radio-pay-bg">
+								<input type="radio" name="pay-method" id="pay-method4" class="radio-pay" value=""/>
+							</span>D.I.G卡支付/预存款支付<span>支持D.I.G卡及预存款的使用</span>
+						</label>
+						<label class="radio">
+							<span class="radio-pay-bg">
+								<input type="radio" name="pay-method" id="pay-method5" class="radio-pay" value=""/>
+							</span>网上银行/快捷支付<span>支持地方银行，需开通网银/支持信用卡支付</span> -->
+						</label>
+					</form>
+				</div>
+				<!-- 支付方式end -->
+				<!-- 其他start -->
+				<div class="other-invoice">
+					<p class="invoice-title">6、其他</p>
+					<div class="form-group">
+						<label class="checkbox-label"><span class="check-invoice-bg"><input type="checkbox" autocomplete="off" name="" value=""/></span></label>发票：
+					</div>
+					<div class="form-group invoice-inf">
+						<p class="invoice-p">
+							开票方式：
+							<label><span class="radio-invoice-bg"><input type="radio" name="" value="" autocomplete="off" disabled="disabled"/></span></label>纸质发票
+						</p>
+						<p class="invoice-p">
+							开票抬头： 
+							<label><span class="radio-invoice-bg"><input type="radio" name="invoice-radio" value="" autocomplete="off" disabled="disabled"/></span></label>个人　　　
+							<label><span class="radio-invoice-bg"><input type="radio" name="invoice-radio" class="company-radio" value="" autocomplete="off" disabled="disabled"/></span></label>公司
+							<input type="text" class="company-name" name="" value="" placeholder="公司名称" autocomplete="off" disabled="disabled"/>
+						</p>
+						<button class="btn btn-invoice">保存发票信息</button>
+						<p class="save-invoice"><span>普通发票（纸质）</span><span>个人</span><span>电脑配件</span></p>
+					</div>	
+					
+					<div class="checkout-btn clearfix">
+						<button class="btn btn-returncart pull-left">返回购物车修改</button>
+						<span class="total-text pull-left">
+							<span class="font-size1 font-color1">【支付宝活动减5元】</span>
+							应付总额：<span class="font-color6">￥1060.38</span>
+							<span class="font-color7">￥1065.38</span>
+						</span>
+						
+						<button class="btn btn-sure pull-right">确认交易</button>
+					</div>
+					
+				</div>
+
+				<!-- 其他end -->
+			</div>
+			<p class="timing-clock timing-right">请在下单后 <span class="font-color4">30 分钟 00 秒 </span>内完成支付[<span class="font-color4">？</span>]</p>
+		</div>
+
+
+		<div class="footer">
+			<div class="footer-top container">
+				<img src="../src/images/map.png" class="map-img">
+				<ul class="clearfix">
+					<li class="pull-left map-inf">
+						<span class="map-title">FTZMALL</span>
+						<ul class="map-ul">
+							<li><a href="">购物流程</a></li>
+							<li><a href="">发票政策</a></li>
+							<li><a href="">安全保证</a></li>
+							<li><a href="">服务保证</a></li>
+							<li><a href="">意见与建议</a></li>
+						</ul>
+					</li>
+					<li class="pull-left map-inf">
+						<span class="map-title">配送服务</span>
+						<ul class="map-ul">
+							<li><a href="">配送范围及运费</a></li>
+							<li><a href="">配送服务</a></li>
+							<li><a href="">验货与签收</a></li>
+						</ul>
+					</li>
+					<li class="pull-left map-inf">
+						<span class="map-title">支付方式</span>
+						<ul class="map-ul">
+							<li><a href="">DIG卡支付</a></li>
+							<li><a href="">在线支付</a></li>
+							<li><a href="">组合支付</a></li>
+						</ul>
+					</li>
+					<li class="pull-left map-inf">
+						<span class="map-title">售后服务</span>
+						<ul class="map-ul">
+							<li><a href="">退换货政策</a></li>
+							<li><a href="">退换货说明</a></li>
+							<li><a href="">退换货流程</a></li>
+							<li><a href="">退款说明</a></li>
+							<li><a href="">常见问题</a></li>
+						</ul>
+					</li>
+					<li class="pull-left map-inf">
+						<span class="map-title">自贸区直购</span>
+						<ul class="map-ul">
+							<li><a href="">消费者告知书</a></li>
+							<li><a href="">海关通关及关税</a></li>
+							<li><a href="">自贸区直够购物流程</a></li>
+							<li><a href="">自贸区直购退换货政策</a></li>
+							<li><a href="">自贸区直购退换货流程</a></li>
+							<li><a href="">自贸区直购退款说明</a></li>
+						</ul>
+					</li>
+					<li class="pull-left code-inf">
+						<span class="map-title">FTZMALL微信</span>
+						<img src="../src/images/code.png">
+						<div class="telephone">
+							400-188-5179
+							<p>周一至周五:9:00-17:00</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="footer-bottom">
+				<p class="footer-bottom-p1"><a href="">关于我们</a>|<a href="">品牌入驻</a>|<a href="">联系我们</a>|<a href="">免责声明</a>|<a href="">隐私条款</a>|<a href="">完税价格表</a>|<a href="">诚聘英才</a>|<a href="">快递 100</a></p>
+				<p class="footer-bottom-p2">Copyright © 2006 - 2015上海外高桥进口商品网版权所有　沪ICP备11030945号-3   增值电信业务经营许可证　沪B-20110100</p>
+				<p>
+					<img src="../src/images/footer1.png"><img src="../src/images/footer2.png">
+				</p>
+			</div>
+		</div>
+		
+		<script src="../src/js/jquery-1.11.3.min.js"></script>
+		<script src="../src/bootstrap-3.3.5/dist/js/bootstrap.js"></script>
+		<script src="../src/js/cbt.ui.checkout.js"></script>
+	</body>
+</html>

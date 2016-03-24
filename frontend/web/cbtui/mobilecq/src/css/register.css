@@ -1,0 +1,44 @@
+/* header以及公用 */
+body{font-family: "Helvetica Neue", "微软雅黑", Helvetica, STHeiTi, sans-serif;background-color:#fff}
+.ui-header-positive {background-color:#ed145b}
+.topbar-bigbox {background-color: #ed145b;}
+.topbar-fontbox {display: block;float: left; margin-left: 10%; width: 75%; height: 45px; line-height: 45px; text-align: center;}
+.topbar-fontbox i{color:#fff;line-height:45px;font-style: normal;}
+.float-r{float:right}
+.font-32{font-size:2em}
+.font-24{font-size:1.5em}
+.font-16{font-size:1em}
+.font-red{color: #ed145b;}
+.icon-g-fx {line-height:45px;height:45px;display:block}
+.bg-black{background-color:#000;}
+.text-right{text-align: right;}
+/* header以及公用 */
+
+/*主体内容 start*/
+.ui-container{margin-top: 10px;}
+#form{margin-top: 10px;}
+/*主体内容 end*/
+
+/*验证码 start*/
+.ui-form-item-r div {width: 110px; height: 44px; position: absolute; top: 0; right: 0;}
+.ui-form-item-r .verifycode {margin-left: 23px; margin-top: 2px; width: 64px; height: 40px;}
+/*验证码 end*/
+
+/*红色大按钮 start*/
+.ui-btn-pink {background-color: #ed145b; background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #ed145b), to(#ed145b)); color: white; border-color: #ed145b; background-clip: padding-box; }
+/*红色大按钮 end*/
+
+/*按钮颜色重写 start*/
+.ui-form-item-l label, .ui-form-item-r button{color: #ed145b;}
+/*按钮颜色重写 end*/
+
+/*tab 颜色重写 start*/
+.ui-tab-nav li.current {color: #ed145b; border-bottom: 2px #ed145b solid;}
+/*tab 颜色重写 end*/
+/*radio 颜色重写 start*/
+.ui-radio input:checked:after {background:#ed145b;}
+/*radio 颜色重写 end*/
+
+/*checkbox 颜色重写 start*/
+.ui-switch input:checked:before {border-color: #ed145b;box-shadow: #ed145b 0px 0px 0px 16px inset;background-color: #ed145b; }
+/*checkbox 颜色重写 end*/

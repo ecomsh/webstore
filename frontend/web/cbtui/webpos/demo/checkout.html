@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ftzmall</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/web-pos.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container-fluid check-m">
+            <header>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h2>FTZMALL</h2>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="wrap">
+                <div class="container-fluid">
+                    <form id="confirmForm" method="post" action="/cashier/createorder.html" onkeydown="if(event.keyCode==13)return false;">
+                        <input name="_csrf" value="SnF5NVBTa3EYCQ92Pn4vODMfNGEAJy5BG0IVRyc0GAkrOR93PCkiGA==" type="hidden">
+                        <input id="uid" name="uid" value="" type="hidden">
+                        <input id="addrid" name="addrid" value="" type="hidden">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="panel panel-info">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">商品清单</h3>
+                                    </div>
+                                    <div class="panel-body orderlist">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover pro-list">
+                                                <thead>
+                                                    <tr>
+                                                        <th>商品编号</th>
+                                                        <th class="text-center">商品名称</th>
+                                                        <th class="narrow text-center">单价</th>
+                                                        <th class="narrow text-center">行邮税</th>
+                                                        <th class="narrow text-center">数量</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>365235623562356</td>
+                                                        <td class="text-center">椰子水</td>
+                                                        <td class="text-center">￥5.00</td>
+                                                        <td class="text-center">￥50</td>
+                                                        <td class="text-center">3</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>365235623562356</td>
+                                                        <td class="text-center">椰子水</td>
+                                                        <td class="text-center">￥5.00</td>
+                                                        <td class="text-center">￥50</td>
+                                                        <td class="text-center">3</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>365235623562356</td>
+                                                        <td class="text-center">椰子水</td>
+                                                        <td class="text-center">￥5.00</td>
+                                                        <td class="text-center">￥50</td>
+                                                        <td class="text-center">3</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>365235623562356</td>
+                                                        <td class="text-center">椰子水</td>
+                                                        <td class="text-center">￥5.00</td>
+                                                        <td class="text-center">￥50</td>
+                                                        <td class="text-center">3</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>365235623562356</td>
+                                                        <td class="text-center">椰子水</td>
+                                                        <td class="text-center">￥5.00</td>
+                                                        <td class="text-center">￥50</td>
+                                                        <td class="text-center">3</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>365235623562356</td>
+                                                        <td class="text-center">椰子水</td>
+                                                        <td class="text-center">￥5.00</td>
+                                                        <td class="text-center">￥50</td>
+                                                        <td class="text-center">3</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>365235623562356</td>
+                                                        <td class="text-center">椰子水</td>
+                                                        <td class="text-center">￥5.00</td>
+                                                        <td class="text-center">￥50</td>
+                                                        <td class="text-center">3</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>365235623562356</td>
+                                                        <td class="text-center">椰子水</td>
+                                                        <td class="text-center">￥5.00</td>
+                                                        <td class="text-center">￥50</td>
+                                                        <td class="text-center">3</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>365235623562356</td>
+                                                        <td class="text-center">椰子水</td>
+                                                        <td class="text-center">￥5.00</td>
+                                                        <td class="text-center">￥50</td>
+                                                        <td class="text-center">3</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>365235623562356</td>
+                                                        <td class="text-center">椰子水</td>
+                                                        <td class="text-center">￥5.00</td>
+                                                        <td class="text-center">￥50</td>
+                                                        <td class="text-center">3</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <nav class="row navbar-fixed-bottom">
+            <div class="col-xs-12">
+                <div class="panel panel-default panel-m">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">收货地址/支付信息</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <div class="col-xs-4 text-right">
+                                        <p>收件人：</p>
+                                        <p>地址：</p>
+                                    </div>
+                                    <div class="col-xs-8 text-left">
+                                        <p>
+                                            <span id="addr_receiver_name">2525</span> (<span id="addr_receiver_mobile">51351</span>)
+                                        </p>
+                                        <p>
+                                            <span id="addr_state_name">2525</span>
+                                            <span id="addr_city_name">2525</span>
+                                            <span id="addr_district_name">2525</span>
+                                            <span id="addr_addr">2525</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-4 text-right">
+                                        <p>商品总价 :</p>
+                                        <p>优惠价格 :</p>
+                                        <p>行邮税 :</p>
+                                        <p>运费 :</p>
+                                        <p>应支付总金额 :</p>
+                                    </div>
+                                    <div class="col-xs-8 text-left pay-color">
+                                        <p id="original_price">￥1414</p>
+                                        <p id="preferential_price">￥10</p>
+                                        <p id="tax">￥1414</p>
+                                        <p id="shipping">￥1414</p>
+                                        <p id="final_price">￥1414</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 text-right">
+                                <div class="col-xs-12 text-right price-p">
+                                    <a class="btn btn-danger step-btn" id="confirm_pre" href="http://w3.soupian.me/cbtui/webpos/demo/account.html">上一步</a>
+                                    <a class="btn btn-success step-btn" id="confirm">下单</a>
+                                </div>
+                            </div>
+                        </div>       
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <footer class="footer">
+            <div class="container-fluid">
+                <p class="pull-left">©  2015</p>
+                <p class="pull-right">FTZMALL</p>
+            </div>
+        </footer>
+        <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script> 
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

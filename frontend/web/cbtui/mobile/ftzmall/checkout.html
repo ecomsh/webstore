@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>结算中心_上海外高桥进口商品网</title>
+<link rel="stylesheet" href="../css/frozen.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../demo/demo.css">
+</head>
+
+<body ontouchstart>
+<!-- 页面头部固定区域start-->
+<header class="ui-header ui-header-positive ui-border-b">
+    <div class="unlogo-head"><i class="ui-icon-return float-left"></i><span class="center-text">结算中心</span><i class="icon-ellipsis-vertical float-right1" onclick=""></i></div>
+</header>
+
+<!-- 页面头部固定区域end--> 
+<!-- 页面尾部固定区域1start-->
+<section class="ui-footer2 ui-footer2-btn ui-border-t">
+    <div class="demo-block">
+        
+        <h5 class="padding-1 float-left">上海保税<br />
+            仓发货</h5>
+        <div class="padding-t7 margin-l10 float-left">
+            <h4 class="ui-nowrap">应付总额<span class="price-highlight"> ¥298.00</span></h4>
+            <h5 class="ui-nowrap">共3件</h5>
+        </div>
+        <div class="ui-btn-wrap float-right">
+            <button class="ui-btn ui-btn-primary padding-rl1"> 确 认 交 易 </button>
+        </div>
+    </div>
+</section>
+<!-- 页面尾部固定区域1end--> 
+<!-- 页面中部非固定区域1-信息填写panel区域start-->
+<section class="top-m-45">
+    <div class="demo-block">
+    <ul class="ui-list1 ui-border-t">
+        <li class="ui-border-t bg-red ui-form-item-link" id="btn2"><!-- JS控制当认证完毕显示为style="display:none;"--> 
+            <a href="#"> <i class="icon-user hl-set2 float-list"></i>
+            <h4 class="ui-nowrap hl-set2 font-1">请先实名认证</h4>
+            </a> </li>
+        <li class="ui-border-t bg-red" style="display:none;"><!-- JS控制当认证完毕显示为style="display:;"--> 
+            
+            <i class="icon-user hl-set2 float-list"></i>
+            <h4 class="ui-nowrap hl-set2 font-1">已实名 - 身份证号：3601**********8043</h4>
+            <!-- JS控制 显示为18位的前4位和后4位--> 
+            
+        </li>
+    </ul>
+    <ul class="ui-list1">
+        <li class="ui-border-t ui-form-item-link" id="btn3"><!-- JS控制当认证完毕显示为style="display:none;"--> 
+            <a href="#"> <i class="icon-map-marker hl-set2 float-list"></i>
+            <h4 class="ui-nowrap hl-set2 font-1">请先填写收货人信息</h4>
+            </a> </li>
+        <li class="ui-border-t ui-form-item-link" style="display:none;"><!-- JS控制当认证完毕显示为style="display:;"-->
+            
+            <div class="width100"><i class="icon-user hl-set2 float-list"></i>
+                <h4 class="hl-set2 font-1">收货人：章三</h4>
+            </div>
+        </li>
+        <li style="display:none;"><!-- JS控制当认证完毕显示为style="display:;"-->
+            <div class="width100"><i class="icon-phone-sign hl-set2 float-list"></i>
+                <h4 class="hl-set2 font-1">手机号：1381521267</h4>
+            </div>
+        </li>
+        <li class="ui-border-b" style="display:none;"><!-- JS控制当认证完毕显示为style="display:;"-->
+            
+            <div class="width100"><i class="icon-map-marker hl-set2 float-list"></i>
+                <p class="ui-txt-justify block-1" style="padding-right: 15px;">地址：上海市浦东新区外高桥保台北西路168号</p>
+            </div>
+        </li>
+    </ul>
+    <ul class="ui-list1">
+        <li class="ui-border-t ui-form-item-link" id="btn4"><!-- JS控制当认证完毕显示为style="display:none;"--> 
+            <a href="#"> <i class="icon-truck hl-set2 float-list"></i>
+            <h4 class="ui-nowrap hl-set2 font-1">请选择送货时间</h4>
+            </a> </li>
+        <li class="ui-border-t ui-form-item-link" style="display:none;"><!-- JS控制当认证完毕显示为style="display:;"--> 
+            
+            <i class="icon-truck hl-set2 float-list"></i>
+            <h4 class="ui-nowrap hl-set2 font-1">仅工作日</h4>
+            <!-- JS控制 显示选项--> 
+            
+        </li>
+    </ul>
+    </div>
+</section>
+<!-- 页面中部非固定区域1-信息填写panel区域end--> 
+<!-- 页面中部弹出页面-实名认证start-->
+<div class="demo-block">
+    <div class="ui-dialog box-align-start">
+        <div class="ui-dialog-cnt width100">
+            <header class="ui-dialog-hd ui-border-b bg-red">
+                <div class="jump-button">实名认证</div>
+                <i class="ui-dialog-close" data-role="button"></i> </header>
+            <div class="width100">
+                <div class="ui-form-item ui-border-b">
+                    <label> 姓名 </label>
+                    <input type="text" placeholder="请填写您的真实姓名">
+                    <a href="#" class="ui-icon-close"> </a> </div>
+                <div class="ui-form-item ui-border-b">
+                    <label> 身份证号码 </label>
+                    <input type="text" placeholder="18位身份证号码">
+                    <a href="#" class="ui-icon-close"> </a> </div>
+                <div class="ui-form-item ui-border-b">
+                    <label> 手机号码 </label>
+                    <input type="text" placeholder="请填写您的手机号码">
+                    <a href="#" class="ui-icon-close"> </a> </div>
+                <div class="ui-form-item ui-border-b">
+                    <label> 身份证号码 </label>
+                    <input type="text" placeholder="18位身份证号码">
+                    <a href="#" class="ui-icon-close"> </a> </div>
+            </div>
+            <div class="ui-dialog-ft">
+                <button type="button" data-role="button">取 消</button>
+                <button type="button" data-role="button">确 认</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 页面中部弹出页面-实名认证end--> 
+<!-- 页面中部弹出页面-收货人信息start-->
+<div class="demo-block">
+    <div class="ui-dialog1 box-align-start">
+        <div class="ui-dialog-cnt width100">
+            <header class="ui-dialog-hd ui-border-b bg-red">
+                <div class="jump-button">填写收货人信息</div>
+                <i class="ui-dialog-close" data-role="button"></i> </header>
+            <div class="width100">
+                <div class="ui-form-item ui-border-b">
+                    <label> 姓名 </label>
+                    <input type="text" placeholder="请填写您的真实姓名">
+                    <a href="#" class="ui-icon-close"> </a> </div>
+                <div class="ui-form-item ui-border-b">
+                    <label> 地址 </label>
+                    <input type="text" placeholder="请填写收货地址">
+                    <a href="#" class="ui-icon-close"> </a> </div>
+                <div class="ui-form-item ui-border-b">
+                    <label> 手机号码 </label>
+                    <input type="text" placeholder="请填写您的手机号码">
+                    <a href="#" class="ui-icon-close"> </a> </div>
+            </div>
+            <div class="ui-dialog-ft">
+                <button type="button" data-role="button">取 消</button>
+                <button type="button" data-role="button">确 认</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 页面中部弹出页面-收货人信息end--> 
+<!-- 页面中部弹出页面-配送时间start-->
+<div class="demo-block">
+    <div class="ui-dialog2 box-align-start">
+        <div class="ui-dialog-cnt width100">
+            <header class="ui-dialog-hd ui-border-b bg-red">
+                <div class="jump-button">送货时间</div>
+                <i class="ui-dialog-close" data-role="button"></i> </header>
+            <div class="width100">
+                <div class="demo-block">
+            <ul class="ui-list ui-list-text ui-list-radio ui-border-tb">
+                <li class="ui-border-t">
+                    <label class="ui-radio" for="radio">
+                        <input type="radio" name="radio">
+                    </label>
+                    <p>仅工作日送货</p>
+                </li>
+                <li class="ui-border-t">
+                    <label class="ui-radio" for="radio">
+                        <input type="radio" checked="" name="radio">
+                    </label>
+                    <p>仅周末送货</p>
+                </li>
+                <li class="ui-border-t">
+                    <label class="ui-radio" for="radio">
+                        <input type="radio" checked="" name="radio">
+                    </label>
+                    <p>工作日/周末/节假日均可送货</p>
+                </li>
+            </ul>
+        </div>
+            </div>
+            <div class="ui-dialog-ft">
+                <button type="button" data-role="button">取 消</button>
+                <button type="button" data-role="button">确 认</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 页面中部弹出页面-配送时间end--> 
+<!-- 页面中部弹出页面-支付方式start-->
+<div class="demo-block">
+    <div class="ui-dialog2 box-align-start">
+        <div class="ui-dialog-cnt width100">
+            <header class="ui-dialog-hd ui-border-b bg-red">
+                <div class="jump-button">请选择支付方式</div>
+                <i class="ui-dialog-close" data-role="button"></i> </header>
+            <div class="width100">
+                <div class="demo-block">
+            <ul class="ui-list ui-list-text ui-list-radio ui-border-tb">
+                <li class="ui-border-t">
+                    <label class="ui-radio" for="radio">
+                        <input type="radio" name="radio">
+                    </label>
+                    <p>支付宝/财富通/东方支付</p>
+                </li>
+                <li class="ui-border-t">
+                    <label class="ui-radio" for="radio">
+                        <input type="radio" checked="" name="radio">
+                    </label>
+                    <p>D.I.G.卡支付/预存款支付</p>
+                </li>
+                <li class="ui-border-t">
+                    <label class="ui-radio" for="radio">
+                        <input type="radio" checked="" name="radio">
+                    </label>
+                    <p>网上银行/快捷支付</p>
+                </li>
+            </ul>
+        </div>
+            </div>
+            <div class="ui-dialog-ft">
+                <button type="button" data-role="button">取 消</button>
+                <button type="button" data-role="button">确 认</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 页面中部弹出页面-支付方式end--> 
+<!-- 页面中部非固定区域1-购物车panel区域start-->
+<section class="border-bottom56">
+    <div class="demo-block">
+        <ul class="ui-list1 ui-border-tb">
+            
+            <li class="ui-border-t bg-red">
+                
+                <h4 class="ui-nowrap hl-set">海关保税仓直发</h4>
+            </li>
+            <li class="ui-border-t">
+                
+                <div class="ui-list-thumb margin-t1"> <span style="background-image:url(../img/images/g-3.png)"></span> </div>
+                <div class="ui-list-info">
+                    <h4 class="ui-nowrap">3栏1-2.5折/红酒净颜面膜130g红酒净颜面膜130g</h4>
+                    <h5 class="price-js"><span style="color: #999;">颜色分类：红色 LX号</span></h5>
+                    <h4 class="price-js">¥ 99.00<span class="padding-rl1" style="color: #999;">x1</span></h4>
+                   
+                    <h5 class="price-s1"><span class="red-box">免</span>适用税率20%</h5>
+                </div>
+            </li>
+            <li class="ui-border-t">
+                
+                <div class="ui-list-thumb margin-t1"> <span style="background-image:url(../img/images/g-3.png)"></span> <span class="margin-t1" style="background-image:url(../img/images/g-3.png)"></span> </div>
+                <div class="ui-list-info">
+                    <h4 class="ui-nowrap">[组合]2.5折/红酒净颜面膜130g红酒净颜面膜130g</h4>
+                    <h5 class="price-js"><span style="color: #999;">颜色分类：红色 LX号</span></h5>
+                    <h4 class="price-s">¥ 199.00<span class="padding-rl1"  style="color: #999;">x1</span></h4> 
+                    <h4 class="ui-nowrap">[组合]2.5折/红酒净颜面膜130g红酒净颜面膜130g</h4>
+                    <h5 class="price-js"><span style="color: #999;">颜色分类：红色 LX号</span></h5>
+                    <h4 class="price-s">¥ 199.00<span class="padding-rl1" style="color: #999;">x1</span></h4>                  
+                    <h5 class="price-s1"><span class="red-box">免</span>适用税率20%</h5>
+                </div>
+            </li>
+        </ul>
+    </div> 
+    <!-- 页面中部非固定区域1-信息选填panel区域start-->
+    <div class="demo-block">   
+    <ul class="ui-list1">       
+        <li class="ui-border-b ui-form-item-link">
+            
+           <a href="#">  <i class="icon-gift hl-set2 float-list"></i>
+            <h4 class="ui-nowrap hl-set2 font-1">参加满百减30优惠活动</h4>
+            <h5 class="price-js">活动优惠：<span style="color: #999;">- ¥90.00</span></h5></a>
+            <!-- JS控制  我不会写这里同前面的按钮，点击选择优惠项目，默认为系统优先自选项--> 
+            
+        </li>
+    </ul>
+    <ul class="ui-list1">       
+        <li class="ui-border-b ui-form-item-link">
+            
+           <a href="#">  <i class="icon-road hl-set2 float-list"></i>
+            <h4 class="ui-nowrap hl-set2 font-1">满百包邮</h4>
+            <h5 class="price-js">运费：<span style="color: #999;"> ¥ 0.00</span></h5></a>
+            <!-- JS控制  我不会写这里同前面的按钮，点击选择优惠项目，默认为系统优先自选项--> 
+            
+        </li>
+    </ul>
+     <ul class="ui-list1">
+        <li class="ui-border-b ui-form-item-link" id="btn5"><!-- JS控制当认证完毕显示为style="display:none;"--> 
+            <a href="#"> <i class="icon-credit-card hl-set2 float-list"></i>
+            <h4 class="ui-nowrap hl-set2 font-1">请选择支付方式</h4>
+            </a> </li>
+        <li class="ui-border-b ui-form-item-link" style="display:none;"><!-- JS控制当认证完毕显示为style="display:;"--> 
+            
+            <i class="icon-truck hl-set2 float-list"></i>
+            <h4 class="ui-nowrap hl-set2 font-1">支付宝/财富通/东方支付</h4>
+            <!-- JS控制 显示选项--> 
+            
+        </li>
+    </ul>
+    </div>
+    <!-- 页面中部非固定区域1-信息选填panel区域end-->
+
+</section>
+<!-- 页面中部非固定区域1-购物车panel区域end-->
+
+<script type="text/javascript" src="../js/stats.js" charset="UTF-8"></script> 
+<script src="../lib/zepto.min.js"></script> 
+<script src="../js/frozen-1.js"></script> 
+<script src="../js/frozen-2.js"></script> 
+<script src="../js/frozen-3.js"></script>
+<script class="demo-script">
+			$(".ui-dialog").dialog("show");
+			$(".ui-dialog1").dialog("show");
+			$(".ui-dialog2").dialog("show");
+</script> 
+<script class="demo-script">
+		(function (){           
+			$("#btn2").click(function(){
+			    $(".ui-dialog").dialog("show");
+			})
+		})();
+		    $("#btn3").click(function(){
+			    $(".ui-dialog1").dialog("show");
+			})
+		();
+		    $("#btn4").click(function(){
+			    $(".ui-dialog2").dialog("show");
+			})
+		();
+		    $("#btn5").click(function(){
+			    $(".ui-dialog2").dialog("show");
+			})
+		();
+</script> 
+<script>
+        $('.ui-list li,.ui-tiled li').click(function(){
+            if($(this).data('href')){
+                location.href= $(this).data('href');
+            }
+        });
+        $('.ui-header .ui-btn').click(function(){
+            location.href= 'index.html';
+        });
+        </script>
+</body>
+</html>

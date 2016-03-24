@@ -1,0 +1,31 @@
+	table{
+		font-size: 10px;
+	}
+
+
+
+	.printer-container{
+		font-size:10px;
+	}
+
+	.printer-container .header .title{
+		text-align: center;
+		margin-bottom: 5px;
+	}
+
+	.printer-container thead tr th {
+		border-top:1px dotted black;
+		border-bottom:1px dotted black;
+	}
+
+	.printer-container .sum{ 
+		padding-top: 10px; 
+		border-top:1px dotted black;	
+	}
+	.printer-container .sum p {
+		margin: 2px;
+	}
+
+	.printer-container .footer p {
+		text-align: center;
+	}

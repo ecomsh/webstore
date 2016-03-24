@@ -1,0 +1,20 @@
+<?php
+
+namespace frontend\modules\act;
+
+class Act extends \yii\base\Module
+{
+    //dcj just for test
+    public $controllerNamespace = 'frontend\modules\act\controllers';
+
+    public function init()
+    {
+        parent::init();
+
+        // 从config.php加载配置来初始化模块
+        \Yii::configure($this, require(__DIR__ . '/config/config.php'));
+        \Yii::configure($this, require(__DIR__ . '/config/config-local.php'));
+        \Yii::configure($this, require(__DIR__ . '/config/config-allinone.php'));
+    }
+
+}

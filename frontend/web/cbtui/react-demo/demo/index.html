@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../shared/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../shared/css/index.css">
+	<script src="../build/react.js"></script>
+	<script src="../build/react-dom.js"></script>
+	<script src="../build/browser.min.js"></script>
+	<script src="../build/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+	<div id="container"></div>
+	<script type="text/babel">
+		var Productlist = React.createClass({
+			getInitialState:function(){
+				return {
+					loading:true,
+					error:null,
+					data:null
+				};
+			},
+			componentDidMount() {
+				this.props.promise.then(
+					value => this.setState({loading: false, data: value}),
+					error => this.setState({loading: false, error: error})
+				);
+			},
+			render:function(){
+				if(this.state.loading){
+					return <span>客观不要急，正在努力加载哦！</span>;
+				}else if(this.state.error !==null){
+					return <span>哎呀，出错啦！</span>;
+				}else{
+					var repos1 = this.state.data.items;
+					var repoList = repos1.map(function (repo1,key) {
+						return (
+							<li key={repo1.id} className="new-product-top">
+								<img src={repo1.productImgUrl} />
+								<p className="new-product-name">{repo1.productName}</p>
+								<p className="product-price">{repo1.productPrice}</p>
+								<p className="china-price">国内参考价{repo1.chinaPrice}</p>
+							</li>
+						);
+					});
+					return (
+						<ul className="clearfix">{repoList}</ul>
+					)
+				}
+			}
+		});
+		var Newproduct = React.createClass({
+			getInitialState:function () {
+				return {
+					titleText:'新品推荐 | New Product'
+				};
+			},
+			render: function(){
+				return (
+					<div className="new-product">
+						<p className="new-title">{this.state.titleText}</p>
+						<Productlist promise={$.getJSON('json.js')} />
+					</div>
+				);
+			}
+		});
+		var Mustbuylist = React.createClass({
+			getInitialState:function(){
+				return {
+					loading:true,
+					error:null,
+					data:null,
+					go:"去看看"
+				};
+			},
+			componentDidMount() {
+				this.props.promise.then(
+					value => this.setState({loading: false, data: value}),
+					error => this.setState({loading: false, error: error})
+				);
+			},
+			render:function(){
+				if(this.state.loading){
+					return <span>客观不要急，正在努力加载哦！</span>;
+				}else if(this.state.error !==null){
+					return <span>哎呀，出错啦！</span>;
+				}else{
+					var repos = this.state.data.buyitems;
+					var repoList = repos.map(function (repo,key) {
+						return (
+							<li key={repo.id} className="buy-product">
+								<div className="buypro-left pull-left">
+									<img className="buypro-img" src={repo.productImgUrl} />
+								</div>
+								<div className="buypro-right pull-left">
+									<span className="end-time">距特卖结束 {repo.endTime}</span>
+									<a href="javascript:;" className="buypro-name">{repo.productName}</a>
+									<p className="buypro-text">{repo.productDescription}</p>
+									<span className="buypro-price">{repo.productPrice}</span>
+									<span className="buypro-chinaprice">
+										原价<span className="price-line">{repo.originalPrice}</span>
+										国内参考价：{repo.chinaPrice}
+									</span>
+									<span className="baoyou-btn">{repo.favoLabel}</span>限时限量抢购
+									<a className="go" href="">{this.state.go}</a>
+								</div>
+							</li>
+						);
+					}.bind(this));
+					return (
+						<ul className="clearfix">{repoList}</ul>
+					)
+				}
+			}
+		});
+		var Mustbuy = React.createClass({
+			getInitialState:function () {
+				return {
+					titleText:'每日必Buy | MUST CHECK OUT'
+				};
+			},
+			render: function(){
+				return (
+					<div className="new-product">
+						<p className="mustbuy-title">{this.state.titleText}</p>
+						<Mustbuylist promise={$.getJSON('json.js')} />
+					</div>
+				);
+			}
+		});
+		var Productcon = React.createClass({
+			render: function(){
+				return(
+					<div className="container">
+						<Newproduct />,
+						<Mustbuy />
+					</div>
+				)
+			}
+		});
+		ReactDOM.render(
+			<Productcon />,
+			document.getElementById("container")
+		);
+	</script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>完善地址</title>
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=37342703" charset="UTF-8"></script>
+<link rel="stylesheet" href="../css/frozen.css">
+<link rel="stylesheet" href="demo.css">
+<link rel="stylesheet" href="common.css">
+<script src="../lib/zepto.min.js"></script>
+<script src="../js/frozen.js"></script>
+</head>
+<body ontouchstart>
+<header class="h_red ui-heard-h ui-header ui-header-positive ui-border-b"> <i class="ui-icon-return ui-i-h" onclick="history.back()"></i>
+  <h1>完善地址</h1>
+</header>
+<section class="ui-container"  id="form">
+        <div class="demo-item">
+            <div class="demo-block store-k">
+                <div class="ui-dialog show">
+                    <div class="ui-dialog-cnt pop-bg">
+                        <header class="ui-dialog-hd title-h">
+                            <i class="ui-dialog-close" data-role="button"></i>
+                        </header>
+                        <div class="ui-dialog-bd">
+                            <div class="title-infor save-m"><img class="save-img" src="../img/weixin/success-tp.png"><span class="save-label">保存成功，是否继续完善下一个订单地址？</span></div>
+                        </div>
+                        <div class="ui-btn-wrap">
+                           <div class="ui-footer ui-btn-group">
+                                <button class="ui-form-btn ui-btn-lg ui-btn-danger">
+                                    继续
+                                </button>
+                                <button class="ui-btn-lg btn-color1">
+                                    关闭
+                                </button>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="ui-dialog-cnt pop-bg">
+                        <header class="ui-dialog-hd title-h">
+                            <i class="ui-dialog-close" data-role="button"></i>
+                        </header>
+                        <div class="ui-dialog-bd">
+                            <div class="title-infor"><img class="save-img" src="../img/weixin/error-tp.png"><span class="save-label">您的地址填写不完整，请填写正确地址！</span></div>
+                        </div>
+                        <div class="ui-btn-wrap">
+                           <button class="ui-form-btn ui-btn-lg ui-btn-danger">关闭</button>
+                        </div>
+                    </div>         
+                </div>
+                <section class="ui-container store-border clearfix" style="background: url(../img/weixin/sec-tp.jpg) no-repeat;-moz-background-size:cover;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;">
+                    <p class="store-c">门店名称：遵义店</p>
+                    <p class="store-c">订单时间：2016-01-06 10:01:56</p>
+                    <p class="store-c">应付金额：<i>￥249.00</i></p>
+                    <div class="pro-thumb">
+                        <a class="arrow-left" href=""><img src="../img/weixin/scroll-l.png" width="9" height="18"></a>
+                        <ul>
+                            <div class="scroll-bigbox">
+                                <li><span>1</span><img src="../img/weixin/pro-tp.jpg" width="116" height="140"></li>
+                                <li><span>1</span><img src="../img/weixin/pro-tp.jpg" width="116" height="140"></li>
+                                <li><span>1</span><img src="../img/weixin/pro-tp.jpg" width="116" height="140"></li>
+                                <li><span>1</span><img src="../img/weixin/pro-tp.jpg" width="116" height="140"></li>
+                            </div>
+                        </ul>
+                        <a class="arrow-right" href=""><img src="../img/weixin/scroll-r.png" width="9" height="18"></a>
+                    </div>
+                </section>
+                <p class="demo-desc text-c">使用常用地址</p>
+                <div class="address-thumb clearfix">
+                    <a class="addarrow-left" href=""><img src="../img/weixin/scroll-l.png" width="9" height="18"></a>
+                    <ul>
+                        <div class="address-bigbox">
+                            <li><a class="current" href="">李小文  15001905231<br>富特西三路77号10栋2楼（外高桥保税区内）</a></li>
+                            <li><a href="">李小文  15001905231<br>富特西三路77号10栋2楼（外高桥保税区内）</a></li>
+                        </div>
+                    </ul>
+                    <a class="addarrow-right" href=""><img src="../img/weixin/scroll-r.png" width="9" height="18"></a>
+                </div>
+                <div class="ui-form ui-border-t">
+                    <form action="#">
+                        <div class="ui-form-item ui-border-b ui-form-h input-ui">
+                            <label><i class="req-color">*</i>地区</label>
+                            <input class="form-ui" type="text" disabled="disabled" placeholder="上海市" />
+                        </div>
+                        <div class="ui-form-item ui-border-b ui-form-h input-ui">
+                            <label><i class="req-color">*</i>城市</label>
+                            <input class="form-ui" type="text" disabled="disabled" placeholder="上海市" />
+                        </div>
+                        <div class="ui-form-item ui-border-b ui-form-h input-ui">
+                            <label><i class="req-color">*</i>区县</label>
+                            <div class="ui-select">
+                                <select>
+                                    <option>浦东新区</option>
+                                    <option selected="">静安区</option>
+                                    <option>长宁区</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="ui-form-item ui-border-b ui-form-h">
+                            <label><i class="req-color">*</i>地址</label>
+                            <input type="text" placeholder="上海市上海浦东新区富特西三路77号10栋" />
+                        </div>
+                        <div class="ui-form-item ui-border-b ui-form-h">
+                            <label><i class="req-color"></i>邮编</label>
+                            <input type="text" placeholder="200033" />
+                        </div>
+                        <div class="ui-form-item ui-border-b ui-form-h">
+                            <label><i class="req-color">*</i>收货人</label>
+                            <input type="text" placeholder="张三" />
+                        </div>
+                        <div class="ui-form-item ui-border-b ui-form-h">
+                            <label><i class="req-color">*</i>手机</label>
+                            <input type="text" placeholder="13800001111" />
+                        </div>
+                        <div class="ui-form-item ui-border-b ui-form-h">
+                            <label><i class="req-color"></i>座机</label>
+                            <input type="text" placeholder="021-62405987" />
+                        </div>
+                        <!--不可修改地址样式
+                        <div class="ui-form-item ui-border-b ui-form-h input-ui">
+                            <label><i class="req-color">*</i>区县</label>
+                            <input class="form-ui" type="text" disabled="disabled" placeholder="上海市" />
+                        </div>
+                        <div class="ui-form-item ui-border-b ui-form-h input-ui">
+                            <label><i class="req-color">*</i>地址</label>
+                            <input class="form-ui" type="text" disabled="disabled" placeholder="上海市上海浦东新区富特西三路77号10栋" />
+                        </div>
+                        <div class="ui-form-item ui-border-b ui-form-h input-ui">
+                            <label><i class="req-color"></i>邮编</label>
+                            <input  class="form-ui" type="text" disabled="disabled" placeholder="200033" />
+                        </div>
+                        <div class="ui-form-item ui-border-b ui-form-h input-ui">
+                            <label><i class="req-color">*</i>收货人</label>
+                            <input  class="form-ui" type="text" disabled="disabled" placeholder="张三" />
+                        </div>
+                        <div class="ui-form-item ui-border-b ui-form-h input-ui">
+                            <label><i class="req-color">*</i>手机</label>
+                            <input  class="form-ui" type="text" disabled="disabled" placeholder="13800001111" />
+                        </div>
+                        <div class="ui-form-item ui-border-b ui-form-h input-ui">
+                            <label><i class="req-color"></i>座机</label>
+                            <input  class="form-ui" type="text" disabled="disabled" placeholder="021-62405987" />
+                        </div>
+                        -->
+                        <div class="ui-form-item ui-form-item-checkbox ui-border-b address-checkbox">
+                            <label class="ui-checkbox">
+                                <input type="checkbox">
+                            </label>
+                            <p>设为默认地址</p>
+                        </div>
+                        <div class="ui-form-item ui-form-item-checkbox ui-border-b address-checkbox">
+                            <label class="ui-checkbox">
+                                <input type="checkbox" checked="">
+                            </label>
+                            <p>设为常用地址</p>
+                        </div>
+                    </form>
+                </div>
+                <div class="ui-btn-wrap">
+                    <button class="ui-form-btn ui-btn-lg ui-btn-danger">保存地址</button>
+                </div>
+            </div>
+        </div>
+</section>
+</body>
+</html>

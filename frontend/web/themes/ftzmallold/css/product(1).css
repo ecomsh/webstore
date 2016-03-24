@@ -1,0 +1,8 @@
+.ppsc-product-detail #goods-viewer { position: relative; }
+.ppsc-product-detail #goods-viewer .ald-skuRight { right: 0; }
+.ppsc-product-detail .leftBoxModi { margin: 10px 10px 0 0; }
+.ppsc-product-detail .btnwrapModi #btn_lj { background: #e60019; }
+.ppsc-product-detail .btnwrapModi #cartBtn { background: none; padding-left: 0; background: #0090f8; }
+.ppsc-product-detail #goods-intro { padding: 0; }
+.ppsc-product-detail .goods-detail-infos .goods-detail-tab { border-bottom: 1px #ff1a33 solid; }
+.ppsc-product-detail .goods-detail-infos .goods-detail-tab li a:hover, .ppsc-product-detail .goods-detail-infos .goods-detail-tab li.active a { background: #ff1a33; }

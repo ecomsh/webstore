@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>实名认证</title>
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=37342703" charset="UTF-8"></script>
+<link rel="stylesheet" href="../css/frozen.css">
+<link rel="stylesheet" href="demo.css">
+<link rel="stylesheet" href="common.css">
+<script src="../lib/zepto.min.js"></script>
+<script src="../js/frozen.js"></script>
+</head>
+<body ontouchstart>
+<header class="h_red ui-heard-h ui-header ui-header-positive ui-border-b"> <i class="ui-icon-return ui-i-h" onclick="history.back()"></i>
+  <h1>实名认证</h1>
+</header>
+<section class="ui-container"  id="form">
+        <div class="demo-item">
+            <p class="demo-desc title_c">提示信息：因涉及国家监管部门规定，需要对购买人信息实名备案，本网站不会保留相关个人隐私信息，请放心填写。</p>
+            <div class="demo-block">
+                <div class="ui-form ui-border-t">
+                    <form action="#">
+                        <div class="ui-form-item ui-border-b ui-form-h">
+                            <label>收件人姓名</label>
+                            <input type="text" placeholder="张三" />
+                        </div>
+                        <div class="ui-form-item ui-border-b ui-form-h">
+                            <label>收件人邮箱</label>
+                            <input type="text" placeholder="zhangsan@163.com" />
+                        </div>
+                        <div class="ui-form-item ui-border-b ui-form-h">
+                            <label>证件类型</label>
+                            <div class="ui-select">
+                                <select>
+                                    <option>护照</option>
+                                    <option selected="">身份证</option>
+                                    <option>学生证</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="ui-form-item ui-border-b ui-form-h">
+                            <label>证件号码</label>
+                            <input type="text" placeholder="310598897979796562" />
+                        </div>
+                    </form>
+                </div>
+                <div class="ui-btn-wrap">
+                    <button class="ui-form-btn ui-btn-lg ui-btn-danger">提交认证</button>
+                </div>
+                <p class="ui-txt-warning ui-center ui-center-h">
+                    <a href="">跳过，暂时不填写</a>
+                </p>
+            </div>
+        </div>
+</section>
+</body>
+</html>

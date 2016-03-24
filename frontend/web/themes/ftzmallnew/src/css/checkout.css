@@ -1,0 +1,177 @@
+body{background: #f7f7f7;}
+.timing-clock{font-size:13px;height:81px;line-height: 81px;border-top: 3px solid #ededed;background: url(../images/clock.png) no-repeat scroll 10px 34px;padding-left: 30px;}
+.checkout-order{background-color: #ffffff;}
+/*实名认证*/
+.real-name,.shipping-address,.shipping-time,.product-listing,.pay-method{padding: 22px 30px 30px 30px;border-bottom: 1px solid #cccccc;}
+.realname-title,.add-title,.time-title,.listing-title,.method-title,.invoice-title{font-size: 18px;font-weight: bold;color: #000000;margin-bottom: 28px;}
+.warm-prompt{color: #221713;width: 750px;height: 28px;line-height: 28px;padding-left:48px;margin-left: 28px;border: 1px solid #ea286c;background: url(../images/checkout-notice.png) no-repeat scroll 14px 5px;background-color: #ffe7f1;}
+.warm-prompt .thereason{background: url(../images/checkout-notice1.png) no-repeat scroll 22px 2px;padding-left: 45px;}
+.real-name label{width: 45px!important;margin-left: 30px;padding: 0;color:#221713;font-weight: normal;}
+.real-name form .form-group div{display: inline-block;}
+.real-name input{border-radius: 0;width: 196px;height: 24px;border: 1px solid #dcdcdc;padding:0;line-height: 24px;padding-left: 12px;}
+.real-name select{width: 140px;height: 22px;border: 1px solid #dcdcdc;}
+.real-card{margin-left: 10px;display: inline-block;}
+.real-name .form-group{margin: 19px 0 5px 0;vertical-align: middle;line-height: 24px;}
+
+.realusername,.realtelephone,.realemail,.realcard{margin: 19px 0 5px 35px;}
+
+.shipping-address label,.modal-body label{width: 80px!important;padding:8px 0 5px;text-align: right;font-size: 12px;color: #221713;}
+.shipping-address input,.shipping-address select,.modal-body input,.modal-body-select{border: 1px solid #d9d9d9!important;font-size: 12px;color: #999999;}
+.form-control,.form-control option,{padding-left: 5px;padding-right: 5px;}
+.shipping-address .form-group,.modal-body .form-group{margin-bottom: 23px;}
+.recipients-name{width: 196px;}
+.recipients-address{width: 141px;margin-right: 25px;margin-left: 15px;}
+.recipients-address-detail{width: 326px;}
+.recipients-tel{width: 124px;}
+.recipients-tel-width1{width: 95px;padding: 6px 0;text-align: center;}
+.recipients-tel-width2{width: 58px;padding: 6px 4px;}
+.recipients-tel-width3{width: 100px;padding: 6px 4px;}
+.recipients-tel-width4{width: 13px;padding: 6px 0;text-align: center;}
+.btn-ensure{width: 84px;height: 27px;line-height: 27px;background: #e81a62;font-size:12px;color: #ffffff;margin:12px 10px 0 15px!important;border:none;-webkit-border-radius:0;-moz-border-radius:0;-ms-border-radius:0;border-radius:0;padding: 0;}
+.btn-ensure:hover,.btn-ensure:focus,.btn-ensure.focus{color: #ffffff;}
+.btn-empty{width: 54px;height: 27px;line-height:27px;border: 1px solid #e3e3e3;font-size:12px;color:#999999;margin-top:12px;background: #f7f7f7;-webkit-border-radius:0;-moz-border-radius:0;-ms-border-radius:0;border-radius:0;padding: 0;}
+.btn-empty:hover,.btn-empty:focus,.btn-empty.focus{color: #999999;}
+
+/*地址选择*/
+.shipping-address tr{display: block;}
+.shipping-address table td{border:none!important;height: 20px!important;line-height: 20px!important;vertical-align: middle!important;}
+.checked-address{border: 1px solid #fe97ba;margin-bottom: 15px;}
+.default-head{width: 85px!important;padding:0px!important;}
+.checked-address .default-head{background: url(../images/address-head.png) no-repeat scroll 8px 7px;padding-left: 35px!important;}
+.radio-address-bg{background: url(../images/radiobtn-bg.png) no-repeat;margin-right: 8px;position: relative;top:2px;display: inline-block;width: 14px;height: 15px;}
+.radio-address-bg input{margin:0!important;}
+.shipping-address table label{margin:0px;padding: 0px;}
+.default-name{width: 150px!important;}
+.default-name label{text-align: left!important;margin-top: -3px!important;width: auto!important}
+.default-tel{width: 120px!important;}
+.default-add-detail{width: 370px!important;}
+.operation1,.operation2,.operation3{color: #54249a;margin-right: 23px;cursor: pointer;text-decoration: none!important;display: none;}
+.checked-address .operation1,.checked-address .operation2,.checked-address .operation3{color: #000000;}
+.address-tr-hover{background: #ffe7f1;}
+.btn-newaddress{width: 136px;height: 36px;border: 1px solid #ee578c;line-height: 4px;padding: 0;background: #ffffff;border-radius: 0;margin-left: 90px;}
+.addbg{color: #ee578c;font-size: 22px;display: inline-block;height: 10px;position: relative;top:2px;left: -9px;}
+
+/*送货时间*/
+
+
+.shipping-time label{height: 36px;border: 1px solid #e8e8e8;padding-left: 42px;padding-right: 25px;margin-right: 18px;font-size: 12px;padding-top: 9px!important;}
+.radio-time-bg{width: 14px;height: 15px;top:10px;position:absolute;background: url(../images/radiobtn-bg.png) no-repeat;display: inline-block;margin-left:-27px;margin-right: 12px; }
+.radio-time-border{border:1px solid #ed4881!important;}
+.radio-time-bg-checked{background: url(../images/radiobtn-checked.png) no-repeat!important;}
+.shipping-time .radio-time{margin-left: 0!important;margin-top:0!important;}
+
+/*商品清单*/
+.product-listing ul{border:1px solid #e1e1e1;}
+.listing-table-title{font-size: 13px;font-weight: bold;margin-bottom: 10px;}
+
+li.checkout-table-header{height: 33px;line-height: 33px;}
+.checkout-table-header .th1{padding-left: 85px;}
+.th1,.th2,.th3,.th4,.th5{display: inline-block;text-align: center;vertical-align: middle;}
+.th1{width: 450px;text-align: left!important;margin-right: -4px;}
+.th2{width: 140px;}
+.th3{width: 200px;}
+.th4{width: 120px;}
+.th5{width: 100px;}
+.product-name{padding-left: 30px;}
+.cart-table1-con .product-price:nth-last-child(1),.cart-table1-con .product-cell:nth-last-child(1){border-bottom: none!important;}
+.product-name,.product-price{height: 70px;line-height: 70px;}
+.amount-payable{font-size: 15px;font-weight: bold;color: #e81a62;}
+.order-total,.activity-span,.freight-span,.order-tariffs,.amount-payable{width: 120px;padding-right: 10px;display: inline-block;text-align: right;}
+li.text-middle{line-height: 20px!important;}
+.product-listing li{vertical-align: middle!important;border-bottom:1px solid #e1e1e1;}
+.price-line{text-decoration: line-through;color: #777777;}
+.listing-explain{background: #f8f8f8;height: 180px;}
+.listing-total{margin-top: 30px;}
+.listing-total div{position: relative;color:#777777;height:26px;line-height: 26px;}
+.activity1,.free-activity{color:#ed145b;font-size: 12px;position: absolute;top: 0;width: 500px;left:-510px;display: inline-block;text-align: right;}
+.free-activity{left: -505px;}
+/*优惠券*/
+.coupons{margin-top:15px;}
+.coupons label{font-size: 13px;font-weight: normal;margin-left: 7px;}
+.radio-coupons-bg{padding-right: 6px;background: url(../images/radiobtn-bg.png) no-repeat;position: relative;top: 1px;}
+.coupons select{width: 320px;height: 23px;border: 1px solid#e8e8e8;font-size: 12px;color: #999999;font-weight: normal;}
+.input-coupons{width: 319px;height: 22px;line-height: 22px;border: 1px solid #dedede;color: #999999;font-size: 12px;}
+.activation{margin-top: 35px;}
+.btn-activation{font-size: 12px;color: #ffffff;width: 64px;height: 24px;background: #e81a62;padding:0!important;border-radius: 0;margin-left: 4px;}
+.btn-activation:hover,.btn-activation:focus,.btn-activation.focus{color: #ffffff;}
+.input-coupons::-webkit-input-placeholder{color: #999999;}
+.input-coupons:-moz-placeholder{color: #999999;}
+.input-coupons::-moz-placeholder{color: #999999;}
+.input-coupons:-ms-placeholder{color: #999999;}
+
+
+/*支付方式*/
+.alipay{height: 162px;background: #fff9f9;border: 1px solid #e3e2e2;}
+.alipay .radio{font-size: 14px;}
+.font-color5{color: #666666;font-size: 13px;font-weight: normal;margin-left: 20px;display: inline-block;}
+.alipay1{background: url(../images/pay-1.png) no-repeat;width: 190px;height: 42px;padding-left: 0;}
+.alipay2{background: url(../images/pay-2.png) no-repeat;width: 190px;height: 42px;padding-left: 0;}
+.alipay3{background: url(../images/pay-3.png) no-repeat;width: 200px;height: 42px;padding-left: 0;}
+.radio-pay-bg{width: 14px;height: 15px;top:14px;left:11px;position:absolute;background: url(../images/radiobtn-bg.png) no-repeat;display: inline-block;}
+.pay-method .radio-pay{margin-left: 0!important;margin-top:0!important;}
+.pay-method .radio{padding-left: 40px;padding-left: 40px;padding-top: 13px;}
+.alipay-div{margin-top: 20px!important;margin-left: 40px;}
+
+/*其他*/
+.other-invoice{padding: 22px 30px 30px 30px;}
+.invoice-inf{padding-left: 0!important;}
+.invoice-p{margin-bottom: 15px;}
+.other-invoice label{width:15px;height: 15px;margin-right: 15px;position: relative;top:3px;}
+label.checkbox-label{margin:0;top:4px;margin-right: 8px;display: inline-block;width: 14px;height: 13px;}
+.company-name{border: 1px solid #e3e3e3;width:236px;height: 24px;margin-left: 6px;}
+.check-invoice-bg{background: url(../images/check-bg.png) no-repeat;display: inline-block;width: 14px;height: 13px;}
+.check-invoice-bg input{margin:0!important;display: inline-block;height: 13px;width: 14px;position: relative;}
+.check-invoice-checked{background: url(../images/checkbg-checked.png) no-repeat!important;}
+
+.radio-invoice-bg{background: url(../images/radiobtn-bg.png) no-repeat;margin-right: 10px;display: inline-block;height: 15px;width: 15px;}
+.radio-invoice-bg input{width:15px;height: 15px;margin:0!important;}
+.other-invoice .form-group{padding-left: 30px;display: inline-block;vertical-align: top;line-height: 21px;}
+.btn-invoice{width: 115px;height: 40px;background: #e81a62;font-size: 14px;color: #ffffff;margin-left: 70px;margin-top: 43px;border-radius: 0!important;}
+.btn-invoice:hover,.btn-invoice:focus,.btn-invoice.focus{color: #ffffff;}
+.save-invoice span{margin-right: 20px;}
+
+.checkout-btn{margin-top: 83px;}
+.btn-returncart{margin-top:10px;width: 124px;height: 36px;color: #777777;background: #f8f8f8;border: 1px solid #ececec;border-radius: 0!important;}
+.btn-returncart:hover,.btn-returncart:focus,.btn-returncart.focus{color: #777777;}
+.total-text{width:720px;font-size: 14px;line-height: 50px;text-align: right;}
+.total-text .font-color6{color: #e81a62;font-size: 18px;font-weight: bold;}
+.btn-sure{width: 148px;height: 50px;background: #e81a62;color: #ffffff;margin-left: 35px;border-radius: 0!important;}
+.btn-sure:hover,.btn-sure:focus,.btn-sure.focus{color: #ffffff;}
+.font-color7{font-size: 15px;color: #999999;text-decoration: line-through;margin-left: 5px;}
+.timing-right{text-align: right;padding-right: 30px;height:61px;line-height: 61px;border-top: none;background: url(../images/clock.png) no-repeat scroll 800px 24px;}
+
+input[type=radio]{-webkit-filter:opacity(0);-moz-filter:opacity(0);-ms-filter: opacity(0);filter:opacity(0);filter:alpha(opacity=0);opacity: 0;}
+input[type=checkbox]{-webkit-filter:opacity(0);-moz-filter:opacity(0);-ms-filter: opacity(0);filter:opacity(0);filter:alpha(opacity=0);opacity: 0;}
+
+/*模态框*/
+.modal{background-color: rgba(0,0,0,.4);}
+.modal-dialog{width: 1100px;height: 385px;margin:0 auto;margin-top:150px;box-sizing:content-box;}
+.modal-dialog-pay{width: 450px;height: 385px;margin:0 auto;margin-top:150px;box-sizing:content-box;}
+.modal-header{height: 50px;background: #faf7f8;line-height: 18px;border-radius: 6px;}
+.modal-body{padding: 22px 30px 30px;}
+
+/*支付弹窗的样式，我从ftzmall上偷来的 by zjp*/
+.modal-body{font-size:12px;}
+.modal-body .text{font-size:14px;font-weight:bold;}
+.modal-body ul li{position:relative;padding:8px 0;}
+.modal-body .ftbl{color:#007fff;}
+.modal-body .paybtn{background:url(member-orderPayments/winicon.png) no-repeat scroll 0px -81px;color:#666;vertical-align:middle;line-height: 100%;text-align: left;font-size: 12px;zoom: 1;display:inline-block;}
+.modal-body a.paybtn{text-decoration:none;cursor:pointer;}
+.modal-body .paybtn .bold{font-weight:bold;padding-left:7px;}
+.modal-body .paybtn span{display: block;line-height: 27px;height: 27px;color: #4d4d4d;float:left;}
+.modal-body .payspan{background:url(member-orderPayments/winicon.png) no-repeat scroll;background-position: right -165px;padding: 0 7px;font-weight:normal;}
+.modal-body .p2{padding-left:20px;}
+.glyphicon-remove{color:#f95a28;}
+.glyphicon-ok{color:#42c11a;}
+/*支付弹窗的样式*/
+
+.understock{width: 365px;height: 170px;margin: 0 auto;margin-top: 200px;}
+.understock .modal-body{width: 365px;height: 170px;text-align: center;padding-top: 37px;color:#221713;}
+.understock .modal-body .btn-returncart{margin-top: 25px;}
+/*实名认证提示*/
+.popover{width: 475px;height: 95px;max-width: 500px;font-size: 12px;color: #777777;}
+.popover-content{padding: 5px;line-height: 20px;}
+.font-color8{color: #e81a62;font-weight: bold}
+
+/*优惠信息提示*/
+.popover-promotion{width: auto;max-width:300px;height:auto;}

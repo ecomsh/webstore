@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ftzmall</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/web-pos.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container-fluid fixed-m">
+            <header>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h2>FTZMALL</h2>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class=" col-xs-12 form-group">
+                                <div class="phone-bg">
+                                    <form class="form-inline text-center">
+                                        <div class="form-group">
+                                            <label for="inputPassword">会员手机：</label>
+                                            <input type="text" class="form-control input-sm inpuw-w" id="userPhone" placeholder="手机号">
+                                        </div>
+                                        <button id="query" type="button" class="btn btn-sm btn-success ">查询</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <h2><a href="/login/logout.html" class="btn btn-default btn-danger pull-right">退出</a>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="wrap">
+                <div class="container-fluid"> 
+                    <!-- address Modal -->
+                    <div class="modal fade" id="addressModal" tabindex="-1" role="dialog" aria-labelledby="addressModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                    <h4 class="modal-title" id="addressModalLabel">添加地址</h4>
+                                </div>
+                                <div class="modal-body"> 
+                                <!--cp from frontend-->
+                                    <form id="addressForm" class="aaa" action="/cashier/index.html" method="post">
+                                        <input type="hidden" name="_csrf" value="SnF5NVBTa3EYCQ92Pn4vODMfNGEAJy5BG0IVRyc0GAkrOR93PCkiGA==">
+                                        <input type="hidden" id="userid" name="userid" value="123">
+                                        <input type="hidden" id="addrid" name="addrid">
+                                        <div class="form-group field-addressapi-statecode required">
+                                            <label class="control-label" for="addressapi-statecode">地区：</label>
+                                            <select id="addressapi-statecode" class="form-control" name="AddressApi[stateCode]" data-level-index="0">
+                                                <option value="">请输入省市</option>
+                                                <option value="110000">北京市</option>
+                                                <option value="120000">天津市</option>
+                                                <option value="130000">河北省</option>
+                                                <option value="140000">山西省</option>
+                                                <option value="150000">内蒙古自治区</option>
+                                            </select>
+                                            <p class="help-block help-block-error"></p>
+                                        </div>
+                                        <div class="form-group field-addressapi-citycode required">
+                                            <label class="control-label" for="addressapi-citycode">城市：</label>
+                                            <select id="addressapi-citycode" class="form-control" name="AddressApi[cityCode]" data-level-index="0">
+                                                <option value="">请输入城市</option>
+                                                <option value="310000">上海市</option>
+                                            </select>
+                                            <p class="help-block help-block-error"></p>
+                                        </div>
+                                        <div class="form-group field-addressapi-districtcode required">
+                                            <label class="control-label" for="addressapi-districtcode">区县：</label>
+                                            <select id="addressapi-districtcode" class="form-control" name="AddressApi[districtCode]" data-level-index="0">
+                                                <option value="">请输入区县</option>
+                                                <option value="310101">黄浦区</option>
+                                                <option value="310104">徐汇区</option>
+                                                <option value="310105">长宁区</option>
+                                                <option value="310106">静安区</option>
+                                            </select>
+                                            <p class="help-block help-block-error"></p>
+                                        </div>
+                                        <div class="form-group field-addressapi-statename">
+                                            <label style="display:none" for="provice1"></label>
+                                            <input type="hidden" id="provice1" class="form-control" name="AddressApi[stateName]" value="上海市">
+                                            <p class="help-block help-block-error" style="display:none"></p>
+                                        </div>
+                                        <div class="form-group field-addressapi-cityname">
+                                            <label style="display:none" for="city1"></label>
+                                            <input type="hidden" id="city1" class="form-control" name="AddressApi[cityName]" value="上海市">
+                                            <p class="help-block help-block-error" style="display:none"></p>
+                                        </div>
+                                        <div class="form-group field-addressapi-districtname">
+                                            <label style="display:none" for="district1"></label>
+                                            <input type="hidden" id="district1" class="form-control" name="AddressApi[districtName]" value="黄浦区">
+                                            <p class="help-block help-block-error" style="display:none"></p>
+                                        </div>
+                                    </form>
+                                    <!--/cp from frontend-->    
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                    <button type="button" id="add_addr_btn" style="display:none;" class="btn btn-success">增加</button>
+                                    <button type="button" id="modify_addr_btn" class="btn btn-danger">保存修改</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form id="orderForm" method="post" action="/cashier/confirm.html" onkeydown="if(event.keyCode==13)return false;">
+                        <input name="_csrf" value="SnF5NVBTa3EYCQ92Pn4vODMfNGEAJy5BG0IVRyc0GAkrOR93PCkiGA==" type="hidden">
+                        <input type="hidden" id="orderUserId" name="orderUserId">
+                        <input type="hidden" id="orderAddrId" name="orderAddrId">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <h4 class="text-primary">
+                                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;
+                                    当前会员：张**
+                                </h4>
+                                <div class="addresslist">
+                                    <div class="addr active" data-addrid="7200890260478821996">
+                                        <div class="inner">
+                                            <div class="addr-head">
+                                                <span class="addr-state" data-statecode="110000">北京市</span>
+                                                <span class="addr-city" data-citycode="110000">北京市</span>
+                                                <span class="addr-district" data-districtcode="110101">东城区</span>
+                                                <span class="addr-receiver">(张三)</span>收
+                                            </div>
+                                            <div class="addr-body">
+                                                <span class="addr-addr">北京市北京市东城区订单12334555</span>
+                                                <span class="addr-phone">(13800138000)</span>
+                                            </div>
+                                            <div class="addr-toolbar" data-toggle="modal" data-target="#addressModal">
+                                                修改
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="addr" data-addrid="7087796151994468231">
+                                        <div class="inner">
+                                            <div class="addr-head">
+                                                <span class="addr-state" data-statecode="310000">上海市</span>
+                                                <span class="addr-city" data-citycode="310000">上海市</span>
+                                                <span class="addr-district" data-districtcode="310101">黄浦区</span>
+                                                <span class="addr-receiver">(张三)</span>收
+                                            </div>
+                                            <div class="addr-body">
+                                                <span class="addr-addr">上海市上海市黄浦区淮海路200号</span>
+                                                <span class="addr-phone">(13800138000)</span>
+                                            </div>
+                                            <div class="addr-toolbar" data-toggle="modal" data-target="#addressModal">
+                                                修改
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="addr" data-addrid="7087796151994468231">
+                                        <div class="inner">
+                                            <div class="addr-head">
+                                                <span class="addr-state" data-statecode="310000">上海市</span>
+                                                <span class="addr-city" data-citycode="310000">上海市</span>
+                                                <span class="addr-district" data-districtcode="310101">黄浦区</span>
+                                                <span class="addr-receiver">(张三)</span>收
+                                            </div>
+                                            <div class="addr-body">
+                                                <span class="addr-addr">上海市上海市黄浦区淮海路200号</span>
+                                                <span class="addr-phone">(13800138000)</span>
+                                            </div>
+                                            <div class="addr-toolbar" data-toggle="modal" data-target="#addressModal">
+                                                修改
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="addr" data-addrid="7087796151994468231">
+                                        <div class="inner">
+                                            <div class="addr-head">
+                                                <span class="addr-state" data-statecode="310000">上海市</span>
+                                                <span class="addr-city" data-citycode="310000">上海市</span>
+                                                <span class="addr-district" data-districtcode="310101">黄浦区</span>
+                                                <span class="addr-receiver">(张三)</span>收
+                                            </div>
+                                            <div class="addr-body">
+                                                <span class="addr-addr">上海市上海市黄浦区淮海路200号</span>
+                                                <span class="addr-phone">(13800138000)</span>
+                                            </div>
+                                            <div class="addr-toolbar" data-toggle="modal" data-target="#addressModal">
+                                                修改
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="add_addr">
+                                        <div class="inner">
+                                            <button type="button" id="addr_modal_btn" class="btn btn-info add-btn" data-toggle="modal" data-target="#addressModal">
+                                                添加地址
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="loader"></div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="table-responsive">
+                                    <table class="table table-hover table-bordered pro-list">
+                                        <thead>
+                                            <tr>
+                                                <th class="item_num text-center">商品编号</th>
+                                                <th class="text-center">商品名称</th>
+                                                <th class="narrow text-center">单价</th>
+                                                <th class="narrow text-center">行邮税</th>
+                                                <th class="narrow text-center">数量</th>
+                                                <th class="narrow text-center">操作</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="item" data-partnumber="0011086001">
+                                                <td class="item_num text-center"><input name="id[]" class="id text" readonly="readonly" value=""></td>
+                                                <td class="text-center">
+                                                    <textarea name="name[]" class="name text" readonly="readonly">FIESTA嘉年华热带椰子水(12盒起订)</textarea>
+                                                </td>
+                                                <td class="narrowtext-center"><input name="price[]" class="price text" readonly="readonly" value=""></td>
+                                                <td class="narrowtext-center"><input name="tax[]" class="tax text" readonly="readonly" value=""></td>
+                                                <td class="text-center">
+                                                    <input type="button" value="-" class="del_num btn btn-danger">
+                                                    <input name="num[]" class="num form-control input-xm" data-value="1" value="1">
+                                                    <input type="button" value="+" class=" add_num btn btn-success ">
+                                                </td>
+                                                <td class="text-center"><button class="del btn btn-default btn-danger">删除</button></td>
+                                            </tr>
+                                            <tr class="item" data-partnumber="0011086001">
+                                                <td class="item_num text-center"><input name="id[]" class="id text" readonly="readonly" value=""></td>
+                                                <td class="text-center">
+                                                    <textarea name="name[]" class="name text" readonly="readonly">FIESTA嘉年华热带椰子水(12盒起订)</textarea>
+                                                </td>
+                                                <td class="narrowtext-center"><input name="price[]" class="price text" readonly="readonly" value=""></td>
+                                                <td class="narrowtext-center"><input name="tax[]" class="tax text" readonly="readonly" value=""></td>
+                                                <td class="text-center">
+                                                    <input type="button" value="-" class="del_num btn btn-danger">
+                                                    <input name="num[]" class="num form-control input-xm" data-value="1" value="1">
+                                                    <input type="button" value="+" class=" add_num btn btn-success ">
+                                                </td>
+                                                <td class="text-center"><button class="del btn btn-default btn-danger">删除</button></td>
+                                            </tr>
+                                            <tr class="item" data-partnumber="0011086001">
+                                                <td class="item_num text-center"><input name="id[]" class="id text" readonly="readonly" value=""></td>
+                                                <td class="text-center">
+                                                    <textarea name="name[]" class="name text" readonly="readonly">FIESTA嘉年华热带椰子水(12盒起订)</textarea>
+                                                </td>
+                                                <td class="narrowtext-center"><input name="price[]" class="price text" readonly="readonly" value=""></td>
+                                                <td class="narrowtext-center"><input name="tax[]" class="tax text" readonly="readonly" value=""></td>
+                                                <td class="text-center">
+                                                    <input type="button" value="-" class="del_num btn btn-danger">
+                                                    <input name="num[]" class="num form-control input-xm" data-value="1" value="1">
+                                                    <input type="button" value="+" class=" add_num btn btn-success ">
+                                                </td>
+                                                <td class="text-center"><button class="del btn btn-default btn-danger">删除</button></td>
+                                            </tr>
+                                            <tr class="item" data-partnumber="0011086001">
+                                                <td class="item_num text-center"><input name="id[]" class="id text" readonly="readonly" value=""></td>
+                                                <td class="text-center">
+                                                    <textarea name="name[]" class="name text" readonly="readonly">FIESTA嘉年华热带椰子水(12盒起订)</textarea>
+                                                </td>
+                                                <td class="narrowtext-center"><input name="price[]" class="price text" readonly="readonly" value=""></td>
+                                                <td class="narrowtext-center"><input name="tax[]" class="tax text" readonly="readonly" value=""></td>
+                                                <td class="text-center">
+                                                    <input type="button" value="-" class="del_num btn btn-danger">
+                                                    <input name="num[]" class="num form-control input-xm" data-value="1" value="1">
+                                                    <input type="button" value="+" class=" add_num btn btn-success ">
+                                                </td>
+                                                <td class="text-center"><button class="del btn btn-default btn-danger">删除</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="qrcode" style="display:none; text-algin:center; padding:200px 0;">
+                        <img style="display:block; height:264px; margin:5px auto;" src="">
+                        <h4 style="text-align:center;">请打开微信扫码支付</h4>
+                        <a href="/cashier/index.html" class="btn btn-success" style="display:block;margin:5px auto;">完成</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="row navbar-fixed-bottom">
+            <div class="col-xs-12">
+                <div class="totalprice-bg">
+                    <div class="form-horizontal col-xs-4 text-left">
+                        <div class="form-group">
+                            <label for="inputPassword" class="col-md-4 control-label" style="texte-align:right;">输入:</label>
+                            <div class="col-md-6">
+                                <input class="form-control input-sm" id="order-input" placeholder="单号">
+                            </div>
+                            <div class="col-md-2">
+                                <a class="btn btn-success btn-sm">确定</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <p id="alert" class="pay-color"></p>
+                    </div>
+                    <div class="col-xs-5">
+                        <div class="row">
+                            <div class="col-xs-12" >
+                                <p>
+                                    <span class="pull-left text-right col-xs-8">商品总价：</span>
+                                    <span class="pull-right col-xs-4 total-price">￥500.00</span>
+                                </p>
+                                <p>
+                                    <span class="pull-left text-right col-xs-8">行邮税总价：</span>
+                                    <span class="pull-right col-xs-4 total-price">￥50.00</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 text-center" >
+                        <a class="btn btn-info step-btn" href="http://w3.soupian.me/cbtui/webpos/demo/checko.html">下一步</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <footer class="footer">
+            <div class="container-fluid">
+                <p class="pull-left">©  2015</p>
+                <p class="pull-right">FTZMALL</p>
+            </div>
+        </footer>
+        <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script> 
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

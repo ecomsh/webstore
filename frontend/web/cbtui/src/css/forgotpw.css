@@ -1,0 +1,48 @@
+.header{background: #ffffff;height:100px;}
+.logo{margin-top: 8px;}
+/*footer*/
+.footer-top{margin-top: 100px;border-bottom: 1px solid #d4d4d4;}
+.map-img{padding-top: 25px;padding-bottom: 20px;border-top: 1px solid #dadada;border-bottom: 1px solid #dadada;width: 100%;}
+.map-title{font-size: 14px;color: #575757;display: block;}
+.map-inf{width:162px;margin-top: 17px;}
+.code-inf{margin-top: 17px;margin-left: 46px;width: 210px;text-align: center;}
+.map-ul{color: #808080;font-size: 12px;line-height: 24px;}
+.map-ul a{color: #808080;}
+.map-ul a:hover{color: #808080;text-decoration: none;}
+.telephone{background: url(../images/tel.png) no-repeat scroll 10px 5px;background-color: #f5f5f5;border-top: 3px solid #ececec;border-left: 2px solid #ebebeb;padding-left: 55px;margin-top: 12px;}
+
+.footer-bottom{height:180px;background: #2a2a2a;color: #d4d4d4;text-align: center;font-size: 12px;}
+.footer-bottom-p1{padding-top: 15px;}
+.footer-bottom-p2{margin-top: 10px;}
+.footer-bottom a{color: #d4d4d4;}
+.footer-bottom a:hover{color: #d4d4d4;text-decoration: none;}
+.footer-bottom p img{margin-right: 4px;margin-top: 15px;}
+
+.forgotpw-container{background: url(../images/forgotpw-bg.png) no-repeat;width: 988px;height: 476px;margin:0 auto;position: relative;font-size: 14px;}
+.forgotpw-progress{width: 700px;margin:0 auto;padding-top:27px;padding-bottom:25px;border-bottom: 1px solid #d9d9d9;}
+.forgotpw-progress h3{font-size: 20px;margin-bottom: 32px;}
+.forgotpw-div{width: 395px;margin:0 auto;margin-top: 38px;}
+.forgotpw-text{color: #999;margin-left: 15%;margin-right: -35%;margin-bottom: 5px;}
+.form-group{margin-bottom: 25px;}
+.col-sm-2,.col-sm-4{padding: 6px 5px 6px 0;font-weight: normal;text-align: right;}
+.col-sm-10,.col-sm-8{padding: 0;}
+.verification-code{width: 133px;display: inline-block;margin-right: 10px;}
+.col-sm-10 .font-color4{margin-left: 15px;}
+.btn-next{width: 136px;height: 39px;background: #e81a62;color: #fff!important;font-size: 17px;outline: none;border-radius: 0;}
+
+.forgotpw-item{height: 35px;margin-right: -100px;}
+.forgotpw-item input{width: 154px;height: 38px;border: 1px solid #ededed;}
+.btn-obtain{width: 171px;height: 40px;border: 1px solid #ededed;background: #f6f6f6;color: #777;margin-left: 20px;}
+.btn-group{margin-top: 28px;}
+.btn-prev{color: #999!important;background: #d9d9d9;width: 136px;height: 39px;font-size: 17px;outline: none;margin-right: 27px;border-radius: 0;}
+.customer-service{position: absolute;bottom: 20px;right: 25px;}
+
+.forgotemail-item{margin-right: -160px;margin-left: -100px;margin-top: 90px;}
+.btn-tomail{width: 185px;height: 40px;font-size: 17px;background: #e81a62;color: #fff!important;margin:0 auto;display: block;margin-top: 15px;}
+.email-notice{color: #999;line-height: 24px;margin:8px -40px 0 -40px;}
+
+.newpw-form{padding-top: 25px;}
+.btn-submite{width: 136px;height: 39px;background: #e81a62;color: #fff!important;font-size: 17px;outline: none;border-radius: 0;}
+
+.success-div{width: 330px;margin:0 auto;margin-top: 85px;background: url(../images/success.png) no-repeat scroll left center;padding-left: 75px;line-height: 28px;}
+.success-item2{color:#999;}

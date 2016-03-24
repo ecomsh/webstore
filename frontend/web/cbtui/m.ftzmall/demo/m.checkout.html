@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="full-screen" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="address=no">
+	<meta name="description" content="">
+	<title></title>
+	<link rel="stylesheet" href="../src/frozenui-1.3.0/css/frozen.css"/>
+	<link rel="stylesheet" href="../src/frozenui-1.3.0/css/font-awesome.css"/>
+	<link rel="stylesheet" href="../src/css/m.common.css">
+	<link rel="stylesheet" href="../src/css/m.checkout.css">
+</head>
+<body ontouchstart>
+	<header class="ui-header ui-header-positive ui-border-b">
+		<div class="topbar-bigbox">
+			<i class="ui-icon-return fl"></i>
+			<div class="topbar-fontbox">确认订单</div>
+			<i class="ui-icon-home fr font-32"></i>
+		</div>
+	</header>
+	<section class="ui-container">
+		<div class="order-wrapper">
+			<form action="" method="post" autocomplete="off" target="_blank">
+				<section class="order-item-group order-realname">
+					<div class="item-title">
+						<img src="../src/images/realname.png" class="order-item-icon">
+						<span class="title">实名认证</span>
+					</div>
+					<a href="javascript:;" class="order-item ui-arrowlink">
+						您还没有进行实名认证，快去验证吧
+						<!-- <div class="h2">
+							<span class="realname-label">姓名：</span><span class="real-name">张三</span>
+						</div>
+						<div class="h2">
+							<span class="realname-label">手机：</span><span class="real-telephone">18888888888</span>
+						</div>
+						<div class="h2">
+							<span class="realname-label">邮箱：</span><span class="real-mail">18888888888@163.com</span>
+						</div>
+						<div class="h2">
+							<span class="realname-label">证件：</span><span class="real-card">身份证</span><span class="realcard-num">187654198808132323</span>
+						</div> -->
+					</a>
+				</section>
+				<section class="order-item-group order-address">
+					<div class="item-title">
+						<img src="../src/images/address.png" class="order-item-icon">
+						<span class="title">收货信息</span>
+					</div>
+					<a href="javascript:;" id="address-list" class="order-item ui-arrowlink">
+						<div class="h2">
+							<span class="name">张安三</span>
+							<span class="telephone">18888888888</span>
+						</div>
+						<div class="address">上海市浦东区 科苑路399号10号楼</div>
+					</a>
+					<a href="javascript:;" id="order-time" class="order-item ui-arrowlink">
+						<div class="h2">收货时间不限</div>
+					</a>
+				</section>
+				<section class="order-list order-item-group">
+					<div class="item-title">
+						<img src="../src/images/order.png" class="order-item-icon">
+						<span class="title">ftzmall国内仓直发</span>
+					</div>
+					<div class="order-item clear">
+						<div class="product-left">
+							<div class="product-item">
+								<div class="product-title">VDL保湿紧致妆前乳VDL保湿紧致妆前乳VDL保湿紧致妆前乳VDL保湿紧致妆前乳</div>
+								<div class="product-weight">商品重量：<span>330g</span></div>
+							</div>
+						</div>
+						<div class="product-price">
+							￥119.00<span class="old-price">￥120</span>
+						</div>
+						<div class="product-num">X1</div>
+					</div>
+					<div class="order-item clear">
+						<div class="product-left">
+							<div class="product-item">
+								<div class="product-title">VDL保湿紧致妆前乳VDL保湿紧致妆前乳VDL保湿紧致妆前乳VDL保湿紧致妆前乳</div>
+								<div class="product-weight">商品重量：<span>330g</span></div>
+							</div>
+							<div class="product-item">
+								<div class="product-title">VDL保湿紧致妆前乳VDL保湿紧致妆前乳VDL保湿紧致妆前乳VDL保湿紧致妆前乳</div>
+								<div class="product-weight">商品重量：<span>330g</span></div>
+							</div>
+							<div class="product-item">
+								<div class="product-title">VDL保湿紧致妆前乳VDL保湿紧致妆前乳VDL保湿紧致妆前乳VDL保湿紧致妆前乳</div>
+								<div class="product-weight">商品重量：<span>330g</span></div>
+							</div>
+						</div>
+						
+						<div class="product-price">
+							￥119.00<span class="old-price">￥120</span>
+						</div>
+						<div class="product-num">X1</div>
+
+					</div>
+					<!-- <div class="order-item order-coupon">
+						<a href="">使用现金券</a>
+					</div> -->
+				</section>
+				<section class="order-money order-item-group">
+					<div class="item-title">
+						<img src="../src/images/price.png" class="order-item-icon">
+						<span class="title">结算金额</span>
+					</div>
+					<div class="order-item clear">
+						<div class="product-label fl">商品总价</div>
+						<div class="product-value fr">￥119</div>
+					</div>
+					<div class="order-item clear">
+						<div class="product-label fl">合计运费</div>
+						<div class="product-value fr">￥0（已减免￥5）</div>
+					</div>
+					<div class="order-item clear">
+						<div class="product-label fl">现金券</div>
+						<div class="product-value fr">￥0</div>
+					</div>
+					<div class="order-item clear">
+						<div class="product-label fl">还需支付</div>
+						<div class="product-value fr">
+							<span class="font-color1">￥119</span>
+						</div>
+					</div>
+				</section>
+				<section class="order-item-group pay-type">
+					<div class="item-title">
+						<img src="../src/images/card.png" class="order-item-icon">
+						<span>支付方式</span>
+					</div>
+					<div class="payitem order-item clear selected">
+						<div class="h2 fl">
+							<span class="order-item-icon1 zhifubao"></span>
+							<span>支付宝支付</span>
+						</div>
+						<div class="check-box fr">
+							<input type="radio" checked="checked" name="gateway" value=""/>
+						</div>
+					</div>
+					<div class="payitem order-item clear">
+						<div class="h2 fl">
+							<span class="order-item-icon1 caifutong"></span>
+							<span>财付通支付</span>
+						</div>
+						<div class="check-box fr">
+							<input type="radio" name="gateway" value=""/>
+						</div>
+					</div>
+				</section>
+				<section class="invoiceitem-type order-item-group">
+					<div class="item-title">
+						<img src="../src/images/fapiao.png" class="order-item-icon">
+						<span>发票</span>
+					</div>
+					<div class="invoiceitem checkbox-div order-item clear">
+						<div class="h2 fl">
+							<span class="order-item-icon1"></span>
+							<span>发票</span>
+						</div>
+						<div class="check-box fr">
+							<input type="checkbox" name="gateway" value=""/>
+						</div>
+					</div>
+					<div class="invoiceitem radio-div order-item clear">
+						<div class="h2 fl">
+							<span>开票方式：纸质发票</span>
+						</div>
+						<div class="check-box fr">
+							<input type="radio" name="gate" value="" disabled/>
+						</div>
+					</div>
+					<div class="order-item">
+						<div class="invoiceitem radio-div clear">
+							<div class="h2 fl">
+								<span>开票抬头：个人</span>
+							</div>
+							<div class="check-box fr">
+								<input type="radio" name="gateway1" value="" disabled/>
+							</div>
+						</div>
+						<div class="invoiceitem radio-div company clear">
+							<div class="h2 fl">
+								<span>　　　　　公司
+									<input type="text" class="company-name" name="" placeholder="请输入公司名称" value="" disabled/>
+								</span>
+							</div>
+							<div class="check-box fr">
+								<input type="radio" class="company-radio" name="gateway1" value="" disabled/>
+							</div>
+						</div>
+					</div>
+
+
+				</section>
+				<section class="order-item clear submit-btn-wrapper">
+					<div class="cart-price fl">
+						<div class="total-price-txt">
+							<span>总额：</span>
+							<span class="total-price">￥119</span>
+						</div>
+					</div>
+					<a class="go-check-out fr">
+						<input type="button" name="" value="提 交"/>
+					</a>
+				</section>
+				<section class="choose-send-way order-item-group">
+					<div class="send-ways">
+						<div class="btn-bar order-item clear">
+							<a href="javascript:;" class="cancel fl">取消</a>
+							<a href="javascript:;" class="sure fr" id="choose-send-sure">确定</a>
+						</div>
+						<div class="send-way order-item selected">
+							<input type="radio" name="shipping-time" value="option1"/>
+							<label>收货时间不限</label>
+						</div>
+						<div class="send-way order-item">
+							<input type="radio" name="shipping-time" value="option2"/>
+							<label>仅工作日送货</label>
+						</div>
+						<div class="send-way order-item">
+							<input type="radio" name="shipping-time" value="option3"/>
+							<label>仅双休与节假日收货</label>
+						</div>
+					</div>
+				</section>
+			</form>
+		</div>
+		<section class="ui-bg address-list-box">
+			<div class="ui-bottom-box">
+			<div class="ui-bottom-title clear">
+				<a class="ui-bottom-cancel fl">取消</a>
+				<a class="ui-bottom-sure fr" id="address-sure">确定</a>
+			</div>
+			<div class="ui-bottom-content">
+				<ul class="address-list-box">
+					<li class="address-item selected">
+						<div class="h2">
+							<span class="name">张三三</span>
+							<span class="telephone">18888888888</span>
+						</div>
+						<div class="address">
+							上海市浦东新区科苑路399号10号楼5层1551上海市浦东新区科苑路399号10号楼5层1551上海市浦东新区科苑路399号10号楼5层1551
+						</div>
+						<div class="address-edit">		
+							<span>编辑</span>
+						</div>
+					</li>
+					<li class="address-item">
+						<div class="h2">
+							<span class="name">张三三</span>
+							<span class="telephone">18888888888</span>
+						</div>
+						<div class="address">
+							上海市浦东新区科苑路399号10号楼5层1551
+						</div>
+						<div class="address-edit">
+							<span>编辑</span>
+						</div>
+					</li>	
+				</ul>
+				<a class="add-address-box">添加地址</a>
+			</div>
+		</div>
+		</section>
+		
+
+	</section>
+
+
+	<script src="../src/frozenui-1.3.0/lib/zepto.min.js"></script>
+	<script src="../src/frozenui-1.3.0/js/frozen.js"></script>
+	<script src="../src/js/mobile.ui.checkout.js"></script>
+	<script src="../src/js/mobile.ui.checkout.js"></script>
+</body>
+</html>

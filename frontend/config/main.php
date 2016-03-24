@@ -1,0 +1,62 @@
+<?php
+
+$params = array_merge(
+        require(__DIR__ . '/../../common/config/params.php'), require(__DIR__ . '/../../common/config/params-allinone.php'), require(__DIR__ . '/../../common/config/params-local.php'), require(__DIR__ . '/params.php'), require(__DIR__ . '/params-local.php')
+);
+
+return [
+    'id' => 'app-frontend',
+    'basePath' => dirname(__DIR__),
+    'bootstrap' => ['log'],
+    'language' => 'zh-CN',
+    'controllerNamespace' => 'frontend\controllers',
+    'defaultRoute' => 'site/index', //act/page for cms
+    'components' => [
+
+        'view' => [
+            'theme' => [
+                'pathMap' => ['@app/views' => '@app/themes/ftzmallnew'],
+            //'baseUrl' => '@web/themes/ftzmallold',
+            ],
+        ],
+        'log' => [
+            'traceLevel' => YII_DEBUG ? 1 : 0,
+            'targets' => [
+//                [
+//                    'class' => 'yii\log\FileTarget',
+//                    'levels' => ['profile'],
+//                    'logVars'=>[],
+//                    'categories' => ['application'],
+//                ],
+                [
+                    'class' => 'yii\log\FileTarget',
+                    'levels' => ['error', 'warning', YII_DEBUG ? 'info' : 'error'],
+                    //'logVars'=>[],  //全局变量
+                ]
+                , [
+                    'class' => 'yii\log\EmailTarget',
+                    'levels' => ['error'],
+                    'categories' => ['yii\test\*'],
+                    'message' => [
+                        'from' => ['ftzmall@sohu.com'],
+                        'to' => ['ftzmall@sohu.com', 'jiayuan422@126.com'],
+                        'subject' => 'Test errors at ftzmall.com',
+                    ],
+                ],
+            ],
+        ],
+        'errorHandler' => [
+            'errorAction' => 'site/error',
+        ],
+    ],
+    //从这里开始代表一个一个的独立模块，如果是简单的页面，可以统一放到act的controller简历，如果是复杂的，可以重新创建模块
+    'modules' => [
+        'act2016' => [
+            'class' => 'frontend\modules\act2016\Act',
+        ],
+        'actadmin' => [
+            'class' => 'frontend\modules\actadmin\Actadmin',
+        ],
+    ],
+    'params' => $params,
+];

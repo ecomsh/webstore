@@ -1,0 +1,166 @@
+.form-inline .form-group {
+    margin-bottom: 0;
+    vertical-align: top;
+}
+
+label.control-label{
+	padding-left:5px;
+	padding-right:5px;
+}
+
+
+td.item_num, th.item_num{
+    width:20%;
+}
+
+td.narrow,th.narrow{
+    width:120px;
+}
+
+.input-xm{
+    height:22px;
+    width:32px;
+    padding:0;
+    text-align:center;
+}
+
+
+input.text{
+    border:none;
+    width:100%;
+    outline:none;
+    background-color:transparent;
+}
+
+
+
+textarea.text{
+    border:none;
+    width:100%;
+    height:auto;
+    outline:none;
+    resize:none;
+    overflow:visible;
+    background-color:transparent;
+
+}
+
+div.addresslist{
+    position: relative;
+    font-size:12px;
+    width:100%;
+    min-height:124px;
+    border:solid 1px #ccc;
+    margin-bottom:15px;
+    overflow: hidden;
+}
+
+div.addr{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 237px;
+    height: 106px;
+    margin: 3px 14px 14px 3px;
+    color: #666;
+    cursor: pointer;
+}
+
+div.add_addr{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 237px;
+    height: 106px;
+    margin: 14px 4px 0px;
+    color: #666;
+    cursor: pointer;
+}
+
+#addr-hide-btn{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+div.addr>div.inner{
+    z-index: 2;
+    position: relative;
+    padding: 8px 12px;
+    border: 3px dashed #999;
+    overflow: hidden;
+}
+
+div.addr.active>div.inner{
+    border: 3px dashed #31708f;
+    background-color:#d9edf7;
+}
+
+div.addr:hover>div.inner{
+    background-color:#d9edf7;
+}
+
+div.addr>div.inner>div.addr-head{
+    width: 100%;
+    border-bottom: 1px solid #f2f2f2;
+    padding: 0 0 5px;
+    margin-bottom: 5px;
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+div.addr>div.inner>div.addr-body{
+    height: 55px;
+    overflow: hidden;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+div.addr>div.inner>div.addr-toolbar{
+    visibility:hidden;
+}
+
+div.addr.active>div.inner>div.addr-toolbar{
+    visibility:visible;
+}
+
+.orderlist{
+    height:400px;
+    overflow-y:scroll;
+}
+
+div#loader{
+    display:none;
+    position:absolute;
+    left:49%;
+    top:400px;
+    width:32px;
+    height:32px;
+    background-image:url(loader.gif);
+}
+
+
+form#confirmForm{
+    display:none;
+}
+
+
+form#orderForm tr td textarea.name{
+    width: 80%;
+}
+
+form#confirmForm tr td input.id{
+    width: 100%;
+}
+
+
+/*.add_num, .del_num{
+    display:inline-block;
+    height: 22px;
+    width: 22px;
+    padding: 0;
+    text-align: center;
+}*/

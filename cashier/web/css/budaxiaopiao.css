@@ -1,0 +1,169 @@
+.box{
+		width:100%;
+		height:328px;
+		margin:0 auto;
+		position: relative;
+	}
+	header{
+		color:#F5FAFA;
+		background:#27B1B4;
+		font-size: 1.2em
+	}
+	.top{
+		height:20px;
+		font-size:0.8em;
+		line-height:2em;
+		padding-left:17px;
+		margin-left:20px;
+		background:url(../images/top_icon.png) no-repeat left bottom;
+	}
+	.inheader{
+		height:60px;
+		padding:0 20px 20px;
+		border-top: 1px solid #5DC5C8;
+		border-bottom: 1px solid #5DC5C8;
+		position: relative;
+	}
+	.hd_left{
+		position: absolute;
+		left:20px;
+		top:0;
+		z-index: 2;
+	}
+	.sousuo{
+		float:right;
+		padding-top:30px;
+		height:50px;
+		margin-left:60px;
+		text-align:center;
+	}
+	.sousuo input{
+		height:25px;
+		width:155px;
+	}
+	.sousuo button{
+		color:#F5FAFA;
+		height:25px;
+		line-height: 25px;
+		padding:0 8px;
+		background: #DC6566;
+	}
+	h1{
+		float:left;
+		height:60px;
+		padding-top:20px;
+		font-size:2em;
+		line-height:30px;
+	}
+	h1 span{
+		font-weight:normal;
+		font-size:0.8em;
+	}
+	.list{
+		height:80px;
+		position: absolute;
+		right:20px;
+		top:0;
+	}
+	.list li{
+		height:65px;
+		float:left;
+		text-align:center;
+		padding:15px 15px 0;
+		cursor:pointer;
+	}
+	.list li.current{
+		background-color:#009B9F;
+	}
+	.list li:nth-child(2){
+		height:59px;
+		padding-top:21px;
+	}
+	.list li:last-child{
+		float:right;
+		margin-right:0;
+		margin-left:60px;
+	}
+	.zheng{
+		padding:0 20px;
+	}
+	h3{
+		font-size:1.2em;
+		padding:10px 0;
+		font-weight:normal;
+		color:#27B1B4;
+	}
+	h3 span{
+		display:inline-block;
+		width:19px;
+		height:19px;
+		background:url(../images/main_1.png) no-repeat center center;
+	}
+	table{
+		width:100%;
+		color:#464646;
+		border-collapse: collapse;
+		border-color:#E8E8E8;
+
+	}
+	td,th {
+		width:25%;
+		height:30px;
+		text-align:center;
+		border-color:#E8E8E8;
+		font-weight: normal;
+	}
+	table thead tr{
+		height:38px;
+		background: #F8F8F8;
+		font-size: 1.5em;
+	}
+	tbody tr:nth-child(even){background: #F8F8F8;}
+	tr td a{
+		display: block;
+		background: #27B1B4;
+		text-decoration: none;
+		color:#fff;
+		width:80px;
+		padding: 4px 0;
+		margin:0 auto;
+	}
+	tr td a:hover{
+		text-decoration:none;
+	}
+	.foot .yema{
+		float:right;
+		padding-top:10px;
+	}
+	.foot .yema li{
+		float:left;
+		text-align:center;
+		margin-right:5px;
+	}
+	.yema span{color:#2D87C3;}
+	.yema .yeshu{
+		width:18px;
+		height:15px;			
+		border: 1px solid #D2D2D2;			
+	}
+	.yema li input{
+		width:18px;
+		height:15px;
+		text-align: center;
+		border: 1px solid #D2D2D2;
+	}
+	.yema .yeshu:hover{
+		color:#fff;
+		border-color:#27B1B4;
+		background: #27B1B4;
+		cursor:pointer;
+	}
+	.yema li.last{
+		width:35px;
+		height:18px;
+		line-height:18px;
+		color:#fff;
+		background: #27B1B4;
+		margin-right:0;
+		cursor: pointer;
+	}

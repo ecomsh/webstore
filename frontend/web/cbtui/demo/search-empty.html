@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<title>ftzmall-search</title>
+		<meta name="viewport" content="width=1200" />
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="">
+		<link rel="stylesheet" href="../src/bootstrap-3.3.5/dist/css/bootstrap.css"/>
+		<link rel="stylesheet" href="../src/css/common.css"/>
+		<link rel="stylesheet" href="../src/css/layout.css"/>
+		<link rel="stylesheet" href="../src/css/search.css"/>
+	</head>
+	<body>
+		<div class="topbar">
+			<div class="container">
+				<div class="pull-left topbar-left">
+				<!-- 未登录状态start -->
+					<!-- 欢迎来到上海外高桥进口商品网！
+					<a class="login-href" href="">请登录</a>|<a class="registe-href" href="">快速注册</a> -->
+				<!-- 未登录状态end -->
+				<!-- 已登录状态start -->
+					<!-- username显示的优先级：用户名>手机>邮箱,点击在新窗口打开用户中心页面 -->
+					欢迎您，<a href="" target="_blank" class="topbar-username">15800000000</a> | <a href="" class="quit">退出</a>
+				<!-- 已登录状态end -->
+				</div>
+				<div class="pull-right topbar-right">
+					<ul class="nav">	
+						<li class="pull-left"><a href="">订单查询　|　</a></li>
+						<!-- <li class="pull-left"><a href="">我的收藏　|　</a></li> -->
+						<li class="pull-left"><a href="">个人中心</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="header">
+			<div class="container clearfix">	
+				<div class="pull-left logo">
+					<a href="index.html"><img src="../src/images/logo.png"></a>
+				</div>
+				<div class="pull-right">
+					<div class="input-group search-group">
+						<input type="text" class="form-control header-search" placeholder="品牌搜索" name="" value=""/>
+						<span class="input-group-btn">
+							<button class="btn btn-search" type="button">搜索</button>
+						</span>
+					</div>
+					<ul class="nav search-nav">
+						<li class="pull-left"><a href="">保湿</a>|</li>
+						<li class="pull-left"><a href="">面膜</a>|</li>
+						<li class="pull-left font-color1"><a href="">洗面奶</a>|</li>
+						<li class="pull-left"><a href="">补水</a>|</li>
+						<li class="pull-left"><a href="">香水</a>|</li>
+						<li class="pull-left"><a href="">眼霜</a>|</li>
+						<li class="pull-left"><a href="">口红</a>|</li>
+						<li class="pull-left font-color1"><a href="">护肤套装</a></li>
+					</ul>
+				</div>	
+			</div>
+		</div>
+		<div class="nav-con">
+			<div class="container clearfix">
+				<div class="pull-left">
+					<ul class="nav nav-ul">
+						<li class="bg-color1 pull-left"><a href="index.html">首页</a></li>
+						<li class="pull-left"><a href="">美妆个护</a></li>
+						<li class="pull-left"><a href="">母婴益智</a></li>
+						<li class="pull-left"><a href="">食品保健</a></li>
+						<li class="pull-left"><a href="">国际轻奢</a></li>
+					</ul>
+				</div>
+				<div class="pull-right">
+					<div class="nav-car navbar-right">
+						购物车<span class="car-count">0</span>>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div class="container search-empty">
+			<div class="empty-div">
+				<span class="empty-bg">
+					<p class="font-size2">抱歉，没有找到与<span class="font-color1"> “浪琴手表” </span>相关的产品</p>
+					<p>建议您：</p>
+					<p>1、看看输入的文字是否有误</p>
+					<p>2、拆分要搜索的关键词，分成几个词语再次搜索</p>
+					<span class="research-text">重新搜索</span>
+					<div class="input-group research-group">
+					<input type="text" class="form-control research-input" placeholder="浪琴手表" name="" value=""/>
+					<span class="input-group-btn">
+						<button class="btn btn-research" type="button"></button>
+					</span>
+					</div>	
+				</span>
+			</div>
+			<div class="guess-like">
+				<h4 class="guesslike-title">
+					猜你喜欢<span>根据你的浏览记录推荐的商品</span>
+					<a href="javascript:;" class="refresh pull-right">换一批</a>
+				</h4>
+				<ul class="row clearfix">
+					<li class="guess-pro pull-left">
+						<img src="../src/images/guess-like.png">
+						<div class="guess-text">
+							<a href="">
+								<span class="font-color1">2件组合装</span>|Merries花王妙而舒花王妙而舒
+							</a>
+							<p class="font-color1">直降价，立省10元</p>
+						</div>
+						<div class="iteminfo">
+							<p>
+								<span class="price">￥176</span> <span class="price-line font-color2">￥539</span>
+							</p>
+							<a href="" class="comment">593 人已评价</a>
+						</div>
+					</li>
+					<li class="guess-pro pull-left">
+						<img src="../src/images/guess-like.png">
+						<div class="guess-text">
+							<a href="">
+								<span class="font-color1">2件组合装</span>|Merries花王妙而舒花王妙而舒
+							</a>
+							<p class="font-color1">直降价，立省10元</p>
+						</div>
+						<div class="iteminfo">
+							<p>
+								<span class="price">￥176</span> <span class="price-line font-color2">￥539</span>
+							</p>
+							<a href="" class="comment">593 人已评价</a>
+						</div>
+					</li>
+					<li class="guess-pro pull-left">
+						<img src="../src/images/guess-like.png">
+						<div class="guess-text">
+							<a href="">
+								<span class="font-color1">2件组合装</span>|Merries花王妙而舒花王妙而舒
+							</a>
+							<p class="font-color1">直降价，立省10元</p>
+						</div>
+						<div class="iteminfo">
+							<p>
+								<span class="price">￥176</span> <span class="price-line font-color2">￥539</span>
+							</p>
+							<a href="" class="comment">593 人已评价</a>
+						</div>
+					</li>
+					<li class="guess-pro pull-left">
+						<img src="../src/images/guess-like.png">
+						<div class="guess-text">
+							<a href="">
+								<span class="font-color1">2件组合装</span>|Merries花王妙而舒花王妙而舒
+							</a>
+							<p class="font-color1">直降价，立省10元</p>
+						</div>
+						<div class="iteminfo">
+							<p>
+								<span class="price">￥176</span> <span class="price-line font-color2">￥539</span>
+							</p>
+							<a href="" class="comment">593 人已评价</a>
+						</div>
+					</li>
+					<li class="guess-pro pull-left">
+						<img src="../src/images/guess-like.png">
+						<div class="guess-text">
+							<a href="">
+								<span class="font-color1">2件组合装</span>|Merries花王妙而舒花王妙而舒
+							</a>
+							<p class="font-color1">直降价，立省10元</p>
+						</div>
+						<div class="iteminfo">
+							<p>
+								<span class="price">￥176</span> <span class="price-line font-color2">￥539</span>
+							</p>
+							<a href="" class="comment">593 人已评价</a>
+						</div>
+					</li>
+				</ul>
+				<h4 class="guesslike-title">
+					大家都在买<span>全网最热门的商品推荐</span>
+				</h4>
+				<ul class="row clearfix">
+					<li class="guess-pro pull-left">
+						<img src="../src/images/guess-like.png">
+						<div class="guess-text">
+							<a href="">
+								<span class="font-color1">3件组合装</span>|Merries花王妙而舒花王妙而舒
+							</a>
+							<p class="font-color1">直降价，立省10元</p>
+						</div>
+						<div class="iteminfo">
+							<p>
+								<span class="price">￥176</span> <span class="price-line font-color2">￥539</span>
+							</p>
+							<a href="" class="comment">593 人已评价</a>
+						</div>
+					</li>
+					<li class="guess-pro pull-left">
+						<img src="../src/images/guess-like.png">
+						<div class="guess-text">
+							<a href="">
+								<span class="font-color1">2件组合装</span>|Merries花王妙而舒花王妙而舒
+							</a>
+							<p class="font-color1">直降价，立省10元</p>
+						</div>
+						<div class="iteminfo">
+							<p>
+								<span class="price">￥176</span> <span class="price-line font-color2">￥539</span>
+							</p>
+							<a href="" class="comment">593 人已评价</a>
+						</div>
+					</li>
+					<li class="guess-pro pull-left">
+						<img src="../src/images/guess-like.png">
+						<div class="guess-text">
+							<a href="">
+								<span class="font-color1">2件组合装</span>|Merries花王妙而舒花王妙而舒
+							</a>
+							<p class="font-color1">直降价，立省10元</p>
+						</div>
+						<div class="iteminfo">
+							<p>
+								<span class="price">￥176</span> <span class="price-line font-color2">￥539</span>
+							</p>
+							<a href="" class="comment">593 人已评价</a>
+						</div>
+					</li>
+					<li class="guess-pro pull-left">
+						<img src="../src/images/guess-like.png">
+						<div class="guess-text">
+							<a href="">
+								<span class="font-color1">2件组合装</span>|Merries花王妙而舒花王妙而舒
+							</a>
+							<p class="font-color1">直降价，立省10元</p>
+						</div>
+						<div class="iteminfo">
+							<p>
+								<span class="price">￥176</span> <span class="price-line font-color2">￥539</span>
+							</p>
+							<a href="" class="comment">593 人已评价</a>
+						</div>
+					</li>
+					<li class="guess-pro pull-left">
+						<img src="../src/images/guess-like.png">
+						<div class="guess-text">
+							<a href="">
+								<span class="font-color1">2件组合装</span>|Merries花王妙而舒花王妙而舒
+							</a>
+							<p class="font-color1">直降价，立省10元</p>
+						</div>
+						<div class="iteminfo">
+							<p>
+								<span class="price">￥176</span> <span class="price-line font-color2">￥539</span>
+							</p>
+							<a href="" class="comment">593 人已评价</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		
+		<div class="footer">
+			<div class="footer-top container">
+				<img src="../src/images/map.png" class="map-img">
+				<ul class="clearfix">
+					<li class="pull-left map-inf">
+						<span class="map-title">FTZMALL</span>
+						<ul class="map-ul">
+							<li><a href="">购物流程</a></li>
+							<li><a href="">发票政策</a></li>
+							<li><a href="">安全保证</a></li>
+							<li><a href="">服务保证</a></li>
+							<li><a href="">意见与建议</a></li>
+						</ul>
+					</li>
+					<li class="pull-left map-inf">
+						<span class="map-title">配送服务</span>
+						<ul class="map-ul">
+							<li><a href="">配送范围及运费</a></li>
+							<li><a href="">配送服务</a></li>
+							<li><a href="">验货与签收</a></li>
+						</ul>
+					</li>
+					<li class="pull-left map-inf">
+						<span class="map-title">支付方式</span>
+						<ul class="map-ul">
+							<li><a href="">DIG卡支付</a></li>
+							<li><a href="">在线支付</a></li>
+							<li><a href="">组合支付</a></li>
+						</ul>
+					</li>
+					<li class="pull-left map-inf">
+						<span class="map-title">售后服务</span>
+						<ul class="map-ul">
+							<li><a href="">退换货政策</a></li>
+							<li><a href="">退换货说明</a></li>
+							<li><a href="">退换货流程</a></li>
+							<li><a href="">退款说明</a></li>
+							<li><a href="">常见问题</a></li>
+						</ul>
+					</li>
+					<li class="pull-left map-inf">
+						<span class="map-title">自贸区直购</span>
+						<ul class="map-ul">
+							<li><a href="">消费者告知书</a></li>
+							<li><a href="">海关通关及关税</a></li>
+							<li><a href="">自贸区直够购物流程</a></li>
+							<li><a href="">自贸区直购退换货政策</a></li>
+							<li><a href="">自贸区直购退换货流程</a></li>
+							<li><a href="">自贸区直购退款说明</a></li>
+						</ul>
+					</li>
+					<li class="pull-left code-inf">
+						<span class="map-title">FTZMALL微信</span>
+						<img src="../src/images/code.png">
+						<div class="telephone">
+							400-188-5179
+							<p>周一至周五:9:00-17:00</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="footer-bottom">
+				<p class="footer-bottom-p1"><a href="">关于我们</a>|<a href="">品牌入驻</a>|<a href="">联系我们</a>|<a href="">免责声明</a>|<a href="">隐私条款</a>|<a href="">完税价格表</a>|<a href="">诚聘英才</a>|<a href="">快递 100</a></p>
+				<p class="footer-bottom-p2">Copyright © 2006 - 2015上海外高桥进口商品网版权所有　沪ICP备11030945号-3   增值电信业务经营许可证　沪B-20110100</p>
+				<p>
+					<img src="../src/images/footer1.png"><img src="../src/images/footer2.png">
+				</p>
+			</div>
+		</div>
+		
+		
+		<script src="../src/js/jquery-1.11.3.min.js"></script>
+		<script src="../src/bootstrap-3.3.5/dist/js/bootstrap.js"></script>
+
+	</body>
+</html>

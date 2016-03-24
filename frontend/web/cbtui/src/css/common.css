@@ -1,0 +1,15 @@
+*{ padding: 0; margin: 0; list-style: none; border: 0;}
+html, body, ul, ol, li, h1, h2, h3, h4, h5, h6, p ,dl, dt, dd{ margin: 0; padding: 0; }
+ul, ol, li { list-style: none; }
+textarea{ outline:none; resize:none;}
+a{ text-decoration: none;}
+img{ vertical-align:middle; border:none;}
+body{font-size:12px; font-family:"Microsoft YaHei"}
+.container{max-width: 1120px;min-width: 1120px;width:1120px;}
+.font-color1{color:#ed145b;}
+.font-color2{color:#4c4c4c;}
+.font-color3{color:#fe6397!important;}
+.font-color4{color:#e81a62!important;}
+.bg-color1{background-color:#ed145b;}
+.font-size1{font-size: 12px;}
+

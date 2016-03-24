@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+这是一个UI标准页面的demo，请严格按照标准进行排版
+-->
+<html lang="zh-CN">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <!--描述，作者，favicon.ico需要留-->
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="../../favicon.ico">
+        <!--引入css文件,bootstrap.css放在前面,common.css公用css文件，XXX.css当前页面需要的组件css，common.css和XXX.css中可以覆盖重写bootstra.css里的样式-->
+        <link rel="stylesheet" href="src/bootstrap-3.3.5/dist/css/bootstrap.css"/>
+        <link rel="stylesheet" href="src/css/common.css"/>
+    </head>
+    <body>
+        <div class="topbar">
+            <div class="container">此处放登录等信息</div>
+        </div>
+        
+        <div class="header">
+            <div class="container">此处放logobox和搜索部分</div>
+        </div>
+        
+        <div class="nav">
+            <ul class="container">
+                <li>first</li>
+                <li>second</li>
+                <li>third</li>
+
+            </ul>
+        </div>
+        
+        <div class="banner">
+            banner图，有可能是轮播的，宽度目前设计100%；
+        </div>
+        
+        <div class="container">
+            <!-- 此处按需加载用或不用bootstrap分栏的这种布局。divname-left,divname-center,divname-left是对div的命名divname在前，位置在后，中间用-连接-->
+            <div class="row">
+                <div class="col-lg-4 divname-left">
+                    <button class="btn btn-primary" type="button" data-toggle="popover" data-content="我是bootstrap弹出的">点我弹出bootstrap样式框</button>
+                </div>
+                <div class="col-lg-4 divname-center">
+                    <button class="alert-btn">点我弹出alert框</button>
+                </div>
+                <div class="col-lg-4 divname-right">
+                    <button type="submit" id="jsonbtn" onclick="getajax()">按钮</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="map">
+            <div class="container">
+                此处放配送服务等信息
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="container">
+                此处放底部版本信息等
+            </div>
+        </div>
+        
+        <!--此处引入jquery文件（需大于1.9版本），bootstrap.js文件，common.js引入页面需要的js组件-->
+        <script src="src/js/jquery-1.11.3.min.js"></script>
+        <script src="src/bootstrap-3.3.5/dist/js/bootstrap.js"></script>
+        <!--common.js存放公共的js，cbt.xx.js存放功能性的js,cbt.ui.js存放ui美化方面的js-->
+        <script src="src/js/common.js"></script>
+        <script src="src/js/cbt.ui.xx.js"></script>
+        <script src="src/js/cbt.ft.xx.js"></script>
+        <script>
+            //全局变量传参/局部传参
+            var getajax=['params1'=>'a','params2'=>'3'];
+        </script>
+        
+    </body>
+</html>

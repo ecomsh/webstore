@@ -1,0 +1,12 @@
+.header { border-bottom: 2px #e60019 solid; }
+
+.login_body { padding: 0; }
+.login_body .ppsc-login-panel { background: #efefef; }
+.login_body .ppsc-login-panel h2 { line-height: 50px; padding-left: 40px; font-size: 18px; }
+.login_body .ppsc-login-panel .login_ul { padding: 0 40px 40px 40px; margin: 0; }
+.login_body .ppsc-login-panel .btn-login { margin: 0; background: #e60019; height: auto; line-height: auto; padding: 10px 50px; font-size: 18px; }
+.login_body .ppsc-login-panel .x-input { width: 230px; }
+
+.ppsc-signup-panel { background: #efefef; }
+.ppsc-signup-panel h2 { line-height: 50px; padding-left: 40px; font-size: 18px; }
+.ppsc-signup-panel .reg_button { margin: 20px 0 0 150px; background: #e60019; height: auto; line-height: auto; padding: 10px 50px; font-size: 18px; }

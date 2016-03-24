@@ -1,0 +1,7 @@
+.form-info {border:solid .0625rem #ddd;overflow:hidden;display: block; width:90%; margin:0 auto; margin-top:1em;}
+.li-info {border-bottom:solid .0625rem #ddd;line-height:2.8em;overflow:hidden;width:95%; margin:0 auto;}
+.item-name {width: 30%;float: left}
+.li-info input{line-height: 3em}
+.li-info select{line-height: 2.8em}
+.help-block-error {color: #ed145b}
+.submit-button {display:block;width:90%;height:2.5rem;border-radius:.25rem;background:#ed145b;line-height:2.5rem;text-align:center;color:#fff;margin:1em auto;}

@@ -1,0 +1,73 @@
+body{background:#fff;}
+.login-leftbox{width:647px;display:block;float:left;margin-top:30px;margin-left:30px}
+.login-rightbigbox{width:392px;height:585px;display:block;float:right;margin-top:30px;margin-right:10px;background:url('../images/login-right.png') 0 0 no-repeat;}
+.login-rightbox{width:311px;margin-left:43px}
+.font-20{font-size:20px}
+.font-12{font-size:12px}
+.font-gray{color:#999}
+.font-red{color:#e81a62}
+.login-right-topbox{width:311px;height:45px;float:left;padding-top:10px}
+.login-right-topbox .pd-130{padding-left:120px}
+.login-right-topbox a {text-decoration:none;padding-left:5px}
+.login-right-topbox a:hover{color:#e81a62}
+.input-box{width:309px;height:39px;display:block;float:left;border:solid 1px #ededed;padding-left:5px;margin-top:22px;margin-bottom:22px;position:relative}
+.input-box-short{width:156px;height:39px;display:block;clear:both;float:left;border:solid 1px #ededed;padding-left:5px;margin-top:22px;margin-bottom:22px}
+.input-box-short2{width:135px;height:39px;display:block;clear:both;float:left;border:solid 1px #ededed;padding-left:5px;margin-top:22px;margin-bottom:22px}
+.getValiCode-box{width:128px;height:43px;disolay:blck;border:solid 1px #ededed;float:left;margin-top:20px;margin-left:22px}
+.getValiCode{height:43px;line-height:43px;width:128px;display:block;text-align:center;text-decoration:none;background-color:#f6f6f6;color:#777}
+.getValiCode-box a {text-decoration:none;color:#777}
+.getValiCode-box a:honver {text-decoration:none;color:#777}
+.btn{width:311px;height:40px;display:block;float:left;background-color:#e81a62;color:#fff;margin-top:23px}
+.btn:hover{color:#fff}
+.login-right-bottombox{clear:both;width:311px;height:45px;line-height:45px;float:left;padding-left:10px;text-align:left}
+.login-right-bottombox a:hover{color:#e81a62;text-decoration:none;}
+
+input[type=radio]{-webkit-filter:opacity(0);-moz-filter:opacity(0);-ms-filter: opacity(0);filter:opacity(0);filter:alpha(opacity=0);opacity: 0;margin-top:2px}
+.radio{float:left;margin:0px;width:130px;padding:0;text-align:left;}
+.radio + .radio{margin-top:0px;width:130px;}
+.radio label{top:10px;background: url(../images/radiobtn-bg.png) no-repeat;}
+.radio .checked{background: url(../images/radiobtn-checked.png) no-repeat!important;}
+.form-group{clear:both;position:relative;float:left;margin-bottom:0px}
+.help-block{height:24px;position:absolute;top:56px;left:0;padding-left:3px;line-height:24px;color:#a94442}
+.has-error .input-box{border:solid 1px #a94442;}
+.has-error .input-box-short{border:solid 1px #a94442;}
+.has-error .input-box-short2{border:solid 1px #a94442;}
+.passwordpower{display:block;float:left;position:relative;}
+.passwordpower span{width:30px;height:10px;display:block;float:left;background-color:#d4d4d2;margin-right:5px}
+.passwordpower .active{background-color:#ff0000;}
+.passwordpower font{color:#ff0000;position:absolute;top:-4px}
+.field-registeruserform-gender .help-block{position:absolute;top:8px;}
+/*.help-block{background: url(../images/login-error.png) 0 0 no-repeat; background-position:0 -17px;height:24px;position:absolute;top:-14px;left:0;padding-left:17px;line-height:24px;border:1px solid #91daf2;backgroun-color:#e7f9ff}*/
+
+
+.margin-r0{margin-right:0}
+.margin-r30{margin-right:30px}
+.login-nav{display:block;float:left;margin-top:30px;}
+.login-member{background: url(../images/login-member.png) 6px 8px no-repeat;padding-left:30px}
+.login-password{background: url(../images/login-password.png) 6px 8px no-repeat;padding-left:30px}
+.getverifycode-box{width:82px;height:52px;disolay:blck;border:solid 1px #ededed;float:left;margin-top:16px;margin-left:22px}
+.getverifycode-a{width:37px;height:24px;disolay:blck;float:left;margin-top:30px;margin-left:10px;}
+.getverifycode-a a{text-decoration:none;color:#e81a62}
+
+input[type=checkbox]{-webkit-filter:opacity(0);-moz-filter:opacity(0);-ms-filter: opacity(0);filter:opacity(0);filter:alpha(opacity=0);opacity: 0;margin-top:2px;}
+.checkbox{float:left;margin:0px;width:130px;padding:0;text-align:left;}
+.checkbox + .checkbox{margin-top:0px;width:130px;}
+.checkbox label{top:10px;background: url(../images/check-bg.png) 0 2px no-repeat;}
+.checkbox .checked{background: url(../images/checkbg-checked.png) 0 2px no-repeat!important;}
+
+.iconAccout {display:block;width:311px;height:43px;margin-top:20px;float:left;position:relative}
+.iconAccout div { padding-bottom: 10px; padding-top: 5px; padding-left:5px}
+.iconAccout span {position:absolute; top:45px;}
+.iconAccout span i {width:18px; height:17px; display:inline-block; position:absolute;left:25px; top:-1px; background-image:url(../images/icon_light.jpg); background-position: -274px -23px;}
+.iconAccout a { text-indent: -9999px;  background-image: url(../images/icon_light.jpg);  background-repeat: no-repeat;  display: inline-block;  width: 43px;  height: 43px;  margin-right: 12px;  float: left;}
+.iconAccout .a2 {  background-position: -57px 0;}
+.iconAccout .a3 {  background-position: -114px 0;}
+.iconAccout .a4 {  background-position: -169px 0;}
+.iconAccout .a5 {  background-position: -224px 0;}
+.iconAccout .a6 {  background-position: 0 -54px;}
+.iconAccout .a7 {  background-position: -57px -54px;}
+.iconAccout .a8 {  background-position: -114px -54px;}
+.iconAccout .a9 {  background-position: -169px -54px;}
+.iconAccout .a10 {  background-position: -224px -54px;}
+.iconAccout p {display:block;float:left}
+.iconAccout .icon-p {padding-top:10px}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<title>ftzmall-checkout</title>
+		<meta name="viewport" content="width=1200" />
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="">
+		<link rel="stylesheet" href="../src/bootstrap-3.3.5/dist/css/bootstrap.css"/>
+		<link rel="stylesheet" href="../src/css/common.css"/>
+		<link rel="stylesheet" href="../src/css/layout.css"/>
+		<link rel="stylesheet" href="../src/css/pay.method.css"/>
+	</head>
+	<body class="pay-bg">
+		<div class="topbar">
+			<div class="container">
+				<div class="pull-left topbar-left">
+				<!-- 未登录状态start -->
+					<!-- 欢迎来到上海外高桥进口商品网！
+					<a class="login-href" href="">请登录</a>|<a class="registe-href" href="">快速注册</a> -->
+				<!-- 未登录状态end -->
+				<!-- 已登录状态start -->
+					<!-- username显示的优先级：用户名>手机>邮箱,点击在新窗口打开用户中心页面 -->
+					欢迎您，<a href="" target="_blank" class="topbar-username">15800000000</a> | <a href="" class="quit">退出</a>
+				<!-- 已登录状态end -->
+				</div>
+				<div class="pull-right topbar-right">
+					<ul class="nav">	
+						<li class="pull-left"><a href="">订单查询　|　</a></li>
+						<li class="pull-left"><a href="">我的收藏　|　</a></li>
+						<li class="pull-left"><a href="">个人中心</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="header">
+			<div class="container clearfix">	
+				<div class="pull-left logo">
+					<a href="index.html"><img src="../src/images/logo.png"></a>
+				</div>
+				<div class="pull-right checkout-right">
+					<img src="../src/images/pay/pay-lc.png">
+				</div>	
+			</div>
+		</div>
+		<div class="container checkout-container">
+			<div class="orders-success">
+				<h4>订单提交成功，现在只差最后一步了！</h4>
+				<p>请尽快完成付款，活动结束或则商品售罄后您的订单将被取消！</p>
+				<span>SkinCode雪肤密码高机能保湿修护唇膏3.5g/支  FTZMALL上海保税仓发货</span>
+				<span>收货信息：上海市，上海市， 浦东新区，外高桥保税区富特西三路77号10栋2F ，手机：15800000000</span>
+				<label class="pull-right"><a href="#">我的订单></a></label>
+			</div>
+			<div class="pay-price">
+				<h4 class="pay-money">支付金额：<i>￥98.00</i>
+					<label class="pull-right">
+						<span href="#" class="thereason" data-toogle="popover" data-placement="bottom" data-content="上海外高桥进口商品网商品需清关后入境，根据海关需求，需要您填写您的身份证进行个人物品入境申报。<br/>因为海关会对您的身份信息进行验证，请确保填写正确，否则商品可能无法正常通关。<br/>身份证信息将加密保管，绝不对外泄漏。">关于实名认证？
+					    </span>
+					</label>
+				</h4>
+				<div class="alipay-div">
+					<label class="radio-inline alipay1">
+						<span class="radio-pay-bg">
+							<input type="radio" name="pay-method" id="pay-method1" class="radio-pay" value="">
+						</span>
+					</label><br>
+					<label class="radio-inline alipay2">
+						<span class="radio-pay-bg radio-time-bg-checked">
+							<input type="radio" name="pay-method" id="pay-method2" class="radio-pay" value="">
+						</span>
+					</label>
+				</div>
+				<button type="button" class="btn btn-pay"  data-toggle="modal" data-target="#myModal" >用支付宝去支付</button>
+			</div>
+			<div class="modal fade in" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="false">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content pay-modal">
+						<div class="modal-header pay-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							<p class="add-title pay-color">提示</p>
+						</div>
+						<div class="modal-body modal-p">
+							<h4 class="pay-title">请在第三方支付页面完成付款<br>付款完成前请不要关闭此窗口</h4>
+							<div class="pay-btn">
+								<button type="button" class="btn btn-paysucc">我已付款成功</button>
+								<button type="button" class="btn btn-default btn-payfail">付款遇到问题，重新支付</button>
+							</div>
+							<p class="con-service"><a href="#">> 联系人工服务</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="footer">
+			<div class="footer-top container">
+				<img src="../src/images/map.png" class="map-img">
+				<ul class="clearfix">
+					<li class="pull-left map-inf">
+						<span class="map-title">FTZMALL</span>
+						<ul class="map-ul">
+							<li><a href="">购物流程</a></li>
+							<li><a href="">发票政策</a></li>
+							<li><a href="">安全保证</a></li>
+							<li><a href="">服务保证</a></li>
+							<li><a href="">意见与建议</a></li>
+						</ul>
+					</li>
+					<li class="pull-left map-inf">
+						<span class="map-title">配送服务</span>
+						<ul class="map-ul">
+							<li><a href="">配送范围及运费</a></li>
+							<li><a href="">配送服务</a></li>
+							<li><a href="">验货与签收</a></li>
+						</ul>
+					</li>
+					<li class="pull-left map-inf">
+						<span class="map-title">支付方式</span>
+						<ul class="map-ul">
+							<li><a href="">DIG卡支付</a></li>
+							<li><a href="">在线支付</a></li>
+							<li><a href="">组合支付</a></li>
+						</ul>
+					</li>
+					<li class="pull-left map-inf">
+						<span class="map-title">售后服务</span>
+						<ul class="map-ul">
+							<li><a href="">退换货政策</a></li>
+							<li><a href="">退换货说明</a></li>
+							<li><a href="">退换货流程</a></li>
+							<li><a href="">退款说明</a></li>
+							<li><a href="">常见问题</a></li>
+						</ul>
+					</li>
+					<li class="pull-left map-inf">
+						<span class="map-title">自贸区直购</span>
+						<ul class="map-ul">
+							<li><a href="">消费者告知书</a></li>
+							<li><a href="">海关通关及关税</a></li>
+							<li><a href="">自贸区直够购物流程</a></li>
+							<li><a href="">自贸区直购退换货政策</a></li>
+							<li><a href="">自贸区直购退换货流程</a></li>
+							<li><a href="">自贸区直购退款说明</a></li>
+						</ul>
+					</li>
+					<li class="pull-left code-inf">
+						<span class="map-title">FTZMALL微信</span>
+						<img src="../src/images/code.png">
+						<div class="telephone">
+							400-188-5179
+							<p>周一至周五:9:00-17:00</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="footer-bottom">
+				<p class="footer-bottom-p1"><a href="">关于我们</a>|<a href="">品牌入驻</a>|<a href="">联系我们</a>|<a href="">免责声明</a>|<a href="">隐私条款</a>|<a href="">完税价格表</a>|<a href="">诚聘英才</a>|<a href="">快递 100</a></p>
+				<p class="footer-bottom-p2">Copyright © 2006 - 2015上海外高桥进口商品网版权所有　沪ICP备11030945号-3   增值电信业务经营许可证　沪B-20110100</p>
+				<p>
+					<img src="../src/images/footer1.png"><img src="../src/images/footer2.png">
+				</p>
+			</div>
+		</div>
+		
+		<script src="../src/js/jquery-1.11.3.min.js"></script>
+		<script src="../src/bootstrap-3.3.5/dist/js/bootstrap.js"></script>
+		<script src="../src/js/cbt.ui.pay.js"></script>
+	</body>
+</html>

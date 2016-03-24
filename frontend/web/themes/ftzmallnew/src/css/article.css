@@ -1,0 +1,11 @@
+.left-box{width:176px;display:block;float:left;margin-top:10px}
+.left-box ul p{font-size:16px;color:#c7c7c7;font-weight:700;height:36px;line-height:36px;margin-top:10px}
+.left-box ul li{font-size:12px;color:#6c6c6c;padding-left:5px;line-height:18px}
+.left-box ul li a{font-size:12px;color:#6c6c6c;font-weight:100;text-decoration:none;cursor: pointer;font-family: "宋体"}
+.bread-cum {background: url("../images/bread-cum.png") no-repeat scroll 0 0; height: 80px; padding-top: 21px;}
+.ArticleDetailsWrap h2.textcenter { background: url("../images/at.jpg") repeat scroll 0 0;  color: #c40001;  text-align: left;}
+.ArticleDetailsWrap h2.textcenter {line-height: 40px; height: 40px; font-size: 18px;  font-weight: bold;  margin: 0px; padding-left:20px}
+.right-box{width:914px;display:block;float:right;margin-top:30px}
+.ArtListWrap .list li {width: 48%;float: left;padding: 5px 15px;margin: 0px 5px;background: none;color: #666666;display: block;border-bottom: 1px solid #EFEFEF;line-height: 23px;}
+.ArtListWrap .list li a{font-family: "宋体";color: #666666;text-decoration: none;}
+.mTB{margin-top:20px;}

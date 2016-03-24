@@ -1,0 +1,37 @@
+    .goods-spec a span, .goods-spec a img{border: 1px solid #cccccc;  background: white;  color: #333333;  display: block;  text-align: center;  padding: 4px 6px;}
+    .goods-spec .spec-item .spec-label {padding: 0;  float: left;  margin-top: 24px;}                   
+    .goods-spec span {color:#333333;font-size:12px}
+    .goods-spec .spec-item .spec-values {padding: 0 2px;  float: left;}
+    .goods-spec a i {  display: none;  background: url(/mobile/images/item_sel.gif) no-repeat 0 0;  height: 12px;  overflow: hidden;  width: 12px; position: absolute;  bottom: -1px;  right: -1px;  text-indent: -9999em;}
+    .goods-spec a { border: 1px white solid; display: block; position: relative; background: white; overflow: hidden;}
+    ul li {list-style:none; padding:0; margin-right:10px; margin-top:10px}
+    ul li .selected{border-color:#E4393} 
+    .clearfix:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; overflow: hidden;}
+    .clearfix {display: block;}
+    .goods-spec .selected, .goods-spec .selected:hover, .goods-spec .selected span, .goods-spec .selected:hover span, .goods-spec .selected:hover img, .goods-spec .selected img {border-color: #E4393C;}
+    .substract{  background: url(/mobile/images/product/substractIcon.gif) no-repeat top left; top: 0px; left: 0px;}
+    .goods-spec .selected i {display: block;}
+
+    .Numinput input.Num{width:50px;text-align:center;height:34px;line-height:34px;margin-left:17px;*margin-left:13px;margin-right:35px;border:none;background:url(/mobile/images/product/inputbg.gif) no-repeat top left;position:absolute}
+    .substract,.pluscq{display:inline-block;width:17px;height:34px;position:absolute;z-index:1;cursor:pointer;}
+    .substract{background:url(/mobile/images/product/substractIcon.gif) no-repeat top left;top:0px;*top:1px;left:0px;}
+    .pluscq{background:url(/mobile/images/product/substractIcon.gif) no-repeat top right;top:0px;*top: 1px;left:67px;*left:66px;}
+    .Numinput{position:relative;}
+    .buyinfo{margin:5px 0;line-height:72px;clear:both;;height:72px}
+    .buyinfo label{display:block;height:23px;color:#333333;vertical-align:middle;padding:0;}
+    .buyinfo li{padding:0 3px;list-style:none}                    
+    .buyinfo{margin:5px 0;line-height:21px;clear:both;}
+    .buyinfo label{margin-top:12px;}
+    .buyinfo li{line-height:34px;}
+    .goods-buy-area{margin-bottom:20px;padding:10px;background-color:#FFE8CA;}
+    .goods-buy-area .spec-item{padding:5px 0;}
+    .goods-buy-area .store{font-weight:700;color:#EA0000;}
+
+    .ks-overlay{position:fixed;margin:0 auto;left:0;right:0;top:20%;}
+    .citySelector{background:none repeat scroll 0 0 #F9F9F9;border:1px solid #E3D7CB;position:relative;width:100%;}
+    .citySelector b{/*background:url("T1U6rrXlNqXXaZ_F7_-126-41.png") no-repeat scroll -36px -29px transparent;cursor:pointer;*/height:21px;overflow:hidden;position:absolute;right:9px;/*text-indent:-3em;*/top:5px;width:29px;}
+    .J_ZxCity{padding:3px 10px 2px;}
+    .cityList a:hover, .cityList .select{background-color:#A18C7C;color:#FFFFFF;display:block;text-decoration:none;}
+    .cityList li{display:inline-block;float:left;}
+    .cityList li a{border:1px solid #F9F9F9;border-radius:2px 2px 2px 2px;color:#999999;display:block;float:left;padding:0 5px;white-space:nowrap;}
+    .lunbo-cq{border:1px solid #d9d9d9;margin:0 auto; text-align:center; margin-bottom:20px; display:block; -moz-border-radius:8px; -webkit-border-radius:8px; border-radius:8px;}

@@ -1,0 +1,36 @@
+
+div#image_display{
+    clear:both;
+}
+
+div#image_display>span.image {
+    position:relative;
+    display: inline-block;
+    margin: 2px;
+    height:70px;
+    width:70px;
+}
+
+div#image_display>span.image b {
+    position:absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 0px 1px;
+    margin: 0px;
+    color:#ffffff;
+    font-size:11px;
+    line-height:12px;
+    background-color:#6d6d6d;
+    cursor: pointer;
+}
+
+
+div#loader{
+    display:none;
+    position:absolute;
+    top:5px;
+    left:70px;
+    width:16px;
+    height:16px;
+    background-image:url(loader.gif);
+}

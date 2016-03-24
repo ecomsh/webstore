@@ -1,0 +1,19 @@
+<script type="text/javascript">
+//common resource and i18n messgae
+   var ctxRoot = '/tools';
+   var grid_displary_records='显示记录';
+</script><page:applyDecorator name="default">
+
+<head>
+    <title>页面未找到</title>
+    <meta name="heading" content="页面未找到"/>
+</head>
+
+<p>
+    请求的页面未找到。您可以选择返回到 <a href="/tools/home">主菜单</a>。或者选择在此休息一下，忘掉刚才的沮丧，欣赏一个美丽的图片？</p>
+<p style="text-align: center">
+    <a href="http://www.flickr.com/photos/mcginityphoto/6716288117/" title="Lake McDonald by McGinityPhoto, on Flickr">
+      <img src="http://farm8.staticflickr.com/7035/6716288117_5d84ab851d_z.jpg" width="640" height="426" 
+      alt="Lake McDonald" style="margin: 20px; border: 1px solid black"></a>
+</p>
+</page:applyDecorator>

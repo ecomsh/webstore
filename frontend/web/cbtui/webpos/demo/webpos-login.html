@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ftzmall</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/web-pos.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="container-fluid">
+                <h2 class="log-m text-center"><img src="../images/webpos-logo.png" width="486" height="60"></h2>
+            </div>
+        </header>
+        <div class="wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <a class="webpos-tp" href="#"><img src="../images/login-ad.png" width="514" height="321"></a>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="webpos-login">
+                            <h4 class="log-title">门店登录</h4>
+                            <form class="form-horizontal">
+                                <div class="form-group web-m">
+                                    <label class="control-label web-title">门店：</label>
+                                    <span class="web-input">
+                                        <select class="form-control webpos-input store-input">
+                                            <option>门店名称</option>
+                                        </select>
+                                    </span>
+                                </div>
+                                <div class="form-group web-m">
+                                    <label class="control-label web-title">用户名：</label>
+                                    <span class="web-input"><input type="text" class="form-control webpos-input store-name" placeholder="请输入用户名"></span>
+                                </div>
+                                <div class="form-group web-m">
+                                    <label class="control-label web-title">密码：</label>
+                                    <span class="web-input"><input type="text" class="form-control webpos-input store-pd" placeholder="请输入密码"></span>
+                                </div>
+                                <div class="form-group web-m">
+                                    <label class="pull-left font16"><input type="checkbox">&nbsp;自动登录</label>
+                                    <span class="pull-right font16 for-pd"><a href="#">忘记密码？</a></span>
+                                </div>
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-primary btn-lg btn-block web-btn">立即登录</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script> 
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

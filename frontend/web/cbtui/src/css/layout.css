@@ -1,0 +1,50 @@
+/*头部*/
+.topbar{background:#f0f0f0;height:26px;line-height: 26px;color:#393939;font-size: 12px;}
+.login-href{margin-left: 40px;margin-right: 20px;}
+.registe-href{margin-left: 20px;}
+.topbar a{color: #393939;padding: 0!important;}
+.topbar a:hover{color: #ed145b;text-decoration: none;}
+/*已登录状态*/
+.topbar a.topbar-username{color: #ed145b;margin-right: 13px;}
+.quit{margin-left: 15px;}
+/*logo and search*/
+.header{background: #ffffff;height:100px;border-bottom: 1px solid #e2e2e2;color:#999999;}
+.logo{margin-top: 8px;}
+.search-group{margin-top: 22px;width: 387px;}
+.header-search{background: url(../images/search.png) no-repeat scroll 13px 8px;background-color:#ffffff;padding-left:30px;border:1px solid #f14b82;}
+.header-search:focus{border-color:#ee1f63;box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(237, 20, 91, 0.6);}
+.btn-search{background: #ed145b;color:#ffffff;}
+.btn-search:hover{color: #ffffff;}
+.search-nav{margin-top: 10px;}
+.search-nav a{padding: 0!important;color: #999999;display: inline-block!important;margin-left: 6px;margin-right: 6px;}
+.font-color1 a{color:#ed145b;}
+.search-nav a:hover{background-color: #ffffff!important;text-decoration: underline!important;}
+/*导航部分*/
+.nav-con{height:37px;background: #242424;font-size: 13px;color:#ffffff;line-height: 37px;}
+.nav-con .nav-ul{width: 700px;}
+.nav-con li{width:110px;margin-right: 30px;text-align: center;}
+.nav-con .nav-ul li a{padding :0!important;color: #ffffff;}
+.nav-con .nav-ul li a:hover{color: #ed145b;background-color: transparent!important;}
+.nav-con .nav-ul li.bg-color1 a:hover{color: #ffffff;}
+.nav-car{background: #333333 url(../images/car-bg.png) no-repeat scroll 4px 8px; padding: 0 12px 0 35px;}
+.car-count{background: url(../images/car-count.png) no-repeat scroll 0 10px;min-width: 17px;display: inline-block;text-align: center;margin: 0 4px 0 3px;}
+/*footer*/
+.footer-top{margin-top: 100px;border-bottom: 1px solid #d4d4d4;}
+.map-img{padding-top: 25px;padding-bottom: 20px;border-top: 1px solid #dadada;border-bottom: 1px solid #dadada;width: 100%;}
+.map-title{font-size: 14px;color: #575757;display: block;}
+.map-inf{width:162px;margin-top: 17px;}
+.code-inf{margin-top: 17px;margin-left: 46px;width: 210px;text-align: center;}
+.map-ul{color: #808080;font-size: 12px;line-height: 24px;}
+.map-ul a{color: #808080;}
+.map-ul a:hover{color: #808080;text-decoration: none;}
+.telephone{background: url(../images/tel.png) no-repeat scroll 10px 5px;background-color: #f5f5f5;border-top: 3px solid #ececec;border-left: 2px solid #ebebeb;padding-left: 55px;margin-top: 12px;}
+
+.footer-bottom{height:180px;background: #2a2a2a;color: #d4d4d4;text-align: center;font-size: 12px;}
+.footer-bottom-p1{padding-top: 15px;}
+.footer-bottom-p2{margin-top: 10px;}
+.footer-bottom a{color: #d4d4d4;}
+.footer-bottom a:hover{color: #d4d4d4;text-decoration: none;}
+.footer-bottom p img{margin-right: 4px;margin-top: 15px;}
+
+/*checkout页面*/
+.checkout-right{margin-top: 50px;}

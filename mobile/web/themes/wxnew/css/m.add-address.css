@@ -1,0 +1,32 @@
+input::-webkit-input-placeholder{color:#ccc}
+input{text-shadow:none;outline:0;border:0}
+.address-info{border-bottom:solid .0625rem #ddd;line-height:2rem;overflow:hidden}
+.item-name{display:inline-block;width:27%;line-height:inherit;vertical-align:middle}
+.item-option{width:43%;background:#fff;border:none;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-webkit-appearance:none;line-height:inherit;vertical-align:middle;font-size:.875rem}
+.global-tips{display:none}
+.new-address-add{padding:.625rem}
+.address-infos{background:#fff;margin:.625rem;border:.0625rem solid #ddd;position:relative;font-size:.875rem;padding:0 .625rem}
+.automatic-position{position:absolute;top:0;right:0;padding:.625rem 0 .625rem .625rem;background:#fff}
+.automatic-position-icon{width:5rem;height:1.75rem;border-left:solid .0625rem #ddd;background:url(http://a0.jmstatic.com/a318ee6d1bd1dd1c/add_address.png) center 1rem no-repeat;background-size:1.25rem 1.25rem;padding-top:2.5rem;text-align:center;font-size:.75rem;color:#6eaf4f;display:none}
+.new-address{display:block;width:100%;height:2.5rem;border-radius:.25rem;background:#ed145b;line-height:2.5rem;text-align:center;color:#fff;margin:1em auto;}
+.go-top{position:fixed;bottom:1.25rem;width:2.8125rem;height:2.8125rem;display:block;background:rgba(237,20,91,.4);border-radius:2.8125rem;z-index:18;text-align:center}
+.address-detail{width:12.125rem}
+.help-block-error{color:#FF0000;word-break:keep-all;position:relative;top:0.5rem;margin-bottom:0.5rem;margin-left:30%;line-height: 20px;width:70%;}
+.ui-container{margin:0 auto;}
+
+.address-item-group{border:.0625rem solid #ddd;border-bottom:none;margin-bottom:.625rem;line-height:1.25rem;background:#fff;word-break:break-all;word-wrap:break-word;margin:.625rem;margin-bottom:0;}
+.item-top{border-left: none;border-bottom: .0625rem solid #ddd;margin:0;padding:.625rem;background: #fff;font-size: .875rem;}
+.item-top-l{margin-right:1rem;color:#ed145b;font-size: .9375rem;}
+.isDefault{color:#e81a62;}
+.item-bottom{position: relative;display: block;padding:.625rem;border-bottom: .0625rem solid #ddd;font-size:.9rem;}
+.clear:after{display: block;clear: both;content: "";visibility: hidden;height: 0;}
+.red-btn{display:block;width:100%;height:2.5rem;border-radius:.25rem;background:#ed145b;line-height:2.5rem;text-align:center;color:#fff!important;margin:1em auto;}
+.btn-div{background:#fff;margin:.625rem;position:relative;font-size:.875rem;}
+.checkbox{line-height:2rem;overflow:hidden;}
+.checkbox label{height:2rem;display:inline-block;vertical-align:middle;}
+.skip-text{text-align:right;color:#e81a62;float:right;margin: .625rem .625rem 0 0;}
+
+.checkbox-info{border-bottom:solid .0625rem #ddd;line-height:2.5rem;overflow:hidden;}
+.check-box{width: 1.375rem;height: 1.375rem;background:url(../images/check-box.png) no-repeat scroll center center;background-size: 1.3125rem 1.3125rem;display: inline-block;vertical-align: middle;position: relative;margin-right: .875rem;}
+.checkbox-info.selected .check-box{background:url(../images/check-box-select.png) no-repeat scroll center center;background-size: 1.3125rem 1.3125rem;}
+.checkbox-info .check-box input{opacity: 0;width: 1.375rem;height: 1.375rem;position: absolute;top:0;}

@@ -1,0 +1,6 @@
+<br />
+<b>Warning</b>:  readfile(http://www.ftzmall.com.cn///ecomgq-images.oss.aliyuncs.com/1b/3c/be/9785830bb0b7143ef1b28a59aeab93a08d7.png): failed to open stream: HTTP request failed! HTTP/1.1 404
+ in <b>E:\cqtest\myBatu.php</b> on line <b>78</b><br />
+<br />
+<b>Warning</b>:  readfile(http://www.ftzmall.com.cn///ecomgq-images.oss.aliyuncs.com/1b/3c/be/9785830bb0b7143ef1b28a59aeab93a08d7.png): failed to open stream: HTTP request failed! HTTP/1.1 404
+ in <b>E:\cqtest\myBatu.php</b> on line <b>78</b><br />

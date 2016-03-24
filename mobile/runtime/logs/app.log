@@ -1,0 +1,134 @@
+2016-02-01 01:28:12 [192.168.40.1][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=100.180.2.248;dbname=webstore
+    in /mnt/hgfs/ec/webstore_0.3/mobile/action/MyViewAction.php:122
+    in /mnt/hgfs/ec/webstore_0.3/mobile/action/MyViewAction.php:51
+2016-02-01 01:28:12 [192.168.40.1][-][-][info][yii\db\Command::query] SELECT * FROM `cms_release` WHERE (`view`='demo') AND (`platform`=2)
+    in /mnt/hgfs/ec/webstore_0.3/mobile/action/MyViewAction.php:122
+    in /mnt/hgfs/ec/webstore_0.3/mobile/action/MyViewAction.php:51
+2016-02-01 01:28:12 [192.168.40.1][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `cms_release`
+    in /mnt/hgfs/ec/webstore_0.3/mobile/action/MyViewAction.php:122
+    in /mnt/hgfs/ec/webstore_0.3/mobile/action/MyViewAction.php:51
+2016-02-01 01:28:12 [192.168.40.1][-][-][info][yii\db\Command::query] SHOW CREATE TABLE `cms_release`
+    in /mnt/hgfs/ec/webstore_0.3/mobile/action/MyViewAction.php:122
+    in /mnt/hgfs/ec/webstore_0.3/mobile/action/MyViewAction.php:51
+2016-02-01 01:28:12 [192.168.40.1][-][-][info][yii\db\Command::query] SELECT * FROM `cms_release` WHERE (`view`='demo') AND (`platform`=2)
+    in /mnt/hgfs/ec/webstore_0.3/mobile/action/MyViewAction.php:138
+    in /mnt/hgfs/ec/webstore_0.3/mobile/action/MyViewAction.php:51
+2016-02-01 01:28:12 [192.168.40.1][-][-][error][application] exception 'yii\web\BadRequestHttpException' with message '|--debug header:--|["Content-Type:application\/json","X-dbecom-TraceId:GC9MbLoEB110nTXrDizdkMDbI6xlCEMO","X-dbecom-OperatorId:","X-dbecom-AppId:Mobile-\/act\/page.html?view=demo"]|--error msg:--|_用户发出的请求针对的是不存在的记录，服务器没有进行操作。{"error":"","response":"{\"status\":false,\"errCode\":\"01404\",\"errMessage\":\"\u7528\u6237\u53d1\u51fa\u7684\u8bf7\u6c42\u9488\u5bf9\u7684\u662f\u4e0d\u5b58\u5728\u7684\u8bb0\u5f55\uff0c\u670d\u52a1\u5668\u6ca1\u6709\u8fdb\u884c\u64cd\u4f5c\u3002\"}","http_code":404,"info":{"url":"http:\/\/api3.soupian.me:8080\/espot-web\/rest\/v1\/emspot\/80102\/_currentContentPrice","content_type":"application\/json","http_code":404,"header_size":150,"request_size":263,"filetime":-1,"ssl_verify_result":0,"redirect_count":0,"total_time":0.241253,"namelookup_time":0.005785,"connect_time":0.040978,"pretransfer_time":0.041143,"size_upload":0,"size_download":134,"speed_download":555,"speed_upload":0,"download_content_length":-1,"upload_content_length":0,"starttransfer_time":0.241108,"redirect_time":0,"redirect_url":"","primary_ip":"192.168.200.10","certinfo":[],"primary_port":8080,"local_ip":"192.168.40.146","local_port":51312},"curl_error":""}用户发出的请求针对的是不存在的记录，服务器没有进行操作。' in /mnt/hgfs/ec/webstore_0.3/common/helpers/Tools.php:80
+Stack trace:
+#0 /mnt/hgfs/ec/webstore_0.3/common/helpers/Tools.php(56): common\helpers\Tools::handleException('01404', '\xE7\x94\xA8\xE6\x88\xB7\xE5\x8F\x91\xE5\x87\xBA\xE7\x9A\x84...', 'html', '|--debug header...', 'BaseApi')
+#1 /mnt/hgfs/ec/webstore_0.3/common/models/BaseApi.php(169): common\helpers\Tools::error('01404', '\xE7\x94\xA8\xE6\x88\xB7\xE5\x8F\x91\xE5\x87\xBA\xE7\x9A\x84...', 'html', 'BaseApi', '|--debug header...')
+#2 /mnt/hgfs/ec/webstore_0.3/common/models/BaseApi.php(230): common\models\BaseApi->callErrorProcess('01404', '\xE7\x94\xA8\xE6\x88\xB7\xE5\x8F\x91\xE5\x87\xBA\xE7\x9A\x84...', '_\xE7\x94\xA8\xE6\x88\xB7\xE5\x8F\x91\xE5\x87\xBA\xE7\x9A...')
+#3 /mnt/hgfs/ec/webstore_0.3/common/models/BaseApi.php(150): common\models\BaseApi->_r(Array)
+#4 /mnt/hgfs/ec/webstore_0.3/common/models/commercial/BaseAdvertisement.php(107): common\models\BaseApi->get('http://api3.sou...')
+#5 /mnt/hgfs/ec/webstore_0.3/frontend/widgets/commercial/CommercialWidget.php(30): common\models\commercial\BaseAdvertisement->fetch('80102')
+#6 /mnt/hgfs/ec/webstore_0.3/vendor/yiisoft/yii2/base/Object.php(107): frontend\widgets\commercial\CommercialWidget->init()
+#7 [internal function]: yii\base\Object->__construct(Array)
+#8 /mnt/hgfs/ec/webstore_0.3/vendor/yiisoft/yii2/di/Container.php(372): ReflectionClass->newInstanceArgs(Array)
+#9 /mnt/hgfs/ec/webstore_0.3/vendor/yiisoft/yii2/di/Container.php(151): yii\di\Container->build('frontend\\widget...', Array, Array)
+#10 /mnt/hgfs/ec/webstore_0.3/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('frontend\\widget...', Array, Array)
+#11 /mnt/hgfs/ec/webstore_0.3/vendor/yiisoft/yii2/base/Widget.php(97): yii\BaseYii::createObject(Array)
+#12 /mnt/hgfs/ec/webstore_0.3/common/helpers/CommercialHelper.php(37): yii\base\Widget::widget(Array)
+#13 [internal function]: common\helpers\CommercialHelper::common\helpers\{closure}(Array)
+#14 /mnt/hgfs/ec/webstore_0.3/common/helpers/CommercialHelper.php(40): preg_replace_callback('/<@([^\\.]*)\\.([...', Object(Closure), '<br/><br/><br/>...')
+#15 /mnt/hgfs/ec/webstore_0.3/mobile/action/MyViewAction.php(150): common\helpers\CommercialHelper::parse('<br/><br/><br/>...')
+#16 /mnt/hgfs/ec/webstore_0.3/mobile/action/MyViewAction.php(51): mobile\action\MyViewAction->resolveViewContent()
+#17 [internal function]: mobile\action\MyViewAction->run()
+#18 /mnt/hgfs/ec/webstore_0.3/vendor/yiisoft/yii2/base/Action.php(92): call_user_func_array(Array, Array)
+#19 /mnt/hgfs/ec/webstore_0.3/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\Action->runWithParams(Array)
+#20 /mnt/hgfs/ec/webstore_0.3/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('page', Array)
+#21 /mnt/hgfs/ec/webstore_0.3/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('act/page', Array)
+#22 /mnt/hgfs/ec/webstore_0.3/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 /mnt/hgfs/ec/webstore_0.3/mobile/web/index.php(31): yii\base\Application->run()
+#24 {main}
+    in /mnt/hgfs/ec/webstore_0.3/common/models/commercial/BaseAdvertisement.php:118
+    in /mnt/hgfs/ec/webstore_0.3/frontend/widgets/commercial/CommercialWidget.php:30
+    in /mnt/hgfs/ec/webstore_0.3/common/helpers/CommercialHelper.php:37
+2016-02-01 01:28:12 [192.168.40.1][-][-][error][application] product-newpro
+80102
+array (
+)
+    in /mnt/hgfs/ec/webstore_0.3/common/models/commercial/BaseAdvertisement.php:136
+    in /mnt/hgfs/ec/webstore_0.3/frontend/widgets/commercial/CommercialWidget.php:30
+    in /mnt/hgfs/ec/webstore_0.3/common/helpers/CommercialHelper.php:37
+2016-02-01 01:28:13 [192.168.40.1][-][-][error][application] exception 'yii\web\BadRequestHttpException' with message '|--debug header:--|["Content-Type:application\/json","X-dbecom-TraceId:KZ8jSCg71mREWsdrClnL2JI2d45-9elj","X-dbecom-OperatorId:","X-dbecom-AppId:Mobile-\/act\/page.html?view=demo"]|--error msg:--|_用户发出的请求针对的是不存在的记录，服务器没有进行操作。{"error":"","response":"{\"status\":false,\"errCode\":\"01404\",\"errMessage\":\"\u7528\u6237\u53d1\u51fa\u7684\u8bf7\u6c42\u9488\u5bf9\u7684\u662f\u4e0d\u5b58\u5728\u7684\u8bb0\u5f55\uff0c\u670d\u52a1\u5668\u6ca1\u6709\u8fdb\u884c\u64cd\u4f5c\u3002\"}","http_code":404,"info":{"url":"http:\/\/api3.soupian.me:8080\/espot-web\/rest\/v1\/emspot\/80105\/_currentContentPrice","content_type":"application\/json","http_code":404,"header_size":150,"request_size":263,"filetime":-1,"ssl_verify_result":0,"redirect_count":0,"total_time":0.300803,"namelookup_time":3.1e-5,"connect_time":0.090433,"pretransfer_time":0.090681,"size_upload":0,"size_download":134,"speed_download":445,"speed_upload":0,"download_content_length":-1,"upload_content_length":0,"starttransfer_time":0.300742,"redirect_time":0,"redirect_url":"","primary_ip":"192.168.200.10","certinfo":[],"primary_port":8080,"local_ip":"192.168.40.146","local_port":51313},"curl_error":""}用户发出的请求针对的是不存在的记录，服务器没有进行操作。' in /mnt/hgfs/ec/webstore_0.3/common/helpers/Tools.php:80
+Stack trace:
+#0 /mnt/hgfs/ec/webstore_0.3/common/helpers/Tools.php(56): common\helpers\Tools::handleException('01404', '\xE7\x94\xA8\xE6\x88\xB7\xE5\x8F\x91\xE5\x87\xBA\xE7\x9A\x84...', 'html', '|--debug header...', 'BaseApi')
+#1 /mnt/hgfs/ec/webstore_0.3/common/models/BaseApi.php(169): common\helpers\Tools::error('01404', '\xE7\x94\xA8\xE6\x88\xB7\xE5\x8F\x91\xE5\x87\xBA\xE7\x9A\x84...', 'html', 'BaseApi', '|--debug header...')
+#2 /mnt/hgfs/ec/webstore_0.3/common/models/BaseApi.php(230): common\models\BaseApi->callErrorProcess('01404', '\xE7\x94\xA8\xE6\x88\xB7\xE5\x8F\x91\xE5\x87\xBA\xE7\x9A\x84...', '_\xE7\x94\xA8\xE6\x88\xB7\xE5\x8F\x91\xE5\x87\xBA\xE7\x9A...')
+#3 /mnt/hgfs/ec/webstore_0.3/common/models/BaseApi.php(150): common\models\BaseApi->_r(Array)
+#4 /mnt/hgfs/ec/webstore_0.3/common/models/commercial/BaseAdvertisement.php(107): common\models\BaseApi->get('http://api3.sou...')
+#5 /mnt/hgfs/ec/webstore_0.3/frontend/widgets/commercial/CommercialWidget.php(30): common\models\commercial\BaseAdvertisement->fetch('80105')
+#6 /mnt/hgfs/ec/webstore_0.3/vendor/yiisoft/yii2/base/Object.php(107): frontend\widgets\commercial\CommercialWidget->init()
+#7 [internal function]: yii\base\Object->__construct(Array)
+#8 /mnt/hgfs/ec/webstore_0.3/vendor/yiisoft/yii2/di/Container.php(372): ReflectionClass->newInstanceArgs(Array)
+#9 /mnt/hgfs/ec/webstore_0.3/vendor/yiisoft/yii2/di/Container.php(151): yii\di\Container->build('frontend\\widget...', Array, Array)
+#10 /mnt/hgfs/ec/webstore_0.3/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('frontend\\widget...', Array, Array)
+#11 /mnt/hgfs/ec/webstore_0.3/vendor/yiisoft/yii2/base/Widget.php(97): yii\BaseYii::createObject(Array)
+#12 /mnt/hgfs/ec/webstore_0.3/common/helpers/CommercialHelper.php(37): yii\base\Widget::widget(Array)
+#13 [internal function]: common\helpers\CommercialHelper::common\helpers\{closure}(Array)
+#14 /mnt/hgfs/ec/webstore_0.3/common/helpers/CommercialHelper.php(40): preg_replace_callback('/<@([^\\.]*)\\.([...', Object(Closure), '<br/><br/><br/>...')
+#15 /mnt/hgfs/ec/webstore_0.3/mobile/action/MyViewAction.php(150): common\helpers\CommercialHelper::parse('<br/><br/><br/>...')
+#16 /mnt/hgfs/ec/webstore_0.3/mobile/action/MyViewAction.php(51): mobile\action\MyViewAction->resolveViewContent()
+#17 [internal function]: mobile\action\MyViewAction->run()
+#18 /mnt/hgfs/ec/webstore_0.3/vendor/yiisoft/yii2/base/Action.php(92): call_user_func_array(Array, Array)
+#19 /mnt/hgfs/ec/webstore_0.3/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\Action->runWithParams(Array)
+#20 /mnt/hgfs/ec/webstore_0.3/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('page', Array)
+#21 /mnt/hgfs/ec/webstore_0.3/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('act/page', Array)
+#22 /mnt/hgfs/ec/webstore_0.3/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 /mnt/hgfs/ec/webstore_0.3/mobile/web/index.php(31): yii\base\Application->run()
+#24 {main}
+    in /mnt/hgfs/ec/webstore_0.3/common/models/commercial/BaseAdvertisement.php:118
+    in /mnt/hgfs/ec/webstore_0.3/frontend/widgets/commercial/CommercialWidget.php:30
+    in /mnt/hgfs/ec/webstore_0.3/common/helpers/CommercialHelper.php:37
+2016-02-01 01:28:13 [192.168.40.1][-][-][error][application] product-globalpro
+80105
+array (
+)
+    in /mnt/hgfs/ec/webstore_0.3/common/models/commercial/BaseAdvertisement.php:136
+    in /mnt/hgfs/ec/webstore_0.3/frontend/widgets/commercial/CommercialWidget.php:30
+    in /mnt/hgfs/ec/webstore_0.3/common/helpers/CommercialHelper.php:37
+2016-02-01 01:28:11 [192.168.40.1][-][-][info][application] $_GET = [
+    'view' => 'demo'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.2.693831858.1453445925'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/mnt/hgfs/ec/webstore_0.3/mobile/web/index.php'
+    'PATH_INFO' => '/act/page.html'
+    'PATH_TRANSLATED' => '/mnt/hgfs/ec/webstore_0.3/mobile/web/act/page.html'
+    'QUERY_STRING' => 'view=demo'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/act/page.html?view=demo'
+    'DOCUMENT_URI' => '/index.php/act/page.html'
+    'DOCUMENT_ROOT' => '/mnt/hgfs/ec/webstore_0.3/mobile/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.6'
+    'REMOTE_ADDR' => '192.168.40.1'
+    'REMOTE_PORT' => '55326'
+    'SERVER_ADDR' => '192.168.40.146'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'mobile.ec.dev'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'mobile.ec.dev'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_ga=GA1.2.693831858.1453445925'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'ORIG_SCRIPT_FILENAME' => '/mnt/hgfs/ec/webstore_0.3/mobile/web/index.php/act/page.html'
+    'ORIG_PATH_TRANSLATED' => '/mnt/hgfs/ec/webstore_0.3/mobile/web/act/page.html'
+    'PHP_SELF' => '/index.php/act/page.html'
+    'REQUEST_TIME_FLOAT' => 1454290091.6709
+    'REQUEST_TIME' => 1454290091
+]

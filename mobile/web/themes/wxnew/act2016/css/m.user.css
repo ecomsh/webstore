@@ -1,0 +1,14 @@
+.member-bg{font-size: 1.1rem;position: relative;background: url(../images/kp_bg.png) no-repeat;background-size: cover;height: 236px;-webkit-border-radius: 6px;border-radius:6px;margin:2%;width: 96%!important;}
+.user-bg{width: 100%;height: auto;}
+.border-n{border:none;}
+.b-n{background: none;}
+.wx-p img{width: 100%;}
+.ui-i-4{line-height: 40px;}
+.text-m{margin-bottom: 30px;}
+.text-r{text-align: right;}
+.dl-c{color: #970b12;font-size: 1.6em;text-shadow:0 1px 1px #fff;-webkit-text-shadow:0 1px 1px #fff;}
+.member-item-group{position: absolute;top:25%;left:20%; line-height: 1.4rem;}
+.member-list{border-top:.0625rem solid #ddd;margin-bottom:.625rem;line-height:1.25rem;background:#fff;word-break:break-all;word-wrap:break-word;}
+.member-list .order-item{position: relative;display: block;padding:.625rem;border-bottom: .0625rem solid #ddd;font-size: .9rem;}
+.ui-actionsheet-tel{color: #fd472b;height: 44px;line-height: 44px;background: rgba(255,255,255,0.84);display: block;width: 100%;box-sizing:border-box;border-bottom-left-radius: 3px;border-bottom-right-radius: 3px;}
+.out{color: #fff!important;margin-top: .6rem;font-size: .9375rem;}

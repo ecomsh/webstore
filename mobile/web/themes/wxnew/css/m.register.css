@@ -1,0 +1,63 @@
+/* header以及公用 */
+body{font-family: "Helvetica Neue", "微软雅黑", Helvetica, STHeiTi, sans-serif;background-color:#fff;width:100%}
+.ui-header-positive {background-color:#ed145b}
+.topbar-bigbox {background-color: #ed145b;}
+.topbar-fontbox {display: block;float: left; margin-left: 10%; width: 75%; height: 45px; line-height: 45px; text-align: center;}
+.topbar-fontbox i{color:#fff;line-height:45px;font-style: normal;}
+.float-r{float:right}
+.font-32{font-size:2em}
+.font-24{font-size:1.5em}
+.font-16{font-size:1em}
+.font-red{color: #ed145b;}
+.icon-g-fx {line-height:45px;height:45px;display:block}
+.bg-black{background-color:#000;}
+.text-right{text-align: right;}
+/* header以及公用 */
+
+/*主体内容 start*/
+.ui-container{margin-top: 10px;}
+#form{margin-top: 10px;}
+/*主体内容 end*/
+
+/*验证码 start*/
+
+.ui-form-item-r .verifycode {margin-left: 23px; margin-top: 2px; width: 64px; height: 40px;}
+/*验证码 end*/
+
+/*红色大按钮 start*/
+.ui-btn-pink {background-color: #ed145b; background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #ed145b), to(#ed145b)); color: white; border-color: #ed145b; background-clip: padding-box; }
+/*红色大按钮 end*/
+
+/*按钮颜色重写 start*/
+.ui-form-item-l label, .ui-form-item-r button{color: #fff;width: 8rem;height:32px;margin-top:6px;margin-right:.625rem;font-size: .875rem;background:#ed145b;background: -webkit-gradient(linear,0 0,0 100%,from(#fe4175),to(#ed145b));background: -moz-gradient(linear,0 0,0 100%,from(#fe4175),to(#ed145b));border-radius:1.875rem;-webkit-border-radius:1.875rem;}
+/*按钮颜色重写 end*/
+
+/*tab 颜色重写 start*/
+.ui-tab-nav li.current {color: #ed145b; border-bottom: 2px #ed145b solid;}
+/*tab 颜色重写 end*/
+/*radio 颜色重写 start*/
+.ui-radio input:checked:after {background:#ed145b;}
+/*radio 颜色重写 end*/
+
+/*checkbox 颜色重写 start*/
+.ui-switch input:checked:before {border-color: #ed145b;box-shadow: #ed145b 0px 0px 0px 16px inset;background-color: #ed145b; }
+/*checkbox 颜色重写 end*/
+
+/*错误信息提示 start*/
+.ui-form-item{min-height: 44px;height:auto;}
+.help-block{color:#e81a62;}
+/*错误信息提示 end*/
+
+.field-smsloginform-verifycode{position: relative;font-size: 16px;min-height: 44px;height: auto;line-height:44px;padding-right: 15px;padding-left: 15px;background-position: left bottom;background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0));background-repeat: repeat-x;-webkit-background-size:100% 1px;background-size:100% 1px;}
+
+/*修改密码页*/
+
+.address-infos{background:#fff;margin:.625rem;border:.0625rem solid #ddd;position:relative;font-size:.875rem;padding:0 .625rem}
+.address-infos .form-group{height:2.75rem;border-bottom:solid .0625rem #ddd;line-height:2.75rem;overflow:hidden}
+.item-name{display:inline-block;width:27%;line-height:inherit;vertical-align:middle}
+.btn-sub{display:block;width:18.75rem;height:2.5rem;border-radius:.25rem;background:#ed145b;line-height:2.5rem;text-align:center;color:#fff;margin:0 auto}
+
+/*实名认证页*/
+.realname-text{background:#ffe7f1 url(../images/notice-bg.png) no-repeat scroll .25rem .65rem;background-size:1rem;padding:.625rem 0 .625rem 1.5rem;font-size:.8rem;margin:.625rem;margin-top:0;}
+.skip-text{text-align:right;color:#e81a62;float:right;margin: .625rem .625rem 0 0;}
+

@@ -1,0 +1,27 @@
+html{font-size: 16px; display: block;}
+body{font-family: "Helvetica Neue", "微软雅黑", Helvetica, STHeiTi, sans-serif;background-color:#fff;width: 20rem;background:#eee；}
+.ui-header-positive {background-color:#ed145b}
+.topbar-bigbox {background-color: #ed145b;}
+.topbar-fontbox {display: block;float: left; margin-left: 10%; width: 75%; height: 45px; line-height: 45px;text-align: center;}
+.topbar-fontbox i{color:#fff;line-height:45px;font-style: normal;}
+.float-r{float:right}
+.font-32{font-size:2em}
+.font-24{font-size:1.5em}
+.font-16{font-size:1em}
+.font-red{color: #ed145b;}
+.icon-g-fx {line-height:45px;height:45px;display:block}
+.bg-black{background-color:#000;}
+input::-webkit-input-placeholder{color:#ccc}
+input{text-shadow:none;outline:0;border:0}
+.address-info{height:2.75rem;border-bottom:solid .0625rem #ddd;line-height:2.75rem;overflow:hidden}
+.item-name{display:inline-block;width:27%;line-height:inherit;vertical-align:middle}
+.item-option{width:43%;background:#fff;border:none;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-webkit-appearance:none;line-height:inherit;vertical-align:middle;font-size:.875rem}
+.add-static{color:#ccc}
+.global-tips{display:none}
+.new-address-add{padding:.625rem}
+.address-infos{background:#fff;margin:.625rem;border:.0625rem solid #ddd;position:relative;font-size:.875rem;padding:0 .625rem}
+.automatic-position{position:absolute;top:0;right:0;padding:.625rem 0 .625rem .625rem;background:#fff}
+.automatic-position-icon{width:5rem;height:1.75rem;border-left:solid .0625rem #ddd;background:url(http://a0.jmstatic.com/a318ee6d1bd1dd1c/add_address.png) center 1rem no-repeat;background-size:1.25rem 1.25rem;padding-top:2.5rem;text-align:center;font-size:.75rem;color:#6eaf4f;display:none}
+.new-address{display:block;width:18.75rem;height:2.5rem;border-radius:.25rem;background:#ed145b;line-height:2.5rem;text-align:center;color:#fff;margin:0 auto}
+.go-top{position:fixed;bottom:1.25rem;width:2.8125rem;height:2.8125rem;display:block;background:rgba(237,20,91,.4);border-radius:2.8125rem;z-index:18;text-align:center}
+.address-detail{width:12.125rem}

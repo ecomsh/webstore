@@ -1,0 +1,147 @@
+.box{
+		width:100%;
+		height:328px;
+		margin:0 auto;
+		position: relative;
+	}
+	header{
+		color:#F5FAFA;
+		background:#27B1B4;
+	}
+	.top{
+		height:20px;
+		font-size:0.8em;
+		line-height:2em;
+		padding-left:17px;
+		margin-left:20px;
+		background:url(../images/top_icon.png) no-repeat left bottom;
+	}
+	.inheader{
+		height:60px;
+		padding:0 20px 20px;
+		border-top: 1px solid #5DC5C8;
+		position: relative;
+	}
+	h1{
+		height:60px;
+		float:left;
+		padding-top:20px;
+		font-size:2em;
+		line-height:30px;
+		position: absolute;
+		left:20px;
+		top:0;
+	}
+	h1 span{
+		font-weight:normal;
+		font-size:0.8em;
+	}
+	.list{
+		height:80px;
+		float:right;
+		font-size: 1.2em;
+		position: absolute;
+		right:20px;
+		top:0;
+	}
+	.list li{
+		height:65px;
+		float:left;
+		text-align:center;
+		padding:15px 15px 0;
+		cursor:pointer;
+	}
+	.list li.current{
+		background-color:#009B9F;
+	}
+	.list li:nth-child(2){
+		height:59px;
+		padding-top:21px;
+	}
+	.list li:last-child{
+		float:right;
+		margin-right:0;
+		margin-left:100px;
+	}
+	.main{height:780px;}
+	.main .left{
+		width:139px;
+		height:100%;
+		background: #27B1B4;
+		float:left;
+	}
+	.inleft li{
+		width:81%;
+		height:40px;
+		padding-left:15px;
+		padding-right:10px;
+		border-bottom: 1px solid #5DC5C8;
+	}
+	.inleft li a{
+		display: block;
+		height:40px;
+		color:#E2F3F4;
+		line-height: 40px;
+		padding-left:25px;
+		background: url(../images/houtai1_1.png) no-repeat left center;
+	}
+	.inleft li a:hover{
+		text-decoration: none;
+	}
+	.inleft li.current{
+		background-color: #009B9F;
+	}
+	.inleft li:nth-child(2) a{
+		background: url(../images/houtai1_2.png) no-repeat left center;
+	}
+	.inleft li:nth-child(3) a{
+		background: url(../images/houtai1_3.png) no-repeat left center;
+	}
+	.inleft li:nth-child(4) a{
+		background: url(../images/houtai1_4.png) no-repeat left center;
+	}
+	.inleft li a span{
+		float:right;
+		margin-top:16px;
+		width:8px;
+		height:11px;
+		background: url(../images/sanjiao.png) no-repeat center center;
+	}
+	.main .right{
+		height:100%;
+		padding:30px 20px 0 0;
+		margin-left:170px;
+	}
+	.right h3{
+		height:32px;
+		line-height: 32px;
+		font-weight: normal;
+		background: #CDEFF0;
+		padding-left:10px;
+	}
+	.right h3 span{
+		display:inline-block;
+		width:3px;
+		height:16px;
+		background:#27B1B4;
+		vertical-align: middle;
+	}
+	table{
+		width:100%;
+		color:#464646;
+		margin-top:50px;
+		border-collapse: collapse;
+		border-color:#E8E8E8;
+	}
+	td,th {
+		width:25%;
+		height:30px;
+		text-align:center;
+		border-color:#E8E8E8;
+		font-weight: normal;
+	}
+	table thead tr{
+		height:38px;
+		background: #F8F8F8;		
+	}
+	tbody tr:nth-child(even){background: #F8F8F8;}

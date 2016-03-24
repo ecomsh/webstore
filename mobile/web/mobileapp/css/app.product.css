@@ -1,0 +1,82 @@
+header.ui-header {
+    display: none !important;
+    height: 0.5em;
+  }
+  #country{
+    color: #FF0000;
+  }
+  #brand-name{
+    color: #8a8a8a;
+    font-size: 0.9em;
+  }
+  .demo-block > .product-detail-box:first-child > p:first-child{
+    float: left;
+    position: absolute;
+    top : 0;
+  }
+  .product-title-g{
+  font-weight :bold;
+  }
+  #offer-price{
+    color: #ff0000;
+    font-size: 1.5em;
+  }
+  .font-del{
+    color: #777777;
+    font-size: 1em;
+    text-decoration: none;
+  }
+  .product-detail-box p .tax-free{
+     padding: 0 6px;
+     border-radius: 0.325em;
+  }
+  .ui-grid-halve-nopadding .ui-border{
+      border : 0px;
+  }
+  .ui-border:after{
+       content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #ffffff), to(#ffffff)), -webkit-gradient(linear, left top, right top, color-stop(0.5, transparent), color-stop(0.5, #ffffff), to(#ffffff)), -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #ffffff), to(#ffffff)), -webkit-gradient(linear, right top, left top, color-stop(0.5, transparent), color-stop(0.5, #ffffff), to(#ffffff));
+  }
+  .ui-grid-halve-nopadding li{
+    padding: 0 1%;
+    width: 48%;
+    margin-top: 5px;
+  }
+  .ui-grid-halve-img{
+      border: 1px solid #C8C8C8;
+  }
+  .price-offer{
+    color: #FC0A19;
+  }
+  .bg-red{
+    background-color: #FC511F;
+  }
+  .font-red{
+    color: #000000;
+  }
+  #show-skumapbox{
+    color: #000000;
+  }
+  .ui-tab-nav li.current{
+    color: #FC9327;
+    border-bottom: 2px #FC9327 solid;
+  }
+  .skumap-smallbox .active{
+    border: 1px solid #FC511F;
+    color: #000000;
+  }
+  .sku-name{
+    color: #000000;
+  }
+  .bg-black{
+        background-color: #fff;
+  }
+  .ui-tiled li{
+    border: 1px solid #C8C8C8;
+    border-right-width: 0px;
+  }

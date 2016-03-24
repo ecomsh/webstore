@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<title>ftzmall-cart</title>
+		<meta name="viewport" content="width=1200" />
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="">
+		<link rel="stylesheet" href="../src/bootstrap-3.3.5/dist/css/bootstrap.css"/>
+		<link rel="stylesheet" href="../src/css/common.css"/>
+		<link rel="stylesheet" href="../src/css/layout.css"/>
+		<link rel="stylesheet" href="../src/css/cart.css"/>
+	</head>
+	<body>
+		<div class="topbar">
+			<div class="container">
+				<div class="pull-left topbar-left">
+					欢迎您，<a href="" target="_blank" class="topbar-username">15800000000</a> | <a href="" class="quit">退出</a> 
+				</div>
+				<div class="pull-right topbar-right">
+					<ul class="nav">
+						<li class="pull-left"><a href="">订单查询　|　</a></li>
+						<li class="pull-left"><a href="">我的收藏　|　</a></li>
+						<li class="pull-left"><a href="">个人中心</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="header">
+			<div class="container clearfix">
+				<div class="pull-left logo">
+					<a href="index.html"><img src="../src/images/logo.png"></a>
+				</div>
+				<div class="pull-right checkout-right">
+					<img src="../src/images/progressbarimg-02.png">
+				</div>
+			</div>
+		</div>
+		<div class="container cart-container">
+			<div class="cart-container-top">
+				<!-- 购物车为空的状态start -->
+				<!-- <div class="cart-empty">
+					<span>购物车里空空如也，赶紧去 <a href="">逛逛吧></a></span>
+				</div> -->
+				<!-- 购物车为空的状态end -->
+				<p class="timing-clock">请在下单后 <span class="font-color4">30 分钟 00 秒 </span>内完成支付[<span class="font-color4">？</span>]</p>
+				<p class="cart-prompt">
+					<span>包邮</span>全场满99元包邮
+				</p>
+				<div class="customs-bonded-goods goods">
+					<div class="cart-table1-header">
+						<span class="column1">
+							<label class="checkbox-label">
+								<span class="check-bg">
+									<input type="checkbox" class="checkall" autocomplete="off" name="" value=""/>
+								</span>
+							</label>
+						</span>
+						<span class="column2">
+							海关保税仓直发
+						</span>
+						<span class="column3">FTZMALL价格（元）</span>
+						<span class="column4">数量</span>
+						<span class="column5">小计（元）</span>
+						<span class="column6">操作</span>
+					</div>
+
+					<ul class="cart-table1">
+						
+						<li class="cart-table1-con">
+							<span class="column1">
+								<label class="checkbox-label">
+									<span class="check-bg">
+										<input type="checkbox" class="ftzbox" autocomplete="off" name="" value=""/>
+									</span>
+								</label>
+							</span>
+							<span class="column2">	
+								<div class="product-information clearfix">
+									<img src="../src/images/cart/tp.jpg" class="product-img">
+									<div class="product-inf">
+										<a class="product-name"><label class="font-color1">【直降】</label>LOBO泰式红咖喱酱 50克/包</a>
+										<p class="product-rate" data-toogle="popover" data-placement="bottom" data-content="<h4>税费=不含税价格*件数*商品税率</h4>根据海关规定：本商品适用税率为<span class='rate-num'>10%</span>，若订单总税额≤50元，海关予以免征。">适用税率：<span class="rate-num">10%</span><span class="to-span"></span></p>
+									</div>
+								</div>	
+							</span>
+							<span class="column3">
+								780
+								<span class="old-price">890.00</span>
+							</span>
+							<span class="column4 clearfix">
+								<a href="" class="quantity-subtract">-</a>
+								<input type="text" name="" value="10" class="product-quantity"/>
+								<a href="" class="quantity-add">+</a>
+								<span class="limit-number">限购3件</span>
+								<span class="not-enough">库存不足</span>
+							</span>
+							<span class="column5">39</span>
+							<span class="column6">
+								<a href="" class="delete-operation"></a>
+							</span>
+						</li>
+						<li class="cart-table1-con">
+							<span class="column1">
+								<label class="checkbox-label">
+									<span class="check-bg">
+										<input type="checkbox" class="ftzbox" autocomplete="off" name="" value=""/>
+									</span>
+								</label>
+							</span>
+							<span class="column2">	
+								<!-- 嵌套外层div是为了整个li的内容进行垂直居中 -->
+								<div class="product-information clearfix">
+									<img src="../src/images/cart/tp.jpg" class="product-img">
+									<div class="product-inf">
+										<a class="product-name"><label class="font-color1">【组合】</label>LOBO泰式红咖喱酱 50克/包</a>
+										<p class="product-rate" data-toogle="popover" data-placement="bottom" data-content="<h4>税费=不含税价格*件数*商品税率</h4>根据海关规定：本商品适用税率为<span class='rate-num'>10%</span>，若订单总税额≤50元，海关予以免征。">适用税率：<span class="rate-num">10%</span><span class="to-span"></span></p>
+									</div>
+								</div>
+								<div class="product-information clearfix">
+									<img src="../src/images/cart/tp.jpg" class="product-img">
+									<div class="product-inf">
+										<a class="product-name"><label class="font-color1">【组合】</label>LOBO泰式红咖喱酱 50克/包LOBO泰式红咖喱酱 50克/包LOBO泰式红咖喱酱 50克/包LOBO泰式红咖喱酱 50克/包LOBO泰式红咖喱酱 50克/包LOBO泰式红咖喱酱 50克/包LOBO泰式红咖喱酱 50克/包LOBO泰式红咖喱酱 50克/包</a>
+										<p class="product-rate" data-toogle="popover" data-placement="bottom" data-content="<h4>税费=不含税价格*件数*商品税率</h4>根据海关规定：本商品适用税率为<span class='rate-num'>20%</span>，若订单总税额≤50元，海关予以免征。">适用税率：<span class="rate-num">20%</span><span class="to-span"></span></p>
+									</div>
+								</div>	
+							</span>
+							<span class="column3">780</span>
+							<span class="column4 clearfix">
+								<a href="" class="quantity-subtract">-</a>
+								<input type="text" name="" value="10" class="product-quantity"/>
+								<a href="" class="quantity-add">+</a>
+								<span class="limit-number">限购3件</span>
+							</span>
+							<span class="column5">39</span>
+							<span class="column6">
+								<a href="" class="delete-operation"></a>
+							</span>
+						</li>
+						<li class="cart-table1-con">
+							<span class="column1">
+								<label class="checkbox-label">
+									<span class="check-bg">
+										<input type="checkbox" class="ftzbox" autocomplete="off" name="" value=""/>
+									</span>
+								</label>
+							</span>
+							<span class="column2">	
+								<div class="product-information clearfix">
+									<img src="../src/images/cart/tp.jpg" class="product-img">
+									<div class="product-inf">
+										<a class="product-name">LOBO泰式红咖喱酱 50克/包</a>
+										<p class="product-rate" data-toogle="popover" data-placement="bottom" data-content="<h4>税费=不含税价格*件数*商品税率</h4>根据海关规定：本商品适用税率为<span class='rate-num'>10%</span>，若订单总税额≤50元，海关予以免征。">适用税率：<span class="rate-num">10%</span><span class="to-span"></span></p>
+									</div>
+								</div>	
+							</span>
+							<span class="column3">780</span>
+							<span class="column4 clearfix">
+								<a href="" class="quantity-subtract">-</a>
+								<input type="text" name="" value="10" class="product-quantity"/>
+								<a href="" class="quantity-add">+</a>
+								<span class="limit-number">限购3件</span>
+							</span>
+							<span class="column5">39</span>
+							<span class="column6">
+								<a href="" class="delete-operation"></a>
+							</span>
+						</li>
+						<li class="cart-table1-con product-soldout">
+							<span class="column1">
+								<label class="checkbox-label">
+									<span class="check-bg">
+										<input type="checkbox" class="ftzbox" autocomplete="off" name="" value=""/>
+									</span>
+								</label>
+							</span>
+							<span class="column2">	
+								<!-- 嵌套外层div是为了整个li的内容进行垂直居中 -->
+								<div class="product-information clearfix">
+									<img src="../src/images/cart/tp.jpg" class="product-img">
+									<div class="product-inf">
+										<a class="product-name">LOBO泰式红咖喱酱 50克/包</a>
+										<p class="product-rate" data-toogle="popover" data-placement="bottom" data-content="<h4>税费=不含税价格*件数*商品税率</h4>根据海关规定：本商品适用税率为<span class='rate-num'>10%</span>，若订单总税额≤50元，海关予以免征。">适用税率：<span class="rate-num">10%</span><span class="to-span"></span></p>
+										<p class="font-color4">商品已下架</p>
+									</div>
+								</div>	
+							</span>
+							<span class="column3">780</span>
+							<span class="column4 clearfix">
+								<a href="" class="quantity-subtract">-</a>
+								<input type="text" name="" value="1" class="product-quantity"/>
+								<a href="" class="quantity-add">+</a>
+							</span>
+							<span class="column5">39</span>
+							<span class="column6">
+								<a href="" class="delete-operation"></a>
+							</span>
+						</li>
+						<li class="cart-table1-con">
+							<div class="vline"></div>
+							<div class="cart-tablen-header clearfix">
+								<span class="font-color4 tablen pull-left">N元任选</span>
+								<div class="rule pull-left">
+									再购<span class="font-color4"> 2 </span>件 立享<span class="font-color1"> 【59元任选3件】 </span><a href="" class="goto">再去看看 ></a>
+								</div>
+							</div>
+							<!-- N元任选 -->
+							<ul class="cart-tablen">
+								<li class="cart-tablen-con">
+									<span class="column1">
+										<label class="checkbox-label">
+											<span class="check-bg">
+												<input type="checkbox" class="ftzbox" autocomplete="off" name="" value=""/>
+											</span>
+										</label>
+									</span>
+									<span class="column2">	
+										<!-- 嵌套外层div是为了整个li的内容进行垂直居中 -->
+										<div class="product-information clearfix">
+											<img src="../src/images/cart/tp.jpg" class="product-img">
+											<div class="product-inf">
+												<a class="product-name">LOBO泰式红咖喱酱 50克/包</a>
+												<p class="product-rate" data-toogle="popover" data-placement="bottom" data-content="<h4>税费=不含税价格*件数*商品税率</h4>根据海关规定：本商品适用税率为<span class='rate-num'>10%</span>，若订单总税额≤50元，海关予以免征。">适用税率：<span class="rate-num">10%</span><span class="to-span"></span></p>
+											</div>
+										</div>	
+									</span>
+									<span class="column3">780</span>
+									<span class="column4 clearfix">
+										<a href="" class="quantity-subtract">-</a>
+										<input type="text" name="" value="1" class="product-quantity"/>
+										<a href="" class="quantity-add">+</a>
+									</span>
+									<span class="column5">39</span>
+									<span class="column6">
+										<a href="" class="delete-operation"></a>
+									</span>
+								</li>
+								<li class="cart-tablen-con">
+									<span class="column1">
+										<label class="checkbox-label">
+											<span class="check-bg">
+												<input type="checkbox" class="ftzbox" autocomplete="off" name="" value=""/>
+											</span>
+										</label>
+									</span>
+									<span class="column2">	
+										<!-- 嵌套外层div是为了整个li的内容进行垂直居中 -->
+										<div class="product-information clearfix">
+											<img src="../src/images/cart/tp.jpg" class="product-img">
+											<div class="product-inf">
+												<a class="product-name"><label class="font-color1">【组合】</label>LOBO泰式红咖喱酱 50克/包</a>
+												<p class="product-rate" data-toogle="popover" data-placement="bottom" data-content="<h4>税费=不含税价格*件数*商品税率</h4>根据海关规定：本商品适用税率为<span class='rate-num'>10%</span>，若订单总税额≤50元，海关予以免征。">适用税率：<span class="rate-num">10%</span><span class="to-span"></span></p>
+											</div>
+										</div>
+										<div class="product-information clearfix">
+											<img src="../src/images/cart/tp.jpg" class="product-img">
+											<div class="product-inf">
+												<a class="product-name"><label class="font-color1">【组合】</label>LOBO泰式红咖喱酱 50克/包LOBO泰式红咖喱酱 50克/包LOBO泰式红咖喱酱 50克/包LOBO泰式红咖喱酱 50克/包LOBO泰式红咖喱酱 50克/包LOBO泰式红咖喱酱 50克/包LOBO泰式红咖喱酱 50克/包LOBO泰式红咖喱酱 50克/包</a>
+												<p class="product-rate" data-toogle="popover" data-placement="bottom" data-content="<h4>税费=不含税价格*件数*商品税率</h4>根据海关规定：本商品适用税率为<span class='rate-num'>20%</span>，若订单总税额≤50元，海关予以免征。">适用税率：<span class="rate-num">20%</span><span class="to-span"></span></p>
+											</div>
+										</div>
+										<div class="product-information clearfix">
+											<img src="../src/images/cart/tp.jpg" class="product-img">
+											<div class="product-inf">
+												<a class="product-name"><label class="font-color1">【组合】</label>LOBO泰式红咖喱酱 50克/包LOBO泰式红咖喱酱 50克/包LOBO泰式红咖喱酱 50克/包LOBO泰式红咖喱酱 50克/包LOBO泰式红咖喱酱 50克/包LOBO泰式红咖喱酱 50克/包LOBO泰式红咖喱酱 50克/包LOBO泰式红咖喱酱 50克/包</a>
+												<p class="product-rate" data-toogle="popover" data-placement="bottom" data-content="<h4>税费=不含税价格*件数*商品税率</h4>根据海关规定：本商品适用税率为<span class='rate-num'>20%</span>，若订单总税额≤50元，海关予以免征。">适用税率：<span class="rate-num">20%</span><span class="to-span"></span></p>
+											</div>
+										</div>	
+									</span>
+									<span class="column3">780</span>
+									<span class="column4 clearfix">
+										<a href="" class="quantity-subtract">-</a>
+										<input type="text" name="" value="10" class="product-quantity"/>
+										<a href="" class="quantity-add">+</a>
+										<span class="limit-number">限购3件</span>
+									</span>
+									<span class="column5">39</span>
+									<span class="column6">
+										<a href="" class="delete-operation"></a>
+									</span>
+								</li>
+								<li class="cart-tablen-con">
+									<span class="column1">
+										<label class="checkbox-label">
+											<span class="check-bg">
+												<input type="checkbox" class="ftzbox" autocomplete="off" name="" value=""/>
+											</span>
+										</label>
+									</span>
+									<span class="column2">	
+										<!-- 嵌套外层div是为了整个li的内容进行垂直居中 -->
+										<div class="product-information clearfix">
+											<img src="../src/images/cart/tp.jpg" class="product-img">
+											<div class="product-inf">
+												<a class="product-name">LOBO泰式红咖喱酱 50克/包</a>
+												<p class="product-rate" data-toogle="popover" data-placement="bottom" data-content="<h4>税费=不含税价格*件数*商品税率</h4>根据海关规定：本商品适用税率为<span class='rate-num'>10%</span>，若订单总税额≤50元，海关予以免征。">适用税率：<span class="rate-num">10%</span><span class="to-span"></span></p>
+											</div>
+										</div>	
+									</span>
+									<span class="column3">780</span>
+									<span class="column4 clearfix">
+										<a href="" class="quantity-subtract">-</a>
+										<input type="text" name="" value="1" class="product-quantity"/>
+										<a href="" class="quantity-add">+</a>
+									</span>
+									<span class="column5">39</span>
+									<span class="column6">
+										<a href="" class="delete-operation"></a>
+									</span>
+								</li>
+
+							</ul>
+						</li>
+						<!-- N选end -->
+						<li class="cart-table1-con">
+							<span class="column1">
+								<label class="checkbox-label">
+									<span class="check-bg">
+										<input type="checkbox" class="ftzbox" autocomplete="off" name="" value=""/>
+									</span>
+								</label>
+							</span>
+							<span class="column2">	
+								<div class="product-information clearfix">
+									<img src="../src/images/cart/tp.jpg" class="product-img">
+									<div class="product-inf">
+										<a class="product-name"><label class="font-color1">【直降】</label>LOBO泰式红咖喱酱 50克/包</a>
+										<p class="product-rate" data-toogle="popover" data-placement="bottom" data-content="<h4>税费=不含税价格*件数*商品税率</h4>根据海关规定：本商品适用税率为<span class='rate-num'>10%</span>，若订单总税额≤50元，海关予以免征。">适用税率：<span class="rate-num">10%</span><span class="to-span"></span></p>
+									</div>
+								</div>	
+							</span>
+							<span class="column3">
+								780
+								<span class="old-price">890.00</span>
+							</span>
+							<span class="column4 clearfix">
+								<a href="" class="quantity-subtract">-</a>
+								<input type="text" name="" value="10" class="product-quantity"/>
+								<a href="" class="quantity-add">+</a>
+								<span class="limit-number">限购3件</span>
+								<span class="not-enough">库存不足</span>
+							</span>
+							<span class="column5">39</span>
+							<span class="column6">
+								<a href="" class="delete-operation"></a>
+							</span>
+						</li>
+						<li class="cart-table1-con">
+							<span class="column1">
+								<label class="checkbox-label">
+									<span class="check-bg">
+										<input type="checkbox" class="ftzbox" autocomplete="off" name="" value=""/>
+									</span>
+								</label>
+							</span>
+							<span class="column2">	
+								<!-- 嵌套外层div是为了整个li的内容进行垂直居中 -->
+								<div class="product-information clearfix">
+									<img src="../src/images/cart/tp.jpg" class="product-img">
+									<div class="product-inf">
+										<a class="product-name"><label class="font-color1">【组合】</label>LOBO泰式红咖喱酱 50克/包</a>
+										<p class="product-rate" data-toogle="popover" data-placement="bottom" data-content="<h4>税费=不含税价格*件数*商品税率</h4>根据海关规定：本商品适用税率为<span class='rate-num'>10%</span>，若订单总税额≤50元，海关予以免征。">适用税率：<span class="rate-num">10%</span><span class="to-span"></span></p>
+									</div>
+								</div>
+								<div class="product-information clearfix">
+									<img src="../src/images/cart/tp.jpg" class="product-img">
+									<div class="product-inf">
+										<a class="product-name"><label class="font-color1">【组合】</label>LOBO泰式红咖喱酱 50克/包LOBO泰式红咖喱酱 50克/包LOBO泰式红咖喱酱 50克/包LOBO泰式红咖喱酱 50克/包LOBO泰式红咖喱酱 50克/包LOBO泰式红咖喱酱 50克/包LOBO泰式红咖喱酱 50克/包LOBO泰式红咖喱酱 50克/包</a>
+										<p class="product-rate" data-toogle="popover" data-placement="bottom" data-content="<h4>税费=不含税价格*件数*商品税率</h4>根据海关规定：本商品适用税率为<span class='rate-num'>20%</span>，若订单总税额≤50元，海关予以免征。">适用税率：<span class="rate-num">20%</span><span class="to-span"></span></p>
+									</div>
+								</div>	
+							</span>
+							<span class="column3">780</span>
+							<span class="column4 clearfix">
+								<a href="" class="quantity-subtract">-</a>
+								<input type="text" name="" value="10" class="product-quantity"/>
+								<a href="" class="quantity-add">+</a>
+								<span class="limit-number">限购3件</span>
+							</span>
+							<span class="column5">39</span>
+							<span class="column6">
+								<a href="" class="delete-operation"></a>
+							</span>
+						</li>
+					</ul>
+					
+					
+					<!-- 海关保税结算 -->
+					<div class="customsbond-settlement clearfix">
+						<div class="pull-left settlement-left">
+							<span class="column1">
+								<label class="checkbox-label">
+									<span class="check-bg">
+										<input type="checkbox" class="checkall" autocomplete="off" name="" value=""/>
+									</span>
+								</label>
+							</span>
+							<span class="column2">
+								<a href="javascript:;" class="all-checkbox">全选</a>
+								<a href="" class="continue-buy">继续购物　|</a>
+								<a href="javascript:;" class="clear-product">　清空选中商品</a>
+							</span>
+						</div>
+						<div class="pull-right settlement-right">
+							<div class="order-total">
+								<span class="settlement-column1">商品总计：</span>
+								<span class="settlement-column2">￥1404.80</span>
+							</div>
+							<div class="order-activities">
+								<span class="settlement-column1">活动优惠：</span>
+								<span class="settlement-column2">-￥404.80</span>
+								<span class="order-activities-arrow font-color1">您参加了【满300减100】的活动</span>
+							</div>
+							<div class="order-tariffs">
+								<span class="settlement-column1">订单关税：</span>
+								<span class="settlement-column2 tariffs-num">￥132.09</span>
+								<span class="tariffs-notice-arrow">关税≤50，免征！</span>
+								<span class="tariffs-notice-arrow1">
+									关税省钱提示：<br/>
+									订单关税超出<span class="font-color4"> 50 </span>元！建议分开下单。（海关免征限额为50元）
+									<p class="font-color4">您可以重新选择商品，把关税总额控制在50元以下，即可免税。</p>
+								</span>
+							</div>
+							<div class="order-pay">
+								<span class="settlement-column1">应付金额（不含运费）：</span>
+								<span class="settlement-column2">￥1060，38</span>
+							</div>
+							<div class="pay-div clearfix">
+								<button class="btn btn-settlement disabled">去结算</button>
+								<div class="pay-notice">海关规定购买多件的总价不能超过￥1000请您分多次购买。</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<p class="cart-prompt">
+					<span>包邮</span>全场满99元包邮
+				</p>
+				<div class="ftzmall-goods goods">
+					<div class="cart-table1-header">
+						<span class="column1">
+							<label class="checkbox-label">
+								<span class="check-bg">
+									<input type="checkbox" class="checkall" autocomplete="off" name="" value=""/>
+								</span>
+							</label>
+						</span>
+						<span class="column2">
+							FTZMALL国内仓直发
+						</span>
+						<span class="column3">FTZMALL价格（元）</span>
+						<span class="column4">数量</span>
+						<span class="column5">小计（元）</span>
+						<span class="column6">操作</span>
+					</div>
+
+					<ul class="cart-table1">
+						<li class="cart-table1-con">
+							<span class="column1">
+								<label class="checkbox-label">
+									<span class="check-bg">
+										<input type="checkbox" autocomplete="off" name="" value=""/>
+									</span>
+								</label>
+							</span>
+							<span class="column2">	
+								<!-- 嵌套外层div是为了整个li的内容进行垂直居中 -->
+								<div class="product-information clearfix">
+									<img src="../src/images/cart/tp.jpg" class="product-img">
+									<div class="product-inf">
+										<a class="product-name">LOBO泰式红咖喱酱 50克/包</a>
+										<p class="product-rate" data-toogle="popover" data-placement="bottom" data-content="<h4>税费=不含税价格*件数*商品税率</h4>根据海关规定：本商品适用税率为<span class='rate-num'>10%</span>，若订单总税额≤50元，海关予以免征。">适用税率：<span class="rate-num">10%</span><span class="to-span"></span></p>
+									</div>
+								</div>	
+							</span>
+							<span class="column3">780</span>
+							<span class="column4 clearfix">
+								<a href="" class="quantity-subtract">-</a>
+								<input type="text" name="" value="1" class="product-quantity"/>
+								<a href="" class="quantity-add">+</a>
+							</span>
+							<span class="column5">39</span>
+							<span class="column6">
+								<a href="" class="delete-operation"></a>
+							</span>
+						</li>
+						<li class="cart-table1-con">
+							<span class="column1">
+								<label class="checkbox-label">
+									<span class="check-bg">
+										<input type="checkbox" autocomplete="off" name="" value=""/>
+									</span>
+								</label>
+							</span>
+							<span class="column2">	
+								<!-- 嵌套外层div是为了整个li的内容进行垂直居中 -->
+								<div class="product-information clearfix">
+									<img src="../src/images/cart/tp.jpg" class="product-img">
+									<div class="product-inf">
+										<a class="product-name">LOBO泰式红咖喱酱 50克/包</a>
+										<p class="product-rate" data-toogle="popover" data-placement="bottom" data-content="<h4>税费=不含税价格*件数*商品税率</h4>根据海关规定：本商品适用税率为<span class='rate-num'>10%</span>，若订单总税额≤50元，海关予以免征。">适用税率：<span class="rate-num">10%</span><span class="to-span"></span></p>
+									</div>
+								</div>	
+							</span>
+							<span class="column3">780</span>
+							<span class="column4 clearfix">
+								<a href="" class="quantity-subtract">-</a>
+								<input type="text" name="" value="1" class="product-quantity"/>
+								<a href="" class="quantity-add">+</a>
+							</span>
+							<span class="column5">39</span>
+							<span class="column6">
+								<a href="" class="delete-operation"></a>
+							</span>
+						</li>
+					</ul>
+					<div class="ftzmall-settlement clearfix">
+						<div class="pull-left settlement-left">
+							<span class="column1">
+								<label class="checkbox-label">
+									<span class="check-bg">
+										<input type="checkbox" class="checkall" autocomplete="off" name="" value=""/>
+									</span>
+								</label>
+							</span>
+							<span class="column2">
+								<a href="javascript:;" class="all-checkbox checkall">全选</a>
+								<a href="" class="continue-buy">继续购物　|</a>
+								<a href="javascript:;" class="clear-product">　清空选中商品</a>
+							</span>
+						</div>
+						<div class="pull-right settlement-right">
+							<div class="order-total">
+								<span class="settlement-column1">商品总计：</span>
+								<span class="settlement-column2">￥1404.80</span>
+							</div>
+							<div class="order-activities">
+								<span class="settlement-column1">活动优惠：</span>
+								<span class="settlement-column2">-￥404.80</span>
+								<span class="order-activities-arrow font-color1">您参加了【满300减100】的活动</span>
+							</div>
+							<div class="order-pay">
+								<span class="settlement-column1">应付金额（不含运费）：</span>
+								<span class="settlement-column2">￥1060，38</span>
+							</div>
+							<div class="pay-div clearfix">
+								<button class="btn btn-settlement">去结算</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cart-container-bottom">
+				<ul class="nav nav-tabs ">
+					<li class="active">
+						<a href="#alsobuy" data-toggle="tab">购买的还买了</a>
+					</li>
+					<li>
+						<a href="#todaywel" data-toggle="tab">今日最受欢迎</a>
+					</li>
+					<li>
+						<a href="#recentview" data-toggle="tab">最近查看过</a>
+					</li>
+				</ul>
+				<div id="myTabContent" class="tab-content">
+					<ul class="row clearfix tab-pane fade in active" id="alsobuy">
+						<li class="final-product pull-left ">
+							<img src="../src/images/finalpro.png" class="finalpro-img final-img">
+							<p class="final-text pull-left final-m">Teazen江南桑拿柠檬马黛茶可爱卡通茶包9克/蓝色</p>
+							<span class="final-price pull-right final-price">￥28.99</span>
+						</li>
+						<li class="final-product pull-left ">
+							<img src="../src/images/finalpro.png" class="finalpro-img final-img">
+							<p class="final-text pull-left final-m">Teazen江南桑拿柠檬马黛茶可爱卡通茶包9克/蓝色</p>
+							<span class="final-price pull-right final-price">￥28.99</span>
+						</li>
+						<li class="final-product pull-left ">
+							<img src="../src/images/finalpro.png" class="finalpro-img final-img">
+							<p class="final-text pull-left final-m">Teazen江南桑拿柠檬马黛茶可爱卡通茶包9克/蓝色</p>
+							<span class="final-price pull-right final-price">￥28.99</span>
+						</li>
+						<li class="final-product pull-left ">
+							<img src="../src/images/finalpro.png" class="finalpro-img final-img">
+							<p class="final-text pull-left final-m">Teazen江南桑拿柠檬马黛茶可爱卡通茶包9克/蓝色</p>
+							<span class="final-price pull-right final-price">￥28.99</span>
+						</li>
+						<li class="final-product pull-left ">
+							<img src="../src/images/finalpro.png" class="finalpro-img final-img">
+							<p class="final-text pull-left final-m">Teazen江南桑拿柠檬马黛茶可爱卡通茶包9克/蓝色</p>
+							<span class="final-price pull-right final-price">￥28.99</span>
+						</li>
+						<li class="final-product pull-left ">
+							<img src="../src/images/finalpro.png" class="finalpro-img final-img">
+							<p class="final-text pull-left final-m">Teazen江南桑拿柠檬马黛茶可爱卡通茶包9克/蓝色</p>
+							<span class="final-price pull-right final-price">￥28.99</span>
+						</li>
+						<li class="final-product pull-left ">
+							<img src="../src/images/finalpro.png" class="finalpro-img final-img">
+							<p class="final-text pull-left final-m">Teazen江南桑拿柠檬马黛茶可爱卡通茶包9克/蓝色</p>
+							<span class="final-price pull-right final-price">￥28.99</span>
+						</li>
+						<li class="final-product pull-left ">
+							<img src="../src/images/finalpro.png" class="finalpro-img final-img">
+							<p class="final-text pull-left final-m">Teazen江南桑拿柠檬马黛茶可爱卡通茶包9克/蓝色</p>
+							<span class="final-price pull-right final-price">￥28.99</span>
+						</li>
+					</ul>
+					<ul class="row clearfix tab-pane fade" id="todaywel">
+						<li class="final-product pull-left ">
+							<img src="../src/images/finalpro.png" class="finalpro-img final-img">
+							<p class="final-text pull-left final-m">Teazen江南桑拿柠檬马黛茶可爱卡通茶包9克/蓝色</p>
+							<span class="final-price pull-right final-price">￥28.99</span>
+						</li>
+						<li class="final-product pull-left ">
+							<img src="../src/images/finalpro.png" class="finalpro-img final-img">
+							<p class="final-text pull-left final-m">Teazen江南桑拿柠檬马黛茶可爱卡通茶包9克/蓝色</p>
+							<span class="final-price pull-right final-price">￥28.99</span>
+						</li>
+						<li class="final-product pull-left ">
+							<img src="../src/images/finalpro.png" class="finalpro-img final-img">
+							<p class="final-text pull-left final-m">Teazen江南桑拿柠檬马黛茶可爱卡通茶包9克/蓝色</p>
+							<span class="final-price pull-right final-price">￥28.99</span>
+						</li>
+						<li class="final-product pull-left ">
+							<img src="../src/images/finalpro.png" class="finalpro-img final-img">
+							<p class="final-text pull-left final-m">Teazen江南桑拿柠檬马黛茶可爱卡通茶包9克/蓝色</p>
+							<span class="final-price pull-right final-price">￥28.99</span>
+						</li>
+						<li class="final-product pull-left ">
+							<img src="../src/images/finalpro.png" class="finalpro-img final-img">
+							<p class="final-text pull-left final-m">Teazen江南桑拿柠檬马黛茶可爱卡通茶包9克/蓝色</p>
+							<span class="final-price pull-right final-price">￥28.99</span>
+						</li>
+						<li class="final-product pull-left ">
+							<img src="../src/images/finalpro.png" class="finalpro-img final-img">
+							<p class="final-text pull-left final-m">Teazen江南桑拿柠檬马黛茶可爱卡通茶包9克/蓝色</p>
+							<span class="final-price pull-right final-price">￥28.99</span>
+						</li>
+						<li class="final-product pull-left ">
+							<img src="../src/images/finalpro.png" class="finalpro-img final-img">
+							<p class="final-text pull-left final-m">Teazen江南桑拿柠檬马黛茶可爱卡通茶包9克/蓝色</p>
+							<span class="final-price pull-right final-price">￥28.99</span>
+						</li>
+						<li class="final-product pull-left ">
+							<img src="../src/images/finalpro.png" class="finalpro-img final-img">
+							<p class="final-text pull-left final-m">Teazen江南桑拿柠檬马黛茶可爱卡通茶包9克/蓝色</p>
+							<span class="final-price pull-right final-price">￥28.99</span>
+						</li>
+					</ul>
+					<ul class="row clearfix tab-pane fade" id="recentview">
+						<li class="final-product pull-left ">
+							<img src="../src/images/finalpro.png" class="finalpro-img final-img">
+							<p class="final-text pull-left final-m">Teazen江南桑拿柠檬马黛茶可爱卡通茶包9克/蓝色</p>
+							<span class="final-price pull-right final-price">￥28.99</span>
+						</li>
+						<li class="final-product pull-left ">
+							<img src="../src/images/finalpro.png" class="finalpro-img final-img">
+							<p class="final-text pull-left final-m">Teazen江南桑拿柠檬马黛茶可爱卡通茶包9克/蓝色</p>
+							<span class="final-price pull-right final-price">￥28.99</span>
+						</li>
+						<li class="final-product pull-left ">
+							<img src="../src/images/finalpro.png" class="finalpro-img final-img">
+							<p class="final-text pull-left final-m">Teazen江南桑拿柠檬马黛茶可爱卡通茶包9克/蓝色</p>
+							<span class="final-price pull-right final-price">￥28.99</span>
+						</li>
+						<li class="final-product pull-left ">
+							<img src="../src/images/finalpro.png" class="finalpro-img final-img">
+							<p class="final-text pull-left final-m">Teazen江南桑拿柠檬马黛茶可爱卡通茶包9克/蓝色</p>
+							<span class="final-price pull-right final-price">￥28.99</span>
+						</li>
+						<li class="final-product pull-left ">
+							<img src="../src/images/finalpro.png" class="finalpro-img final-img">
+							<p class="final-text pull-left final-m">Teazen江南桑拿柠檬马黛茶可爱卡通茶包9克/蓝色</p>
+							<span class="final-price pull-right final-price">￥28.99</span>
+						</li>
+						<li class="final-product pull-left ">
+							<img src="../src/images/finalpro.png" class="finalpro-img final-img">
+							<p class="final-text pull-left final-m">Teazen江南桑拿柠檬马黛茶可爱卡通茶包9克/蓝色</p>
+							<span class="final-price pull-right final-price">￥28.99</span>
+						</li>
+						<li class="final-product pull-left ">
+							<img src="../src/images/finalpro.png" class="finalpro-img final-img">
+							<p class="final-text pull-left final-m">Teazen江南桑拿柠檬马黛茶可爱卡通茶包9克/蓝色</p>
+							<span class="final-price pull-right final-price">￥28.99</span>
+						</li>
+						<li class="final-product pull-left ">
+							<img src="../src/images/finalpro.png" class="finalpro-img final-img">
+							<p class="final-text pull-left final-m">Teazen江南桑拿柠檬马黛茶可爱卡通茶包9克/蓝色</p>
+							<span class="final-price pull-right final-price">￥28.99</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="footer-top container"> <img src="../src/images/map.png" class="map-img">
+				<ul class="clearfix">
+					<li class="pull-left map-inf"> <span class="map-title">FTZMALL</span>
+						<ul class="map-ul">
+							<li><a href="">购物流程</a></li>
+							<li><a href="">发票政策</a></li>
+							<li><a href="">安全保证</a></li>
+							<li><a href="">服务保证</a></li>
+							<li><a href="">意见与建议</a></li>
+						</ul>
+					</li>
+					<li class="pull-left map-inf"> <span class="map-title">配送服务</span>
+						<ul class="map-ul">
+							<li><a href="">配送范围及运费</a></li>
+							<li><a href="">配送服务</a></li>
+							<li><a href="">验货与签收</a></li>
+						</ul>
+					</li>
+					<li class="pull-left map-inf"> <span class="map-title">支付方式</span>
+						<ul class="map-ul">
+							<li><a href="">DIG卡支付</a></li>
+							<li><a href="">在线支付</a></li>
+							<li><a href="">组合支付</a></li>
+						</ul>
+					</li>
+					<li class="pull-left map-inf"> <span class="map-title">售后服务</span>
+						<ul class="map-ul">
+							<li><a href="">退换货政策</a></li>
+							<li><a href="">退换货说明</a></li>
+							<li><a href="">退换货流程</a></li>
+							<li><a href="">退款说明</a></li>
+							<li><a href="">常见问题</a></li>
+						</ul>
+					</li>
+					<li class="pull-left map-inf"> <span class="map-title">自贸区直购</span>
+						<ul class="map-ul">
+							<li><a href="">消费者告知书</a></li>
+							<li><a href="">海关通关及关税</a></li>
+							<li><a href="">自贸区直够购物流程</a></li>
+							<li><a href="">自贸区直购退换货政策</a></li>
+							<li><a href="">自贸区直购退换货流程</a></li>
+							<li><a href="">自贸区直购退款说明</a></li>
+						</ul>
+					</li>
+					<li class="pull-left code-inf"> <span class="map-title">FTZMALL微信</span> <img src="../src/images/code.png">
+						<div class="telephone"> 400-188-5179
+							<p>周一至周五:9:00-17:00</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="footer-bottom">
+				<p class="footer-bottom-p1"><a href="">关于我们</a>|<a href="">品牌入驻</a>|<a href="">联系我们</a>|<a href="">免责声明</a>|<a href="">隐私条款</a>|<a href="">完税价格表</a>|<a href="">诚聘英才</a>|<a href="">快递 100</a></p>
+				<p class="footer-bottom-p2">Copyright © 2006 - 2015上海外高桥进口商品网版权所有　沪ICP备11030945号-3   增值电信业务经营许可证　沪B-20110100</p>
+				<p> <img src="../src/images/footer1.png"><img src="../src/images/footer2.png"> </p>
+			</div>
+		</div>
+		<script src="../src/js/jquery-1.11.3.min.js"></script> 
+		<script src="../src/bootstrap-3.3.5/dist/js/bootstrap.js"></script> 
+		<script src="../src/js/cbt.ui.cart.js"></script>
+	</body>
+</html>

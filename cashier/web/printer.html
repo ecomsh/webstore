@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>printer</title>
+	<meta charset="utf-8">
+	<style type="text/css" src="./css/bootstrap.min.css"></style>
+	<style type="text/css">
+
+
+	</style>
+
+</head>
+<body>
+
+
+
+<iframe id="here">
+
+</iframe>
+
+
+<input  type="button" value="print" onclick="p()" />
+
+
+<script type="text/javascript" src="./js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+
+<script>
+
+function p()       
+{
+
+
+var iframe = document.getElementById('here');
+var doc = iframe.contentWindow.document;
+
+var css = 
+	'<style type="text/css">'+
+	'table{font-size:10px;}'+
+	'.printer-container{'+
+	'	font-size:10px;'+
+	'}'+
+	'.printer-container .header .title{'+
+	'	text-align: center;'+
+	'	margin-bottom: 5px;'+
+	'}'+
+	'.printer-container thead tr th {'+
+	'	border-top:1px dotted black;'+
+	'	border-bottom:1px dotted black;'+
+	'}'+
+	'.printer-container .sum{ '+
+	'	padding-top: 10px; '+
+	'	border-top:1px dotted black;'+	
+	'}'+
+	'.printer-container .sum p {'+
+	'	margin: 2px;'+
+	'}'+
+	'.printer-container .footer p {'+
+	'	text-align: center;'+
+	'}'+
+	'</style>';
+
+doc.write(css);
+
+
+
+
+
+var content= 
+
+'<div class="printer-container">'+
+'	<div class="row header">'+
+'		<div class="col-xs-12">'+
+'			<p class="title">FTZMall O2O <span id="receipt-channelType">XXX店</span></p>'+
+'			<p><span id="receipt-time">2015-09-28 12:00</span> 机号:<span id="receipt-channelId">XXX</span></p>'+
+'			<p>订单号:<span id="receipt-orderId" >XXXXXXXXX</span></p>'+
+'		</div>'+
+'	</div>'+
+
+'	<table style="width:100%;">'+
+'		<thead>'+
+'			<tr>'+
+'				<th>商品名称</th>'+
+'				<th>货号</th>'+
+'				<th>数量</th>'+
+'				<th>税费</th>'+
+'				<th>金额</th>'+
+'			</tr>'+
+'		</thead>'+
+'		<tbody>'+
+
+
+'			<tr>'+
+'				<td>此程序可以实现选择页面中的区域进行打印</td>'+
+'				<td>631</td>'+
+'				<td>1</td>'+
+'				<td>20.00</td>'+
+'				<td>100.00</td>'+
+'			</tr>'+
+
+
+'			<tr>'+
+'				<td>此程序可以实现选择页面中的区域进行打印</td>'+
+'				<td>631</td>'+
+'				<td>1</td>'+
+'				<td>20.00</td>'+
+'				<td>100.00</td>'+
+'			</tr>'+
+
+
+'		</tbody>'+
+'	</table>'+
+'	<div class="sum">'+
+'		<p>共计<span id="receipt-totalNum">3</span>件商品</p>'+
+'		<p>商品总价：<span id="receipt-originalPrice" >20</span></p>'+
+'		<p>行邮税总价：<span id="receipt-totalTax" >20</span></p>'+
+'		<p>运费：<span id="receipt-shipping" >20</span></p>'+
+'		<p>支付总价：<span id="receipt-finalPrice" >20</span></p>'+
+'		<p>支付方式：微信</p>'+
+'		<p>收银员：<span id="receipt-cashier" >xxx</span></p>'+
+'	</div>'+
+'	<div class="footer">'+
+'		<p>**谢谢光临，请妥善保管收银条**</p>'+
+'	</div>'+
+'</div>';
+
+
+
+doc.write(content);
+doc.close();
+iframe.contentWindow.focus();
+iframe.contentWindow.print();
+
+}
+
+</script>
+
+</body>
+</html>
+
+

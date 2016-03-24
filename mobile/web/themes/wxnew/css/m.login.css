@@ -1,0 +1,61 @@
+/* header以及公用 */
+body{font-family: "Helvetica Neue", "微软雅黑", Helvetica, STHeiTi, sans-serif;background-color:#fff;width:100%}
+.ui-header-positive {background-color:#ed145b}
+.topbar-bigbox {background-color: #ed145b;}
+.topbar-fontbox {display: block;float: left; margin-left: 10%; width: 75%; height: 45px; line-height: 45px; text-align: center;}
+.topbar-fontbox i{color:#fff;line-height:45px;font-style: normal;}
+.float-r{float:right}
+.font-32{font-size:2em}
+.font-24{font-size:1.5em}
+.font-16{font-size:1em}
+.font-red{color: #ed145b;}
+.icon-g-fx {line-height:45px;height:45px;display:block}
+.bg-black{background-color:#000;}
+.text-right{text-align: right;}
+/* header以及公用 */
+
+/*主体内容 start*/
+.ui-container{margin-top: 10px;}
+/*主体内容 end*/
+
+/*验证码 start*/
+.ui-form-item-r div {padding-right: 0px}
+.ui-form-item-r .verifycode {margin-left: 23px; margin-top: 2px; width: 64px; height: 40px;}
+/*验证码 end*/
+
+/*登录按钮 start*/
+.ui-btn-pink {background-color: #ed145b; background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #ed145b), to(#ed145b)); color: white; border-color: #ed145b; background-clip: padding-box; }
+/*登录按钮 end*/
+
+/*红色大按钮 start*/
+.ui-form-item-l label, .ui-form-item-r button{color: #fff;width: 8rem;height:32px;margin-top:6px;margin-right:.625rem;font-size: .875rem;background:#ed145b;background: -webkit-gradient(linear,0 0,0 100%,from(#fe4175),to(#ed145b));background: -moz-gradient(linear,0 0,0 100%,from(#fe4175),to(#ed145b));border-radius:1.875rem;-webkit-border-radius:1.875rem;}
+/*红色大按钮 end*/
+
+/*tab 颜色重写 start*/
+.ui-tab-nav li.current {color: #ed145b; border-bottom: 2px #ed145b solid;}
+/*tab 颜色重写 end*/
+/*radio 颜色重写 start*/
+.ui-radio input:checked:after {background:#ed145b;}
+/*radio 颜色重写 end*/
+
+/*checkbox 颜色重写 start*/
+.ui-switch input:checked:before {border-color: #ed145b;box-shadow: #ed145b 0px 0px 0px 16px inset;background-color: #ed145b; }
+/*checkbox 颜色重写 end*/
+
+/*错误信息提示 start*/
+.ui-form-item{min-height: 44px;height:auto;}
+.help-block{color:#e81a62;}
+/*错误信息提示 start*/
+.ui-btn-wrap .ui-tooltips-cnt{height: auto;white-space:normal;}
+
+/*登录成功提示start*/
+.login-success{background: url(../images/win-bg.png) no-repeat;background-size: cover;}
+.login-success .full-screen{font-size: 16px;margin-top: 100px;}
+.login-success .success-text{text-align: center;color: #ed145b;font-size: 26px;margin-bottom: 16px;}
+.login-success .success-text1{text-align: center;}
+.login-success .success-text1 i{color: #ed145b;font-weight: bold;}
+.login-success .win-h{height: 100%;}
+.login-success .img-w{width: 100%;}
+.login-success .border-n{border: none;min-height: 80px;}
+.login-success .border-n span{color: #00a5e0;}
+/*登录成功提示end*/
